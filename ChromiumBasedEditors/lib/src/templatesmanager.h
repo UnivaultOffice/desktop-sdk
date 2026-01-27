@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2019
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-12 Ernesta Birznieka-Upisha
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 0, bldg. 0, office 0 (TEST) Test Legal Street (TEST)
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -63,7 +63,7 @@ public:
 	}
 };
 
-#define ONLYOFFICE_TEMPLATES_VERSION 1
+#define UNIVAULTOFFICE_TEMPLATES_VERSION 1
 class CTemplatesCache : public NSThreads::CBaseThread
 {
 private:
@@ -310,12 +310,12 @@ public:
 				delete[] pBuffer;
 			}
 
-#ifdef ONLYOFFICE_TEMPLATES_VERSION
+#ifdef UNIVAULTOFFICE_TEMPLATES_VERSION
 			if (0 != arTemplates.size())
 			{
 				// check version!!!
 				std::string sOO_Version = arTemplates[0];
-				if (0 != sOO_Version.find("ONLYOFFICE_TEMPLATES_VERSION_"))
+				if (0 != sOO_Version.find("UNIVAULTOFFICE_TEMPLATES_VERSION_"))
 				{
 					arTemplates.clear();
 				}
@@ -323,7 +323,7 @@ public:
 				{
 					std::string sVersion = sOO_Version.substr(29);
 					int nVersion = std::stoi(sVersion);
-					if (nVersion != ONLYOFFICE_TEMPLATES_VERSION)
+					if (nVersion != UNIVAULTOFFICE_TEMPLATES_VERSION)
 						arTemplates.clear();
 					else
 						arTemplates.erase(arTemplates.begin());
@@ -483,9 +483,9 @@ public:
 
 			// формируем новый набор шаблонов
 			NSStringUtils::CStringBuilder oTemplatesLog;
-#ifdef ONLYOFFICE_TEMPLATES_VERSION
-			oTemplatesLog.WriteString(L"ONLYOFFICE_TEMPLATES_VERSION_");
-			oTemplatesLog.WriteString(std::to_wstring(ONLYOFFICE_TEMPLATES_VERSION));
+#ifdef UNIVAULTOFFICE_TEMPLATES_VERSION
+			oTemplatesLog.WriteString(L"UNIVAULTOFFICE_TEMPLATES_VERSION_");
+			oTemplatesLog.WriteString(std::to_wstring(UNIVAULTOFFICE_TEMPLATES_VERSION));
 			oTemplatesLog.WriteString(L"\n");
 #endif
 			int nCount = (int)arTemplatesPaths.size();
@@ -510,7 +510,7 @@ public:
 
 		DWORD dwTime = NSTimers::GetTickCount();
 		DWORD dwTime2 = dwTime;
-		DWORD dwTimeEps = 2000;
+		DWORD dwTimeEps = 2026;
 
 		bool bIsNeedConvert = false;
 		for (std::vector<std::wstring>::iterator i = arTemplatesPaths.begin(); i != arTemplatesPaths.end(); i++)
@@ -556,7 +556,7 @@ public:
 			oBuilder.WriteEncodeXmlString(*i);
 			oBuilder.WriteString(L"</m_sFileFrom><m_sFileTo>");
 			oBuilder.WriteEncodeXmlString(sOutputFile);
-			oBuilder.WriteString(L"</m_sFileTo><m_nFormatTo>1025</m_nFormatTo><m_sFontDir>");
+			oBuilder.WriteString(L"</m_sFileTo><m_nFormatTo>2026</m_nFormatTo><m_sFontDir>");
 			oBuilder.WriteEncodeXmlString(m_pManager->m_oSettings.fonts_cache_info_path);
 			oBuilder.WriteString(L"</m_sFontDir><m_bIsNoBase64>false</m_bIsNoBase64><m_sAllFontsPath>");
 			oBuilder.WriteEncodeXmlString(m_pManager->m_oSettings.fonts_cache_info_path);

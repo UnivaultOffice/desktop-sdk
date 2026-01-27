@@ -1,10 +1,10 @@
-Source: onlyoffice-desktopeditor
+Source: univaultoffice-desktopeditor
 Section: office
 Priority: optional
-Maintainer: Ascensio System SIA <support@onlyoffice.com>
+Maintainer: Univault Technologies <support@univaultoffice.github.io>
 Build-Depends: debhelper (>= 8.0.0)
 
-Package: onlyoffice-desktopeditor
+Package: univaultoffice-desktopeditor
 Architecture: amd64
 Depends: x11-common, libxss1, libcurl3, libgtkglext1, libcairo2, fonts-dejavu, fonts-opensymbol
 Recommends: fonts-liberation, ttf-mscorefonts-installer, fonts-crosextra-carlito, fonts-takao-gothic

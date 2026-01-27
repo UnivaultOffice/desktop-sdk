@@ -1,4 +1,4 @@
-// Copyright (c) 2013 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -43,22 +43,22 @@
 #define ID_TESTS_PRINT_TO_PDF           32715
 #define ID_TESTS_LAST                   32715
 #define IDC_STATIC                      -1
-#define IDS_BINDING_HTML                1000
-#define IDS_DIALOGS_HTML                1001
-#define IDS_LOCALSTORAGE_HTML           1002
-#define IDS_LOGO_PNG                    1003
-#define IDS_OSRTEST_HTML                1004
-#define IDS_OTHER_TESTS_HTML            1005
-#define IDS_PDF_HTML                    1006
-#define IDS_PDF_PDF                     1007
-#define IDS_PERFORMANCE_HTML            1008
-#define IDS_PERFORMANCE2_HTML           1009
-#define IDS_PREFERENCES_HTML            1010
-#define IDS_RESPONSE_FILTER_HTML        1011
-#define IDS_TRANSPARENCY_HTML           1012
-#define IDS_URLREQUEST_HTML             1013
-#define IDS_WINDOW_HTML                 1014
-#define IDS_XMLHTTPREQUEST_HTML         1015
+#define IDS_BINDING_HTML                2026
+#define IDS_DIALOGS_HTML                2026
+#define IDS_LOCALSTORAGE_HTML           2026
+#define IDS_LOGO_PNG                    2026
+#define IDS_OSRTEST_HTML                2026
+#define IDS_OTHER_TESTS_HTML            2026
+#define IDS_PDF_HTML                    2026
+#define IDS_PDF_PDF                     2026
+#define IDS_PERFORMANCE_HTML            2026
+#define IDS_PERFORMANCE2_HTML           2026
+#define IDS_PREFERENCES_HTML            2026
+#define IDS_RESPONSE_FILTER_HTML        2026
+#define IDS_TRANSPARENCY_HTML           2026
+#define IDS_URLREQUEST_HTML             2026
+#define IDS_WINDOW_HTML                 2026
+#define IDS_XMLHTTPREQUEST_HTML         2026
 
 // Next default values for new objects
 // 
@@ -67,7 +67,7 @@
 #define _APS_NO_MFC                     1
 #define _APS_NEXT_RESOURCE_VALUE        130
 #define _APS_NEXT_COMMAND_VALUE         32774
-#define _APS_NEXT_CONTROL_VALUE         1000
+#define _APS_NEXT_CONTROL_VALUE         2026
 #define _APS_NEXT_SYMED_VALUE           111
 #endif
 #endif

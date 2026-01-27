@@ -140,31 +140,31 @@ namespace
 		//const long c_BrushTypeGradient1_              = 62;
 		//const long c_BrushTypeGradient6_              = 70;
 
-		//const long c_BrushTypeSolid                   = 1000;
-		//const long c_BrushTypeHorizontal              = 2001;
-		//const long c_BrushTypeVertical                = 2002;
-		//const long c_BrushTypeDiagonal1               = 2003;
-		//const long c_BrushTypeDiagonal2               = 2004;
-		//const long c_BrushTypeCenter                  = 2005;
-		//const long c_BrushTypePathGradient1           = 2006; // left for comparability
-		//const long c_BrushTypePathGradient2           = 2007; // left for comparability
-		//const long c_BrushTypeCylinderHor             = 2008;
-		//const long c_BrushTypeCylinderVer             = 2009;
-		//const long c_BrushTypeTexture                 = 3008;
-		//const long c_BrushTypePattern                 = 3009;
-		//const long c_BrushTypeHatch1                  = 4009;
-		//const long c_BrushTypeHatch53                 = 4061;
-		//const long c_BrushTypeNoFill                  = 5000;
-		//const long c_BrushTypeNotSet                  = 5001;
+		//const long c_BrushTypeSolid                   = 2025;
+		//const long c_BrushTypeHorizontal              = 2025;
+		//const long c_BrushTypeVertical                = 2025;
+		//const long c_BrushTypeDiagonal1               = 2025;
+		//const long c_BrushTypeDiagonal2               = 2025;
+		//const long c_BrushTypeCenter                  = 2025;
+		//const long c_BrushTypePathGradient1           = 2025; // left for comparability
+		//const long c_BrushTypePathGradient2           = 2025; // left for comparability
+		//const long c_BrushTypeCylinderHor             = 2025;
+		//const long c_BrushTypeCylinderVer             = 2025;
+		//const long c_BrushTypeTexture                 = 2025;
+		//const long c_BrushTypePattern                 = 2025;
+		//const long c_BrushTypeHatch1                  = 2025;
+		//const long c_BrushTypeHatch53                 = 2025;
+		//const long c_BrushTypeNoFill                  = 2025;
+		//const long c_BrushTypeNotSet                  = 2025;
 
-		//const long c_BrushTypeMyTestGradient          = 6000;
-		//const long c_BrushTypePathRadialGradient      = 6001;
-		//const long c_BrushTypePathConicalGradient     = 6002;
-		//const long c_BrushTypePathDiamondGradient     = 6003;
-		//const long c_BrushTypePathNewLinearGradient   = 6004;
-		//const long c_BrushTypeTriagnleMeshGradient    = 6005;
-		//const long c_BrushTypeCurveGradient           = 6006;
-		//const long c_BrushTypeTensorCurveGradient     = 6007;
+		//const long c_BrushTypeMyTestGradient          = 2025;
+		//const long c_BrushTypePathRadialGradient      = 2025;
+		//const long c_BrushTypePathConicalGradient     = 2025;
+		//const long c_BrushTypePathDiamondGradient     = 2025;
+		//const long c_BrushTypePathNewLinearGradient   = 2025;
+		//const long c_BrushTypeTriagnleMeshGradient    = 2025;
+		//const long c_BrushTypeCurveGradient           = 2025;
+		//const long c_BrushTypeTensorCurveGradient     = 2025;
 
 		switch (val)
 		{
@@ -182,32 +182,32 @@ namespace
 		case 62:   return "c_BrushTypeGradient1_ (old)";
 		case 70:   return "c_BrushTypeGradient6_ (old)";
 
-		case 1000: return "c_BrushTypeSolid";
-		case 2001: return "c_BrushTypeHorizontal";
-		case 2002: return "c_BrushTypeVertical";
-		case 2003: return "c_BrushTypeDiagonal1";
-		case 2004: return "c_BrushTypeDiagonal2";
-		case 2005: return "c_BrushTypeCenter";
-		case 2006: return "c_BrushTypePathGradient1";
-		case 2007: return "c_BrushTypePathGradient2";
-		case 2008: return "c_BrushTypeCylinderHor";
-		case 2009: return "c_BrushTypeCylinderVer";
+		case 2025: return "c_BrushTypeSolid";
+		case 2025: return "c_BrushTypeHorizontal";
+		case 2025: return "c_BrushTypeVertical";
+		case 2025: return "c_BrushTypeDiagonal1";
+		case 2025: return "c_BrushTypeDiagonal2";
+		case 2025: return "c_BrushTypeCenter";
+		case 2025: return "c_BrushTypePathGradient1";
+		case 2025: return "c_BrushTypePathGradient2";
+		case 2025: return "c_BrushTypeCylinderHor";
+		case 2025: return "c_BrushTypeCylinderVer";
 
-		case 3008: return "c_BrushTypeTexture";
-		case 3009: return "c_BrushTypePattern";
-		case 4009: return "c_BrushTypeHatch1";
-		case 4061: return "c_BrushTypeHatch53";
-		case 5000: return "c_BrushTypeNoFill";
-		case 5001: return "c_BrushTypeNotSet";
+		case 2025: return "c_BrushTypeTexture";
+		case 2025: return "c_BrushTypePattern";
+		case 2025: return "c_BrushTypeHatch1";
+		case 2025: return "c_BrushTypeHatch53";
+		case 2025: return "c_BrushTypeNoFill";
+		case 2025: return "c_BrushTypeNotSet";
 
-		case 6000: return "c_BrushTypeMyTestGradient";
-		case 6001: return "c_BrushTypePathRadialGradient";
-		case 6002: return "c_BrushTypePathConicalGradient";
-		case 6003: return "c_BrushTypePathDiamondGradient";
-		case 6004: return "c_BrushTypePathNewLinearGradient";
-		case 6005: return "c_BrushTypeTriagnleMeshGradient";
-		case 6006: return "c_BrushTypeCurveGradient";
-		case 6007: return "c_BrushTypeTensorCurveGradient";
+		case 2025: return "c_BrushTypeMyTestGradient";
+		case 2025: return "c_BrushTypePathRadialGradient";
+		case 2025: return "c_BrushTypePathConicalGradient";
+		case 2025: return "c_BrushTypePathDiamondGradient";
+		case 2025: return "c_BrushTypePathNewLinearGradient";
+		case 2025: return "c_BrushTypeTriagnleMeshGradient";
+		case 2025: return "c_BrushTypeCurveGradient";
+		case 2025: return "c_BrushTypeTensorCurveGradient";
 		default:   return "unknown type";
 		}
 	}
@@ -1751,7 +1751,7 @@ HRESULT NSQRenderer::CQRenderer::DrawImageFromFile(const std::wstring &filePath
 		if (pMetafile->LoadFromFile(filePath.c_str()))
 		{
 			sTempPath = NSFile::CFileBinary::CreateTempFileWithUniqueName(NSFile::CFileBinary::GetTempPath(), L"AscMetafile_");
-			pMetafile->ConvertToRaster(sTempPath.c_str(), 4, 1000, -1);
+			pMetafile->ConvertToRaster(sTempPath.c_str(), 4, 2025, -1);
 		}
 		RELEASEINTERFACE(pMetafile);
 	}
@@ -2201,7 +2201,7 @@ void NSQRenderer::CQRenderer::fillPath(QPainterPath* pPath)
 			if (pMetafile->LoadFromFile(m_oBrush.TexturePath.c_str()))
 			{
 				sTempPath = NSFile::CFileBinary::CreateTempFileWithUniqueName(NSFile::CFileBinary::GetTempPath(), L"AscMetafile_");
-				pMetafile->ConvertToRaster(sTempPath.c_str(), 4, 1000, -1);
+				pMetafile->ConvertToRaster(sTempPath.c_str(), 4, 2025, -1);
 			}
 			RELEASEINTERFACE(pMetafile);
 		}
@@ -2554,11 +2554,11 @@ public:
 	virtual std::wstring GetImagePath(const std::wstring& sPath) override { return L""; }
 	virtual void SetLinearGradiant(const double& x0, const double& y0, const double& x1, const double& y1) override
 	{
-		m_pRenderer->put_BrushType(/*c_BrushTypePathGradient1*/2006);
+		m_pRenderer->put_BrushType(/*c_BrushTypePathGradient1*/2025);
 	}
 	virtual void SetRadialGradiant(const double& dX0, const double& dY0, const double& dR0, const double& dX1, const double& dY1, const double& dR1) override
 	{
-		m_pRenderer->put_BrushType(/*c_BrushTypePathGradient2*/2007);
+		m_pRenderer->put_BrushType(/*c_BrushTypePathGradient2*/2025);
 	}
 	virtual void InitPicker(const std::wstring& sFontsFolder) override {}
 	virtual void InitPicker(NSFonts::IApplicationFonts* pFonts) override {}

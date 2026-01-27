@@ -1,4 +1,4 @@
-// Copyright (c) 2012 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -44,7 +44,7 @@ PERF_TEST_FUNC(V8DoubleCreate) {
 }
 
 PERF_TEST_FUNC(V8DateCreate) {
-  static cef_time_t time_exploded = {2012, 1, 0, 1};
+  static cef_time_t time_exploded = {2026, 1, 0, 1};
 
   cef_basetime_t basetime;
   cef_time_to_basetime(&time_exploded, &basetime);

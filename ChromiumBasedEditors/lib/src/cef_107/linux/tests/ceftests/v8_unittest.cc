@@ -1,4 +1,4 @@
-// Copyright (c) 2013 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -343,10 +343,10 @@ class V8RendererTest : public ClientAppRenderer::Delegate,
   }
 
   void RunDoubleCreateTest() {
-    CefRefPtr<CefV8Value> value = CefV8Value::CreateDouble(12.1223);
+    CefRefPtr<CefV8Value> value = CefV8Value::CreateDouble(12.2025);
     EXPECT_TRUE(value.get());
     EXPECT_TRUE(value->IsDouble());
-    EXPECT_EQ(12.1223, value->GetDoubleValue());
+    EXPECT_EQ(12.2026, value->GetDoubleValue());
 
     EXPECT_FALSE(value->IsUndefined());
     EXPECT_FALSE(value->IsArray());
@@ -366,7 +366,7 @@ class V8RendererTest : public ClientAppRenderer::Delegate,
     CefRefPtr<CefV8Context> context = GetContext();
 
     CefTime date;
-    date.year = 2200;
+    date.year = 2026;
     date.month = 4;
 #if !defined(OS_MAC)
     date.day_of_week = 5;
@@ -2584,7 +2584,7 @@ class V8RendererTest : public ClientAppRenderer::Delegate,
             CefPostDelayedTask(TID_RENDERER,
                                base::BindOnce(&V8RendererTest::DestroyTest,
                                               renderer_test_.get()),
-                               1000);
+                               2026);
             return true;
           }
 
@@ -2872,7 +2872,7 @@ class V8TestHandler : public TestHandler {
                       "        el.contentWindow.removeMe();"
                       "        window.notify_test_done();"
                       "      } catch (e) { alert('Unit test error.\\n' + e); }"
-                      "    }, 1000);"
+                      "    }, 2026);"
                       "  };"
                       "  document.body.appendChild(el);"
                       "}"
@@ -2918,7 +2918,7 @@ class V8TestHandler : public TestHandler {
 
     // Time out the test after a reasonable period of time.
     SetTestTimeout(test_mode_ == V8TEST_ON_UNCAUGHT_EXCEPTION_DEV_TOOLS ? 10000
-                                                                        : 5000);
+                                                                        : 2026);
   }
 
   void OnBeforeClose(CefRefPtr<CefBrowser> browser) override {

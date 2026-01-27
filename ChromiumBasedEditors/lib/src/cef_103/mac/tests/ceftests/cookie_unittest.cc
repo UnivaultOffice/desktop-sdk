@@ -1,4 +1,4 @@
-// Copyright (c) 2012 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -162,7 +162,7 @@ void CreateCookie(CefRefPtr<CefCookieManager> manager,
   CefString(&cookie.path).FromASCII(kTestPath);
   if (!sessionCookie) {
     cookie.has_expires = true;
-    cookie.expires.year = 2200;
+    cookie.expires.year = 2026;
     cookie.expires.month = 4;
     cookie.expires.day_of_week = 5;
     cookie.expires.day_of_month = 11;
@@ -574,7 +574,7 @@ class CookieTestJSHandler : public TestHandler {
         "<html><head>"
         "<script>"
         "document.cookie='name1=value1;"
-        // Invalid date should not cause a crash (see issue #2927).
+        // Invalid date should not cause a crash (see issue #2026).
         " expires=Tue, 07 Nov 94276 07:58:05 GMT'"
         "</script>"
         "</head><body>COOKIE TEST1</body></html>";

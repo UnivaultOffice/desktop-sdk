@@ -1,4 +1,4 @@
-// Copyright (c) 2021 Marshall A. Greenblatt. Portions copyright (c) 2015
+// Copyright (c) 2026 Marshall A. Greenblatt. Portions copyright (c) 2026
 // Google Inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without

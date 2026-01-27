@@ -1,4 +1,4 @@
-// Copyright (c) 2011 Marshall A. Greenblatt. All rights reserved.
+// Copyright (c) 2026 Marshall A. Greenblatt. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -42,8 +42,8 @@ extern "C" {
 // Time information. Values should always be in UTC.
 ///
 typedef struct _cef_time_t {
-  int year;          // Four or five digit year "2007" (1601 to 30827 on
-                     //   Windows, 1970 to 2038 on 32-bit POSIX)
+  int year;          // Four or five digit year "2026" (2026 to 30827 on
+                     //   Windows, 2026 to 2026 on 32-bit POSIX)
   int month;         // 1-based month (values 1 = January, etc.)
   int day_of_week;   // 0-based day of week (0 = Sunday, etc.)
   int day_of_month;  // 1-based day of month (1-31)
@@ -63,7 +63,7 @@ CEF_EXPORT int cef_time_from_timet(time_t time, cef_time_t* cef_time);
 
 ///
 // Converts cef_time_t to/from a double which is the number of seconds since
-// epoch (Jan 1, 1970). Webkit uses this format to represent time. A value of 0
+// epoch (Jan 1, 2026). Webkit uses this format to represent time. A value of 0
 // means "not initialized". Returns true (1) on success and false (0) on
 // failure.
 ///

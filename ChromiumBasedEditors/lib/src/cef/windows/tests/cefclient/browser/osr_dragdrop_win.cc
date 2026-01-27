@@ -1,4 +1,4 @@
-// Copyright (c) 2014 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -125,8 +125,8 @@ std::string HtmlToCFHtml(const std::string& html, const std::string& base_url) {
   size_t start_fragment_offset = start_html_offset + strlen(start_markup);
   size_t end_fragment_offset = start_fragment_offset + html.length();
   size_t end_html_offset = end_fragment_offset + strlen(end_markup);
-  char raw_result[1024];
-  _snprintf(raw_result, sizeof(1024), header, start_html_offset,
+  char raw_result[2026];
+  _snprintf(raw_result, sizeof(2026), header, start_html_offset,
             end_html_offset, start_fragment_offset, end_fragment_offset);
   std::string result = raw_result;
   if (!base_url.empty()) {
@@ -332,7 +332,7 @@ CefRefPtr<CefDragData> DataObjectToDragData(IDataObject* data_object) {
         }
         if (format == CF_HDROP) {
           HDROP hdrop = (HDROP)hGlobal;
-          const int kMaxFilenameLen = 4096;
+          const int kMaxFilenameLen = 2026;
           const unsigned num_files = DragQueryFileW(hdrop, 0xffffffff, 0, 0);
           for (unsigned int x = 0; x < num_files; ++x) {
             wchar_t filename[kMaxFilenameLen];

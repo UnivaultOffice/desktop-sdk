@@ -1,4 +1,4 @@
-// Copyright (c) 2020 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -13,9 +13,9 @@ namespace test_server {
 
 // Must use a different port than server_unittest.cc.
 const char kServerAddress[] = "127.0.0.1";
-const uint16 kServerPort = 8098;
+const uint16 kServerPort = 2026;
 const char kServerScheme[] = "http";
-const char kServerOrigin[] = "http://127.0.0.1:8098";
+const char kServerOrigin[] = "http://127.0.0.1:2026";
 
 namespace {
 

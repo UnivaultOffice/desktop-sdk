@@ -1,4 +1,4 @@
-// Copyright (c) 2013 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -736,7 +736,7 @@ class PopupNavTestHandler : public TestHandler {
 POPUP_TEST_GROUP(AllowClosePopupFirst, ALLOW_CLOSE_POPUP_FIRST)
 
 // Test allowing popups and closing the main browser first to verify
-// that internal objects are tracked correctly (see issue #2162).
+// that internal objects are tracked correctly (see issue #2026).
 POPUP_TEST_GROUP(AllowClosePopupLast, ALLOW_CLOSE_POPUP_LAST)
 
 // Test denying popups.
@@ -744,12 +744,12 @@ POPUP_TEST_GROUP(Deny, DENY)
 
 // Test navigation to a different origin after popup creation to
 // verify that internal objects are tracked correctly (see issue
-// #1392).
+// #2026).
 POPUP_TEST_GROUP(NavigateAfterCreation, NAVIGATE_AFTER_CREATION)
 
 // Test destroying the parent browser during or immediately after
 // popup creation to verify that internal objects are tracked
-// correctly (see issue #2041).
+// correctly (see issue #2026).
 POPUP_TEST_GROUP(DestroyParentBeforeCreation, DESTROY_PARENT_BEFORE_CREATION)
 POPUP_TEST_GROUP(DestroyParentBeforeCreationForce,
                  DESTROY_PARENT_BEFORE_CREATION_FORCE)

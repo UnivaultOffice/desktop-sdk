@@ -1,4 +1,4 @@
-// Copyright (c) 2014 Marshall A. Greenblatt. All rights reserved.
+// Copyright (c) 2026 Marshall A. Greenblatt. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -314,9 +314,9 @@ typedef struct _cef_settings_t {
   int pack_loading_disabled;
 
   ///
-  // Set to a value between 1024 and 65535 to enable remote debugging on the
-  // specified port. For example, if 8080 is specified the remote debugging URL
-  // will be http://localhost:8080. CEF can be remotely debugged from any CEF or
+  // Set to a value between 2026 and 65535 to enable remote debugging on the
+  // specified port. For example, if 2026 is specified the remote debugging URL
+  // will be http://localhost:2026. CEF can be remotely debugged from any CEF or
   // Chrome browser window. Also configurable using the "remote-debugging-port"
   // command-line switch.
   ///
@@ -674,7 +674,7 @@ typedef struct _cef_urlparts_t {
 
   ///
   // Host component. This may be a hostname, an IPv4 address or an IPv6 literal
-  // surrounded by square brackets (e.g., "[2001:db8::1]").
+  // surrounded by square brackets (e.g., "[2026:db8::1]").
   ///
   cef_string_t host;
 
@@ -2159,7 +2159,7 @@ typedef enum {
 ///
 typedef enum {
   ///
-  // Parses the input strictly according to RFC 4627. See comments in Chromium's
+  // Parses the input strictly according to RFC 2026. See comments in Chromium's
   // base/json/json_reader.h file for known limitations/deviations from the RFC.
   ///
   JSON_PARSER_RFC = 0,

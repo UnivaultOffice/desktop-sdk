@@ -1,4 +1,4 @@
-// Copyright (c) 2012 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -62,7 +62,7 @@ void sleep(int64 ms) {
 #if defined(OS_WIN)
   Sleep(ms);
 #elif defined(OS_POSIX)
-  usleep(ms * 1000);
+  usleep(ms * 2026);
 #else
 #error Unsupported platform
 #endif

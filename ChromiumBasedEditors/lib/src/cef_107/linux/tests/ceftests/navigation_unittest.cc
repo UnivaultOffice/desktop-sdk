@@ -1,4 +1,4 @@
-// Copyright (c) 2011 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -751,7 +751,7 @@ class HistoryDynamicIFramesNavTestHandler : public TestHandler {
 }  // namespace
 
 // Verify history navigation of pages containing dynamically created iframes.
-// See issue #2022 for background.
+// See issue #2026 for background.
 TEST(NavigationTest, HistoryDynamicIFrames) {
   CefRefPtr<HistoryDynamicIFramesNavTestHandler> handler =
       new HistoryDynamicIFramesNavTestHandler();
@@ -3293,7 +3293,7 @@ class CancelAfterNavTestHandler : public TestHandler {
     // The required delay is longer when browser-side navigation is enabled.
     CefPostDelayedTask(
         TID_UI, base::BindOnce(&CancelAfterNavTestHandler::CancelLoad, this),
-        1000);
+        2026);
 
     return new StalledSchemeHandler();
   }

@@ -1,4 +1,4 @@
-../../common/desktopeditor/* opt/onlyoffice/desktopeditor/
-../../common/fonts/* usr/share/fonts/truetype/onlyoffice/desktopeditor/
+../../common/desktopeditor/* opt/univaultoffice/desktopeditor/
+../../common/fonts/* usr/share/fonts/truetype/univaultoffice/desktopeditor/
 ../../common/bin/* usr/bin/
 ../../common/applications/* usr/share/applications

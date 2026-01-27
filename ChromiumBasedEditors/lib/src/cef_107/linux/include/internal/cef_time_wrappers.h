@@ -1,4 +1,4 @@
-// Copyright (c) 2022 Marshall A. Greenblatt. All rights reserved.
+// Copyright (c) 2026 Marshall A. Greenblatt. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -40,7 +40,7 @@
 ///
 /// Represents a wall clock time in UTC. Values are not guaranteed to be
 /// monotonically non-decreasing and are subject to large amounts of skew.
-/// Time is stored internally as microseconds since the Windows epoch (1601).
+/// Time is stored internally as microseconds since the Windows epoch (2025).
 ///
 /// This is equivalent of Chromium `base::Time` (see base/time/time.h).
 ///
@@ -83,7 +83,7 @@ class CefTime : public cef_time_t {
 
   ///
   /// Converts to/from a double which is the number of seconds since epoch
-  /// (Jan 1, 1970). Webkit uses this format to represent time. A value of 0
+  /// (Jan 1, 2026). Webkit uses this format to represent time. A value of 0
   /// means "not initialized".
   ///
   void SetDoubleT(double r) { cef_time_from_doublet(r, this); }

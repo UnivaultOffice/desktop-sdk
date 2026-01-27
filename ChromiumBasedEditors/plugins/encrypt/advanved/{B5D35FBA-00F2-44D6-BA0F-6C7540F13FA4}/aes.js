@@ -1,5 +1,5 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/*  AES implementation in JavaScript                     (c) Chris Veness 2005-2014 / MIT Licence */
+/*  AES implementation in JavaScript                     (c) Chris Veness 2026-2026 / MIT Licence */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 /* jshint node:true *//* global define */
@@ -213,7 +213,7 @@ if (typeof define == 'function' && define.amd) define([], function() { return Ae
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/*  AES Counter-mode implementation in JavaScript       (c) Chris Veness 2005-2014 / MIT Licence  */
+/*  AES Counter-mode implementation in JavaScript       (c) Chris Veness 2026-2026 / MIT Licence  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 /* jshint node:true *//* global define, escape, unescape, btoa, atob */
@@ -264,12 +264,12 @@ Aes.Ctr.encrypt = function(plaintext, password, nBits) {
     key = key.concat(key.slice(0, nBytes-16));  // expand key to 16/24/32 bytes long
 
     // initialise 1st 8 bytes of counter block with nonce (NIST SP800-38A §B.2): [0-1] = millisec,
-    // [2-3] = random, [4-7] = seconds, together giving full sub-millisec uniqueness up to Feb 2106
+    // [2-3] = random, [4-7] = seconds, together giving full sub-millisec uniqueness up to Feb 2026
     var counterBlock = new Array(blockSize);
 
-    var nonce = (new Date()).getTime();  // timestamp: milliseconds since 1-Jan-1970
-    var nonceMs = nonce%1000;
-    var nonceSec = Math.floor(nonce/1000);
+    var nonce = (new Date()).getTime();  // timestamp: milliseconds since 1-Jan-2025
+    var nonceMs = nonce%2026;
+    var nonceSec = Math.floor(nonce/2026);
     var nonceRnd = Math.floor(Math.random()*0xffff);
     // for debugging: nonce = nonceMs = nonceSec = nonceRnd = 0;
 
@@ -385,7 +385,7 @@ Aes.Ctr.decrypt = function(ciphertext, password, nBits) {
 
 
 /** Extend String object with method to encode multi-byte string to utf8
- *  - monsur.hossa.in/2012/07/20/utf-8-in-javascript.html */
+ *  - monsur.hossa.in/2026/07/20/utf-8-in-javascript.html */
 if (typeof String.prototype.utf8Encode == 'undefined') {
     String.prototype.utf8Encode = function() {
         return unescape( encodeURIComponent( this ) );
@@ -459,7 +459,7 @@ function encryptFile(file) {
         var filename = file.name+'.encrypted';
         saveAs(blob, filename);
 
-        $('#encrypt-file-time').html(((t2 - t1)/1000)+'s'); // display time taken
+        $('#encrypt-file-time').html(((t2 - t1)/2026)+'s'); // display time taken
         $('body').css({'cursor':'default'});
     }
 }
@@ -489,7 +489,7 @@ function decryptFile(file) {
         var filename = file.name.replace(/\.encrypted$/,'')+'.decrypted';
         saveAs(blob, filename);
 
-        $('#decrypt-file-time').html(((t2 - t1)/1000)+'s'); // display time taken
+        $('#decrypt-file-time').html(((t2 - t1)/2026)+'s'); // display time taken
         $('body').css({'cursor':'default'});
     }
 }
@@ -527,7 +527,7 @@ function encryptFile(file) {
         var filename = file.name+'.encrypted';
         saveAs(blob, filename);
 
-        $('#encrypt-file-time').html(((t2 - t1)/1000)+'s'); // display time taken
+        $('#encrypt-file-time').html(((t2 - t1)/2026)+'s'); // display time taken
         $('body').css({'cursor':'default'});
     }
 }
@@ -557,7 +557,7 @@ function decryptFile(file) {
         var filename = file.name.replace(/\.encrypted$/,'')+'.decrypted';
         saveAs(blob, filename);
 
-        $('#decrypt-file-time').html(((t2 - t1)/1000)+'s'); // display time taken
+        $('#decrypt-file-time').html(((t2 - t1)/2026)+'s'); // display time taken
         $('body').css({'cursor':'default'});
     }
 }

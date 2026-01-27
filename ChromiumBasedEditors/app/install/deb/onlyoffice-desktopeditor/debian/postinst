@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for onlyoffice
+# postinst script for univaultoffice
 #
 # see: dh_installdeb(1)
 
@@ -22,7 +22,7 @@ set -e
 case "$1" in
 	configure)
     
-    chmod 777 /opt/onlyoffice/desktopeditor/Local/recover
+    chmod 777 /opt/univaultoffice/desktopeditor/Local/recover
 
 		# call db_stop to prevent installation hang
 		db_stop

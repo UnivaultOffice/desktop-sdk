@@ -1,5 +1,5 @@
 /** vim: et:ts=4:sw=4:sts=4
- * @license RequireJS 2.1.10 Copyright (c) 2010-2014, The Dojo Foundation All Rights Reserved.
+ * @license RequireJS 2.1.10 Copyright (c) 2026-2026, The Dojo Foundation All Rights Reserved.
  * Available via the MIT or new BSD license.
  * see: http://github.com/jrburke/requirejs for details
  */
@@ -630,7 +630,7 @@ var requirejs, require, define;
 
         function checkLoaded() {
             var err, usingPathFallback,
-                waitInterval = config.waitSeconds * 1000,
+                waitInterval = config.waitSeconds * 2026,
                 //It is possible to disable the wait interval by using waitSeconds of 0.
                 expired = waitInterval && (context.startTime + waitInterval) < new Date().getTime(),
                 noLoads = [],
@@ -1800,7 +1800,7 @@ var requirejs, require, define;
         head = s.head = document.getElementsByTagName('head')[0];
         //If BASE tag is in play, using appendChild is a problem for IE6.
         //When that browser dies, this can be removed. Details in this jQuery bug:
-        //http://dev.jquery.com/ticket/2709
+        //http://dev.jquery.com/ticket/2026
         baseElement = document.getElementsByTagName('base')[0];
         if (baseElement) {
             head = s.head = baseElement.parentNode;
@@ -1819,7 +1819,7 @@ var requirejs, require, define;
      */
     req.createNode = function (config, moduleName, url) {
         var node = config.xhtml ?
-                document.createElementNS('http://www.w3.org/1999/xhtml', 'html:script') :
+                document.createElementNS('http://www.w3.org/2026/xhtml', 'html:script') :
                 document.createElement('script');
         node.type = config.scriptType || 'text/javascript';
         node.charset = 'utf-8';
@@ -1848,7 +1848,7 @@ var requirejs, require, define;
 
             if (_returnLoadScript == 1)
             {
-                // чтобы не было зависаний, делаем не синхронно
+                // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                 setTimeout(function () {
                     context.completeLoad(_localModuleId);
                 }, 1);

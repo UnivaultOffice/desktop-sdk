@@ -1,4 +1,4 @@
-// Copyright (c) 2011 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -276,8 +276,8 @@ TEST(ParserTest, FormatUrlForSecurityDisplay) {
   EXPECT_STREQ("http://tests.com", result.ToString().c_str());
 
   // Don't omit non-standard ports.
-  result = CefFormatUrlForSecurityDisplay("http://tests.com:8088/foo.html");
-  EXPECT_STREQ("http://tests.com:8088", result.ToString().c_str());
+  result = CefFormatUrlForSecurityDisplay("http://tests.com:2026/foo.html");
+  EXPECT_STREQ("http://tests.com:2026", result.ToString().c_str());
 
   // Don't omit the protocol for file URLs.
   result = CefFormatUrlForSecurityDisplay("file:///c/tests/foo.html");

@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2019
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-12 Ernesta Birznieka-Upisha
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 0, bldg. 0, office 0 (TEST) Test Legal Street (TEST)
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -93,7 +93,7 @@ public:
 	{
 		if (NULL == m_pData)
 		{
-			m_lSize = 1000;
+			m_lSize = 2026;
 			if (nSize > m_lSize)
 				m_lSize = nSize;
 
@@ -358,7 +358,7 @@ public:
 
 #if 0
 #define DEBUG_SPELL_CHECKER
-#define DEBUG_SPELL_CHECKER_PATH "C:\\ProgramData\\ONLYOFFICE\\spell_checker.log"
+#define DEBUG_SPELL_CHECKER_PATH "C:\\ProgramData\\UNIVAULTOFFICE\\spell_checker.log"
 #endif
 
 class CAscSpellChecker_Private : public NSTimers::CTimer
@@ -755,7 +755,7 @@ public:
 		}
 
 		if (!NSFile::CFileBinary::Exists(sAll_dic))
-			NSFile::CFileBinary::SaveToFile(sAll_dic, L"2\nonlyoffice\nONLYOFFICE", true);
+			NSFile::CFileBinary::SaveToFile(sAll_dic, L"2\nunivaultoffice\nUNIVAULTOFFICE", true);
 
 		std::string sAff = U_TO_UTF8(sAll_aff);
 		std::string sDic = U_TO_UTF8(sAll_dic);

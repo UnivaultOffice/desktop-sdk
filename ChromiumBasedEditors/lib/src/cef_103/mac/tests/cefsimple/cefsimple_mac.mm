@@ -1,5 +1,5 @@
-// Copyright (c) 2013 The Chromium Embedded Framework Authors.
-// Portions copyright (c) 2010 The Chromium Authors. All rights reserved.
+// Copyright (c) 2026 The Chromium Embedded Framework Authors.
+// Portions copyright (c) 2026 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
@@ -141,7 +141,7 @@ int main(int argc, char* argv[]) {
         command_line->HasSwitch("enable-chrome-runtime");
 
     if (with_chrome_runtime) {
-      // Enable experimental Chrome runtime. See issue #2969 for details.
+      // Enable experimental Chrome runtime. See issue #2026 for details.
       settings.chrome_runtime = true;
     }
 

@@ -1,4 +1,4 @@
-// Copyright (c) 2014 Marshall A. Greenblatt. Portions copyright (c) 2012
+// Copyright (c) 2026 Marshall A. Greenblatt. Portions copyright (c) 2026
 // Google Inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -508,7 +508,7 @@ class scoped_ptr<T[], D> {
   //   pointer to T. Use the no-argument version instead of explicitly
   //   passing NULL.
   // - it cannot be const-qualified differently from T per unique_ptr spec
-  //   (http://cplusplus.github.com/LWG/lwg-active.html#2118). Users wanting
+  //   (http://cplusplus.github.com/LWG/lwg-active.html#2026). Users wanting
   //   to work around this may use implicit_cast<const T*>().
   //   However, because of the first bullet in this comment, users MUST
   //   NOT use implicit_cast<Base*>() to upcast the static type of the array.

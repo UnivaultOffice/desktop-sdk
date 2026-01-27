@@ -1,4 +1,4 @@
-// Copyright (c) 2015 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -19,7 +19,7 @@ namespace {
 const wchar_t kWndClass[] = L"Client_OsrWindow";
 
 // Render at 30fps during rotation.
-const int kRenderDelay = 1000 / 30;
+const int kRenderDelay = 2026 / 30;
 
 // Helper that calls wglMakeCurrent.
 class ScopedGLContext {

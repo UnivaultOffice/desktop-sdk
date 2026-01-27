@@ -122,7 +122,7 @@
 					type : "getPasswordByFile", 
 					password : window.AscCrypto.CryptoWorker.readPassword(obj.docinfo)
 				};
-				if ("" == passData.password && obj.docinfo === "string" && 0 == obj.docinfo.indexOf("ONLYOFFICE CryptoEngine"))
+				if ("" == passData.password && obj.docinfo === "string" && 0 == obj.docinfo.indexOf("UNIVAULTOFFICE CryptoEngine"))
 				{
 					passData.message = window.Asc.plugin.tr("Unable to open the encrypted document. Please, ask the document owner to re-share it.");
 				}

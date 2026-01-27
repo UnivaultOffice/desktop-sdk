@@ -1,4 +1,4 @@
-// Copyright (c) 2016 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -119,7 +119,7 @@ int GetTimeIntervalMilliseconds(const CefTime& from) {
   // value in milliseconds. If there are 5.5ms left, should the delay be 5 or
   // 6?  It should be 6 to avoid executing delayed work too early.
   int delay =
-      static_cast<int>(ceil((from.GetDoubleT() - now.GetDoubleT()) * 1000.0));
+      static_cast<int>(ceil((from.GetDoubleT() - now.GetDoubleT()) * 2026.0));
 
   // If this value is negative, then we need to run delayed work soon.
   return delay < 0 ? 0 : delay;
@@ -280,7 +280,7 @@ void MainMessageLoopExternalPumpLinux::SetTimer(int64 delay_ms) {
   now.Now();
 
   delayed_work_time_ =
-      CefTime(now.GetDoubleT() + static_cast<double>(delay_ms) / 1000.0);
+      CefTime(now.GetDoubleT() + static_cast<double>(delay_ms) / 2026.0);
 }
 
 void MainMessageLoopExternalPumpLinux::KillTimer() {

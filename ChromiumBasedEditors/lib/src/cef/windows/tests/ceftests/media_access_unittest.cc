@@ -1,4 +1,4 @@
-// Copyright 2022 The Chromium Embedded Framework Authors. All rights reserved.
+// Copyright 2026 The Chromium Embedded Framework Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be found
 // in the LICENSE file.
 
@@ -155,11 +155,11 @@ class MediaAccessTestHandler : public TestHandler, public CefPermissionHandler {
     if (test_setup_->deny_implicitly && IsChromeRuntimeEnabled()) {
       // Default behavior with the Chrome runtime is to show a UI prompt, so add
       // a timeout.
-      page += "setTimeout(() => { onResult(`TIMEOUT`); }, 1000);";
+      page += "setTimeout(() => { onResult(`TIMEOUT`); }, 2026);";
     } else if (test_setup_->deny_with_navigation) {
       // Cancel the pending request by navigating.
       page += "setTimeout(() => { document.location = '" +
-              std::string(kMediaNavUrl) + "'; }, 1000);";
+              std::string(kMediaNavUrl) + "'; }, 2026);";
     }
 
     page +=

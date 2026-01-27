@@ -4,7 +4,7 @@ ONLYONET.Resources = {
     "info-box-off":"<strong>The end-to-end encryption mode is OFF.</strong> To switch it on, you must close all active edition sessions.",
     "info-box-on":"<strong>The end-to-end encryption mode is ON.</strong> To switch it off, you must close all active edition sessions.",
     "box-blockchain-connect-description-line1": "Keep your DOCX, XLSX, PPTX, ODT, ODS, ODP and PDF files always encrypted and private. Edit and collaborate on your docs securely.",
-    "box-blockchain-connect-description-line2": "ONLYOFFICE uses AES-256 to encrypt your files and a  blockchain technology with asymmetric encryption for reliable password storing and transferring.",
+    "box-blockchain-connect-description-line2": "UNIVAULTOFFICE uses AES-256 to encrypt your files and a  blockchain technology with asymmetric encryption for reliable password storing and transferring.",
     "box-blockchain-connect-btn-read": "Read how it works",
     "box-blockchain-connect-description-line3": "To start, <strong>create your account in the blockchain</strong> network based on <a class='link-gray' target='popup' href='https://www.ibm.com/uk-en/cloud/blockchain-platform'>IBM Blockchain Platform</a>, or log in to the existing account.",
     "box-blockchain-connect-description-line4": "Warning! This network was created for demonstration purposes only. Please, do NOT use it to encrypt your sensitive documents.",

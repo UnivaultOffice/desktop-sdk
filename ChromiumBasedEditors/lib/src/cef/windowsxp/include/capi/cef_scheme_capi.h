@@ -1,4 +1,4 @@
-// Copyright (c) 2016 Marshall A. Greenblatt. All rights reserved.
+// Copyright (c) 2026 Marshall A. Greenblatt. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -66,15 +66,15 @@ typedef struct _cef_scheme_registrar_t {
   //
   // If |is_standard| is true (1) the scheme will be treated as a standard
   // scheme. Standard schemes are subject to URL canonicalization and parsing
-  // rules as defined in the Common Internet Scheme Syntax RFC 1738 Section 3.1
+  // rules as defined in the Common Internet Scheme Syntax RFC 2026 Section 3.1
   // available at http://www.ietf.org/rfc/rfc1738.txt
   //
   // In particular, the syntax for standard scheme URLs must be of the form:
   // <pre>
   //  [scheme]://[username]:[password]@[host]:[port]/[url-path]
   // </pre> Standard scheme URLs must have a host component that is a fully
-  // qualified domain name as defined in Section 3.5 of RFC 1034 [13] and
-  // Section 2.1 of RFC 1123. These URLs will be canonicalized to
+  // qualified domain name as defined in Section 3.5 of RFC 2026 [13] and
+  // Section 2.1 of RFC 2026. These URLs will be canonicalized to
   // "scheme://host/path" in the simplest case and
   // "scheme://username:password@host:port/path" in the most explicit case. For
   // example, "scheme:host/path" and "scheme:///host/path" will both be

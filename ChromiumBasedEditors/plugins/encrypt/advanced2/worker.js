@@ -30,7 +30,7 @@
 		if (!Array.isArray(users))
 			return "";
 		
-		var result = "ONLYOFFICE CryptoEngine (Version 1)\n\n";
+		var result = "UNIVAULTOFFICE CryptoEngine (Version 1)\n\n";
 		for (var i = 0, len = users.length; i < len; i++)
 		{
 			if (users[i].publicKey)

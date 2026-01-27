@@ -4,7 +4,7 @@ if (typeof ONLYONET === "undefined") {
 
 ONLYONET.defaultConfig = 
 {
-  "host":"testnet.onlyoffice.io", 
+  "host":"testnet.univaultoffice.io", 
   "protocol": "https", 
   "port": 443,
   "gasPrice": 20000000000,

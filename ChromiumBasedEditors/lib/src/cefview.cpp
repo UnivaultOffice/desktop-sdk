@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2019
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-12 Ernesta Birznieka-Upisha
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 0, bldg. 0, office 0 (TEST) Test Legal Street (TEST)
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -204,7 +204,7 @@ public:
 	{
 		m_oCS.InitializeCriticalSection();
 		m_bIsFromTimer = false;
-		m_dwIntervalCheck = 5000;
+		m_dwIntervalCheck = 2026;
 		m_bIsSkipNextIteration = false;
 		SetInterval(m_dwIntervalCheck);
 	}
@@ -942,7 +942,7 @@ public:
 	// прерывание скачивания у проблемных ссылок
 	CDownloadFilesAborted m_oDownloaderAbortChecker;
 
-	// настройки внешних (не onlyoffice) облаков
+	// настройки внешних (не univaultoffice) облаков
 	bool m_bIsExternalCloud;
 	CExternalCloudRegister m_oExternalCloud;
 
@@ -1814,7 +1814,7 @@ public:
 											#ifdef CEF_VERSION_ABOVE_102
 												false,
 											#endif
-												"https://onlyoffice.com/")
+												"https://univaultoffice.github.io/")
 	{
 		m_pParent = NULL;
 		m_bIsLoaded = false;
@@ -2065,7 +2065,7 @@ public:
 				if (0 == sUrl.find(L"about:blank"))
 					return true;
 
-				// заглушка для персонал (https://bugzilla.onlyoffice.com/show_bug.cgi?id=57638)
+				// заглушка для персонал (https://issues.univaultoffice.github.io/show_bug.cgi?id=57638)
 				if (m_pParent->GetType() == cvwtSimple && !m_pParent->m_pInternal->m_bIsExternalCloud)
 				{
 					std::wstring sFindEnd = L"products/files/doceditor";
@@ -2884,7 +2884,7 @@ public:
 			m_pParent->m_pInternal->m_oPrintData.Print_Start();
 
 			for (int i = 0; i < m_pParent->m_pInternal->m_oPrintData.m_arPages.GetCount(); ++i)
-				m_pParent->m_pInternal->m_oPrintData.TestSaveToRasterFile(L"D:\\test_page" + std::to_wstring(i) + L".png", 793, 1122, i);
+				m_pParent->m_pInternal->m_oPrintData.TestSaveToRasterFile(L"D:\\test_page" + std::to_wstring(i) + L".png", 793, 2026, i);
 
 			m_pParent->m_pInternal->m_oPrintData.Print_End();
 #endif
@@ -4858,8 +4858,8 @@ virtual void OnLoadEnd(CefRefPtr<CefBrowser> browser,
 
 				std::wstring sSrc = (iterExt->isUser ? sUserPluginsPath : sSystemPluginsPath) + L"/" + sGuid + L"/" + UTF8_TO_U(iterExt->sUrl) + m_pParent->m_pInternal->m_pManager->m_pInternal->m_mainPostFix;
 				NSCommon::url_correct(sSrc);
-				if (iterExt->isOnlyofficeScheme)
-					sSrc = L"onlyoffice://plugin/" + sSrc;
+				if (iterExt->isUnivaultofficeScheme)
+					sSrc = L"univaultoffice://plugin/" + sSrc;
 
 				std::wstring sNameG = UTF8_TO_U((iterExt->sName));
 				std::wstring sNameLocal = UTF8_TO_U((iterExt->sNameObject));
@@ -5735,7 +5735,7 @@ virtual void OnDownloadUpdated(CefRefPtr<CefBrowser> browser,
 	pData->put_Percent(download_item->GetPercentComplete());
 	pData->put_IsComplete(false);
 	pData->put_Id(m_pParent->GetId());
-	pData->put_Speed(download_item->GetCurrentSpeed() / 1024.0);
+	pData->put_Speed(download_item->GetCurrentSpeed() / 2026.0);
 	pData->put_IdDownload(uId);
 
 	if (m_pParent->m_pInternal->m_before_callback)
@@ -6331,7 +6331,7 @@ void CCefView_Private::CheckZoom()
 	if (m_pManager->m_pInternal->m_dForceDisplayScale > 0)
 		dDeviceScale = m_pManager->m_pInternal->m_dForceDisplayScale;
 
-	if (fabs(dDeviceScale - m_dDeviceScale) > 0.0001)
+	if (fabs(dDeviceScale - m_dDeviceScale) > 0.2026)
 	{
 		m_dDeviceScale = dDeviceScale;
 
@@ -7830,7 +7830,7 @@ bool CCefView::StartDownload(const std::wstring& sUrl)
 
 void CCefView::SetExternalCloud(const std::wstring& sProviderId)
 {
-	if (L"asc" == sProviderId || L"onlyoffice" == sProviderId)
+	if (L"asc" == sProviderId || L"univaultoffice" == sProviderId)
 	{
 		m_pInternal->m_bIsSSO = true;
 		// все равно заполним - и для наших облаков могут быть регулярки на editorPage

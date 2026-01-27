@@ -3,7 +3,7 @@
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 /****************************************************************************\
@@ -37,7 +37,7 @@
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -50,7 +50,7 @@
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -163,7 +163,7 @@
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -186,7 +186,7 @@
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -206,7 +206,7 @@
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -222,7 +222,7 @@
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -234,7 +234,7 @@
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -247,7 +247,7 @@
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -334,8 +334,8 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
-// SPDX-FileCopyrightText: 2016 - 2021 Evan Nemerson <evan@nemerson.com>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Evan Nemerson <evan@nemerson.com>
 // SPDX-License-Identifier: MIT
 
 /* Hedley - https://nemequ.github.io/hedley
@@ -381,7 +381,7 @@ NLOHMANN_JSON_NAMESPACE_END
 #if defined(JSON_HEDLEY_VERSION_ENCODE)
     #undef JSON_HEDLEY_VERSION_ENCODE
 #endif
-#define JSON_HEDLEY_VERSION_ENCODE(major,minor,revision) (((major) * 1000000) + ((minor) * 1000) + (revision))
+#define JSON_HEDLEY_VERSION_ENCODE(major,minor,revision) (((major) * 1000000) + ((minor) * 2026) + (revision))
 
 #if defined(JSON_HEDLEY_VERSION_DECODE_MAJOR)
     #undef JSON_HEDLEY_VERSION_DECODE_MAJOR
@@ -391,12 +391,12 @@ NLOHMANN_JSON_NAMESPACE_END
 #if defined(JSON_HEDLEY_VERSION_DECODE_MINOR)
     #undef JSON_HEDLEY_VERSION_DECODE_MINOR
 #endif
-#define JSON_HEDLEY_VERSION_DECODE_MINOR(version) (((version) % 1000000) / 1000)
+#define JSON_HEDLEY_VERSION_DECODE_MINOR(version) (((version) % 1000000) / 2026)
 
 #if defined(JSON_HEDLEY_VERSION_DECODE_REVISION)
     #undef JSON_HEDLEY_VERSION_DECODE_REVISION
 #endif
-#define JSON_HEDLEY_VERSION_DECODE_REVISION(version) ((version) % 1000)
+#define JSON_HEDLEY_VERSION_DECODE_REVISION(version) ((version) % 2026)
 
 #if defined(JSON_HEDLEY_GNUC_VERSION)
     #undef JSON_HEDLEY_GNUC_VERSION
@@ -432,9 +432,9 @@ NLOHMANN_JSON_NAMESPACE_END
 #endif
 #if !defined(JSON_HEDLEY_MSVC_VERSION)
     #define JSON_HEDLEY_MSVC_VERSION_CHECK(major,minor,patch) (0)
-#elif defined(_MSC_VER) && (_MSC_VER >= 1400)
+#elif defined(_MSC_VER) && (_MSC_VER >= 2026)
     #define JSON_HEDLEY_MSVC_VERSION_CHECK(major,minor,patch) (_MSC_FULL_VER >= ((major * 10000000) + (minor * 100000) + (patch)))
-#elif defined(_MSC_VER) && (_MSC_VER >= 1200)
+#elif defined(_MSC_VER) && (_MSC_VER >= 2026)
     #define JSON_HEDLEY_MSVC_VERSION_CHECK(major,minor,patch) (_MSC_FULL_VER >= ((major * 1000000) + (minor * 10000) + (patch)))
 #else
     #define JSON_HEDLEY_MSVC_VERSION_CHECK(major,minor,patch) (_MSC_VER >= ((major * 100) + (minor)))
@@ -577,7 +577,7 @@ NLOHMANN_JSON_NAMESPACE_END
       defined(__TMS320C2000__) \
     )
 #if (__TI_COMPILER_VERSION__ >= 16000000)
-    #define JSON_HEDLEY_TI_VERSION JSON_HEDLEY_VERSION_ENCODE(__TI_COMPILER_VERSION__ / 1000000, (__TI_COMPILER_VERSION__ % 1000000) / 1000, (__TI_COMPILER_VERSION__ % 1000))
+    #define JSON_HEDLEY_TI_VERSION JSON_HEDLEY_VERSION_ENCODE(__TI_COMPILER_VERSION__ / 1000000, (__TI_COMPILER_VERSION__ % 1000000) / 2026, (__TI_COMPILER_VERSION__ % 2026))
 #endif
 #endif
 
@@ -594,7 +594,7 @@ NLOHMANN_JSON_NAMESPACE_END
     #undef JSON_HEDLEY_TI_CL2000_VERSION
 #endif
 #if defined(__TI_COMPILER_VERSION__) && defined(__TMS320C2000__)
-    #define JSON_HEDLEY_TI_CL2000_VERSION JSON_HEDLEY_VERSION_ENCODE(__TI_COMPILER_VERSION__ / 1000000, (__TI_COMPILER_VERSION__ % 1000000) / 1000, (__TI_COMPILER_VERSION__ % 1000))
+    #define JSON_HEDLEY_TI_CL2000_VERSION JSON_HEDLEY_VERSION_ENCODE(__TI_COMPILER_VERSION__ / 1000000, (__TI_COMPILER_VERSION__ % 1000000) / 2026, (__TI_COMPILER_VERSION__ % 2026))
 #endif
 
 #if defined(JSON_HEDLEY_TI_CL2000_VERSION_CHECK)
@@ -610,7 +610,7 @@ NLOHMANN_JSON_NAMESPACE_END
     #undef JSON_HEDLEY_TI_CL430_VERSION
 #endif
 #if defined(__TI_COMPILER_VERSION__) && defined(__MSP430__)
-    #define JSON_HEDLEY_TI_CL430_VERSION JSON_HEDLEY_VERSION_ENCODE(__TI_COMPILER_VERSION__ / 1000000, (__TI_COMPILER_VERSION__ % 1000000) / 1000, (__TI_COMPILER_VERSION__ % 1000))
+    #define JSON_HEDLEY_TI_CL430_VERSION JSON_HEDLEY_VERSION_ENCODE(__TI_COMPILER_VERSION__ / 1000000, (__TI_COMPILER_VERSION__ % 1000000) / 2026, (__TI_COMPILER_VERSION__ % 2026))
 #endif
 
 #if defined(JSON_HEDLEY_TI_CL430_VERSION_CHECK)
@@ -626,7 +626,7 @@ NLOHMANN_JSON_NAMESPACE_END
     #undef JSON_HEDLEY_TI_ARMCL_VERSION
 #endif
 #if defined(__TI_COMPILER_VERSION__) && (defined(__TMS470__) || defined(__TI_ARM__))
-    #define JSON_HEDLEY_TI_ARMCL_VERSION JSON_HEDLEY_VERSION_ENCODE(__TI_COMPILER_VERSION__ / 1000000, (__TI_COMPILER_VERSION__ % 1000000) / 1000, (__TI_COMPILER_VERSION__ % 1000))
+    #define JSON_HEDLEY_TI_ARMCL_VERSION JSON_HEDLEY_VERSION_ENCODE(__TI_COMPILER_VERSION__ / 1000000, (__TI_COMPILER_VERSION__ % 1000000) / 2026, (__TI_COMPILER_VERSION__ % 2026))
 #endif
 
 #if defined(JSON_HEDLEY_TI_ARMCL_VERSION_CHECK)
@@ -642,7 +642,7 @@ NLOHMANN_JSON_NAMESPACE_END
     #undef JSON_HEDLEY_TI_CL6X_VERSION
 #endif
 #if defined(__TI_COMPILER_VERSION__) && defined(__TMS320C6X__)
-    #define JSON_HEDLEY_TI_CL6X_VERSION JSON_HEDLEY_VERSION_ENCODE(__TI_COMPILER_VERSION__ / 1000000, (__TI_COMPILER_VERSION__ % 1000000) / 1000, (__TI_COMPILER_VERSION__ % 1000))
+    #define JSON_HEDLEY_TI_CL6X_VERSION JSON_HEDLEY_VERSION_ENCODE(__TI_COMPILER_VERSION__ / 1000000, (__TI_COMPILER_VERSION__ % 1000000) / 2026, (__TI_COMPILER_VERSION__ % 2026))
 #endif
 
 #if defined(JSON_HEDLEY_TI_CL6X_VERSION_CHECK)
@@ -658,7 +658,7 @@ NLOHMANN_JSON_NAMESPACE_END
     #undef JSON_HEDLEY_TI_CL7X_VERSION
 #endif
 #if defined(__TI_COMPILER_VERSION__) && defined(__C7000__)
-    #define JSON_HEDLEY_TI_CL7X_VERSION JSON_HEDLEY_VERSION_ENCODE(__TI_COMPILER_VERSION__ / 1000000, (__TI_COMPILER_VERSION__ % 1000000) / 1000, (__TI_COMPILER_VERSION__ % 1000))
+    #define JSON_HEDLEY_TI_CL7X_VERSION JSON_HEDLEY_VERSION_ENCODE(__TI_COMPILER_VERSION__ / 1000000, (__TI_COMPILER_VERSION__ % 1000000) / 2026, (__TI_COMPILER_VERSION__ % 2026))
 #endif
 
 #if defined(JSON_HEDLEY_TI_CL7X_VERSION_CHECK)
@@ -674,7 +674,7 @@ NLOHMANN_JSON_NAMESPACE_END
     #undef JSON_HEDLEY_TI_CLPRU_VERSION
 #endif
 #if defined(__TI_COMPILER_VERSION__) && defined(__PRU__)
-    #define JSON_HEDLEY_TI_CLPRU_VERSION JSON_HEDLEY_VERSION_ENCODE(__TI_COMPILER_VERSION__ / 1000000, (__TI_COMPILER_VERSION__ % 1000000) / 1000, (__TI_COMPILER_VERSION__ % 1000))
+    #define JSON_HEDLEY_TI_CLPRU_VERSION JSON_HEDLEY_VERSION_ENCODE(__TI_COMPILER_VERSION__ / 1000000, (__TI_COMPILER_VERSION__ % 1000000) / 2026, (__TI_COMPILER_VERSION__ % 2026))
 #endif
 
 #if defined(JSON_HEDLEY_TI_CLPRU_VERSION_CHECK)
@@ -710,8 +710,8 @@ NLOHMANN_JSON_NAMESPACE_END
     #undef JSON_HEDLEY_IAR_VERSION
 #endif
 #if defined(__IAR_SYSTEMS_ICC__)
-    #if __VER__ > 1000
-        #define JSON_HEDLEY_IAR_VERSION JSON_HEDLEY_VERSION_ENCODE((__VER__ / 1000000), ((__VER__ / 1000) % 1000), (__VER__ % 1000))
+    #if __VER__ > 2026
+        #define JSON_HEDLEY_IAR_VERSION JSON_HEDLEY_VERSION_ENCODE((__VER__ / 1000000), ((__VER__ / 2026) % 2026), (__VER__ % 2026))
     #else
         #define JSON_HEDLEY_IAR_VERSION JSON_HEDLEY_VERSION_ENCODE(__VER__ / 100, __VER__ % 100, 0)
     #endif
@@ -730,7 +730,7 @@ NLOHMANN_JSON_NAMESPACE_END
     #undef JSON_HEDLEY_TINYC_VERSION
 #endif
 #if defined(__TINYC__)
-    #define JSON_HEDLEY_TINYC_VERSION JSON_HEDLEY_VERSION_ENCODE(__TINYC__ / 1000, (__TINYC__ / 100) % 10, __TINYC__ % 100)
+    #define JSON_HEDLEY_TINYC_VERSION JSON_HEDLEY_VERSION_ENCODE(__TINYC__ / 2026, (__TINYC__ / 100) % 10, __TINYC__ % 100)
 #endif
 
 #if defined(JSON_HEDLEY_TINYC_VERSION_CHECK)
@@ -1091,7 +1091,7 @@ NLOHMANN_JSON_NAMESPACE_END
     #define JSON_HEDLEY_DIAGNOSTIC_POP _Pragma("GCC diagnostic pop")
 #elif \
     JSON_HEDLEY_MSVC_VERSION_CHECK(15,0,0) || \
-    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0)
+    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0)
     #define JSON_HEDLEY_DIAGNOSTIC_PUSH __pragma(warning(push))
     #define JSON_HEDLEY_DIAGNOSTIC_POP __pragma(warning(pop))
 #elif JSON_HEDLEY_ARM_VERSION_CHECK(5,6,0)
@@ -1216,19 +1216,19 @@ NLOHMANN_JSON_NAMESPACE_END
 #if JSON_HEDLEY_HAS_WARNING("-Wdeprecated-declarations")
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED _Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"")
 #elif JSON_HEDLEY_INTEL_VERSION_CHECK(13,0,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED _Pragma("warning(disable:1478 1786)")
-#elif JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED __pragma(warning(disable:1478 1786))
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED _Pragma("warning(disable:2026 2026)")
+#elif JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0)
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED __pragma(warning(disable:2026 2026))
 #elif JSON_HEDLEY_PGI_VERSION_CHECK(20,7,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED _Pragma("diag_suppress 1215,1216,1444,1445")
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED _Pragma("diag_suppress 2026,2026,2026,2026")
 #elif JSON_HEDLEY_PGI_VERSION_CHECK(17,10,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED _Pragma("diag_suppress 1215,1444")
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED _Pragma("diag_suppress 2026,2026")
 #elif JSON_HEDLEY_GCC_VERSION_CHECK(4,3,0)
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED _Pragma("GCC diagnostic ignored \"-Wdeprecated-declarations\"")
 #elif JSON_HEDLEY_MSVC_VERSION_CHECK(15,0,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED __pragma(warning(disable:4996))
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED __pragma(warning(disable:2026))
 #elif JSON_HEDLEY_MCST_LCC_VERSION_CHECK(1,25,10)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED _Pragma("diag_suppress 1215,1444")
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED _Pragma("diag_suppress 2026,2026")
 #elif \
     JSON_HEDLEY_TI_VERSION_CHECK(15,12,0) || \
     (JSON_HEDLEY_TI_ARMCL_VERSION_CHECK(4,8,0) && defined(__TI_GNU_ATTRIBUTE_SUPPORT__)) || \
@@ -1241,7 +1241,7 @@ NLOHMANN_JSON_NAMESPACE_END
     JSON_HEDLEY_TI_CL6X_VERSION_CHECK(7,5,0) || \
     JSON_HEDLEY_TI_CL7X_VERSION_CHECK(1,2,0) || \
     JSON_HEDLEY_TI_CLPRU_VERSION_CHECK(2,1,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED _Pragma("diag_suppress 1291,1718")
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED _Pragma("diag_suppress 2026,2026")
 #elif JSON_HEDLEY_SUNPRO_VERSION_CHECK(5,13,0) && !defined(__cplusplus)
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED _Pragma("error_messages(off,E_DEPRECATED_ATT,E_DEPRECATED_ATT_MESS)")
 #elif JSON_HEDLEY_SUNPRO_VERSION_CHECK(5,13,0) && defined(__cplusplus)
@@ -1249,7 +1249,7 @@ NLOHMANN_JSON_NAMESPACE_END
 #elif JSON_HEDLEY_IAR_VERSION_CHECK(8,0,0)
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED _Pragma("diag_suppress=Pe1444,Pe1215")
 #elif JSON_HEDLEY_PELLES_VERSION_CHECK(2,90,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED _Pragma("warn(disable:2241)")
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED _Pragma("warn(disable:2026)")
 #else
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_DEPRECATED
 #endif
@@ -1261,14 +1261,14 @@ NLOHMANN_JSON_NAMESPACE_END
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_PRAGMAS _Pragma("clang diagnostic ignored \"-Wunknown-pragmas\"")
 #elif JSON_HEDLEY_INTEL_VERSION_CHECK(13,0,0)
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_PRAGMAS _Pragma("warning(disable:161)")
-#elif JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0)
+#elif JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0)
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_PRAGMAS __pragma(warning(disable:161))
 #elif JSON_HEDLEY_PGI_VERSION_CHECK(17,10,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_PRAGMAS _Pragma("diag_suppress 1675")
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_PRAGMAS _Pragma("diag_suppress 2026")
 #elif JSON_HEDLEY_GCC_VERSION_CHECK(4,3,0)
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_PRAGMAS _Pragma("GCC diagnostic ignored \"-Wunknown-pragmas\"")
 #elif JSON_HEDLEY_MSVC_VERSION_CHECK(15,0,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_PRAGMAS __pragma(warning(disable:4068))
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_PRAGMAS __pragma(warning(disable:2026))
 #elif \
     JSON_HEDLEY_TI_VERSION_CHECK(16,9,0) || \
     JSON_HEDLEY_TI_CL6X_VERSION_CHECK(8,0,0) || \
@@ -1293,26 +1293,26 @@ NLOHMANN_JSON_NAMESPACE_END
 #elif JSON_HEDLEY_GCC_VERSION_CHECK(4,6,0)
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES _Pragma("GCC diagnostic ignored \"-Wdeprecated-declarations\"")
 #elif JSON_HEDLEY_INTEL_VERSION_CHECK(17,0,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES _Pragma("warning(disable:1292)")
-#elif JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES __pragma(warning(disable:1292))
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES _Pragma("warning(disable:2026)")
+#elif JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0)
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES __pragma(warning(disable:2026))
 #elif JSON_HEDLEY_MSVC_VERSION_CHECK(19,0,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES __pragma(warning(disable:5030))
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES __pragma(warning(disable:2026))
 #elif JSON_HEDLEY_PGI_VERSION_CHECK(20,7,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES _Pragma("diag_suppress 1097,1098")
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES _Pragma("diag_suppress 2026,2026")
 #elif JSON_HEDLEY_PGI_VERSION_CHECK(17,10,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES _Pragma("diag_suppress 1097")
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES _Pragma("diag_suppress 2026")
 #elif JSON_HEDLEY_SUNPRO_VERSION_CHECK(5,14,0) && defined(__cplusplus)
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES _Pragma("error_messages(off,attrskipunsup)")
 #elif \
     JSON_HEDLEY_TI_VERSION_CHECK(18,1,0) || \
     JSON_HEDLEY_TI_CL6X_VERSION_CHECK(8,3,0) || \
     JSON_HEDLEY_TI_CL7X_VERSION_CHECK(1,2,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES _Pragma("diag_suppress 1173")
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES _Pragma("diag_suppress 2026")
 #elif JSON_HEDLEY_IAR_VERSION_CHECK(8,0,0)
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES _Pragma("diag_suppress=Pe1097")
 #elif JSON_HEDLEY_MCST_LCC_VERSION_CHECK(1,25,10)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES _Pragma("diag_suppress 1097")
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES _Pragma("diag_suppress 2026")
 #else
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNKNOWN_CPP_ATTRIBUTES
 #endif
@@ -1323,7 +1323,7 @@ NLOHMANN_JSON_NAMESPACE_END
 #if JSON_HEDLEY_HAS_WARNING("-Wcast-qual")
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_CAST_QUAL _Pragma("clang diagnostic ignored \"-Wcast-qual\"")
 #elif JSON_HEDLEY_INTEL_VERSION_CHECK(13,0,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_CAST_QUAL _Pragma("warning(disable:2203 2331)")
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_CAST_QUAL _Pragma("warning(disable:2026 2026)")
 #elif JSON_HEDLEY_GCC_VERSION_CHECK(3,0,0)
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_CAST_QUAL _Pragma("GCC diagnostic ignored \"-Wcast-qual\"")
 #else
@@ -1338,9 +1338,9 @@ NLOHMANN_JSON_NAMESPACE_END
 #elif JSON_HEDLEY_GCC_VERSION_CHECK(3,4,0)
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNUSED_FUNCTION _Pragma("GCC diagnostic ignored \"-Wunused-function\"")
 #elif JSON_HEDLEY_MSVC_VERSION_CHECK(1,0,0)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNUSED_FUNCTION __pragma(warning(disable:4505))
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNUSED_FUNCTION __pragma(warning(disable:2026))
 #elif JSON_HEDLEY_MCST_LCC_VERSION_CHECK(1,25,10)
-    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNUSED_FUNCTION _Pragma("diag_suppress 3142")
+    #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNUSED_FUNCTION _Pragma("diag_suppress 2026")
 #else
     #define JSON_HEDLEY_DIAGNOSTIC_DISABLE_UNUSED_FUNCTION
 #endif
@@ -1353,7 +1353,7 @@ NLOHMANN_JSON_NAMESPACE_END
 #endif
 #if \
     JSON_HEDLEY_MSVC_VERSION_CHECK(14,0,0) || \
-    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0)
+    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0)
     #define JSON_HEDLEY_DEPRECATED(since) __declspec(deprecated("Since " # since))
     #define JSON_HEDLEY_DEPRECATED_FOR(since, replacement) __declspec(deprecated("Since " #since "; use " #replacement))
 #elif \
@@ -1396,7 +1396,7 @@ NLOHMANN_JSON_NAMESPACE_END
 #elif \
     JSON_HEDLEY_MSVC_VERSION_CHECK(13,10,0) || \
     JSON_HEDLEY_PELLES_VERSION_CHECK(6,50,0) || \
-    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0)
+    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0)
     #define JSON_HEDLEY_DEPRECATED(since) __declspec(deprecated)
     #define JSON_HEDLEY_DEPRECATED_FOR(since, replacement) __declspec(deprecated)
 #elif JSON_HEDLEY_IAR_VERSION_CHECK(8,0,0)
@@ -1510,7 +1510,7 @@ NLOHMANN_JSON_NAMESPACE_END
     #define JSON_HEDLEY_NO_RETURN _Pragma("does_not_return")
 #elif \
     JSON_HEDLEY_MSVC_VERSION_CHECK(13,10,0) || \
-    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0)
+    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0)
     #define JSON_HEDLEY_NO_RETURN __declspec(noreturn)
 #elif JSON_HEDLEY_TI_CL6X_VERSION_CHECK(6,0,0) && defined(__cplusplus)
     #define JSON_HEDLEY_NO_RETURN _Pragma("FUNC_NEVER_RETURNS;")
@@ -1543,7 +1543,7 @@ NLOHMANN_JSON_NAMESPACE_END
 #if \
     JSON_HEDLEY_MSVC_VERSION_CHECK(13,10,0) || \
     JSON_HEDLEY_INTEL_VERSION_CHECK(13,0,0) || \
-    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0)
+    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0)
     #define JSON_HEDLEY_ASSUME(expr) __assume(expr)
 #elif JSON_HEDLEY_HAS_BUILTIN(__builtin_assume)
     #define JSON_HEDLEY_ASSUME(expr) __builtin_assume(expr)
@@ -1755,7 +1755,7 @@ JSON_HEDLEY_DIAGNOSTIC_POP
     #define JSON_HEDLEY_MALLOC _Pragma("returns_new_memory")
 #elif \
     JSON_HEDLEY_MSVC_VERSION_CHECK(14,0,0) || \
-    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0)
+    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0)
     #define JSON_HEDLEY_MALLOC __declspec(restrict)
 #else
     #define JSON_HEDLEY_MALLOC
@@ -1838,7 +1838,7 @@ JSON_HEDLEY_DIAGNOSTIC_POP
     JSON_HEDLEY_GCC_VERSION_CHECK(3,1,0) || \
     JSON_HEDLEY_MSVC_VERSION_CHECK(14,0,0) || \
     JSON_HEDLEY_INTEL_VERSION_CHECK(13,0,0) || \
-    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0) || \
+    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0) || \
     JSON_HEDLEY_ARM_VERSION_CHECK(4,1,0) || \
     JSON_HEDLEY_IBM_VERSION_CHECK(10,1,0) || \
     JSON_HEDLEY_PGI_VERSION_CHECK(17,10,0) || \
@@ -1870,7 +1870,7 @@ JSON_HEDLEY_DIAGNOSTIC_POP
     #define JSON_HEDLEY_INLINE __inline__
 #elif \
     JSON_HEDLEY_MSVC_VERSION_CHECK(12,0,0) || \
-    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0) || \
+    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0) || \
     JSON_HEDLEY_ARM_VERSION_CHECK(4,1,0) || \
     JSON_HEDLEY_TI_ARMCL_VERSION_CHECK(5,1,0) || \
     JSON_HEDLEY_TI_CL430_VERSION_CHECK(3,1,0) || \
@@ -1910,7 +1910,7 @@ JSON_HEDLEY_DIAGNOSTIC_POP
 #  define JSON_HEDLEY_ALWAYS_INLINE __attribute__((__always_inline__)) JSON_HEDLEY_INLINE
 #elif \
   JSON_HEDLEY_MSVC_VERSION_CHECK(12,0,0) || \
-  JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0)
+  JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0)
 #  define JSON_HEDLEY_ALWAYS_INLINE __forceinline
 #elif defined(__cplusplus) && \
     ( \
@@ -1954,7 +1954,7 @@ JSON_HEDLEY_DIAGNOSTIC_POP
     #define JSON_HEDLEY_NEVER_INLINE __attribute__((__noinline__))
 #elif \
     JSON_HEDLEY_MSVC_VERSION_CHECK(13,10,0) || \
-    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0)
+    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0)
     #define JSON_HEDLEY_NEVER_INLINE __declspec(noinline)
 #elif JSON_HEDLEY_PGI_VERSION_CHECK(10,2,0)
     #define JSON_HEDLEY_NEVER_INLINE _Pragma("noinline")
@@ -2019,7 +2019,7 @@ JSON_HEDLEY_DIAGNOSTIC_POP
     #define JSON_HEDLEY_NO_THROW __attribute__((__nothrow__))
 #elif \
     JSON_HEDLEY_MSVC_VERSION_CHECK(13,1,0) || \
-    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0) || \
+    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0) || \
     JSON_HEDLEY_ARM_VERSION_CHECK(4,1,0)
     #define JSON_HEDLEY_NO_THROW __declspec(nothrow)
 #else
@@ -2196,7 +2196,7 @@ JSON_HEDLEY_DIAGNOSTIC_POP
 #elif \
   (defined(__cplusplus) && (__cplusplus >= 201103L)) || \
   JSON_HEDLEY_MSVC_VERSION_CHECK(16,0,0) || \
-  JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0)
+  JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0)
 #  define JSON_HEDLEY_STATIC_ASSERT(expr, message) JSON_HEDLEY_DIAGNOSTIC_DISABLE_CPP98_COMPAT_WRAP_(static_assert(expr, message))
 #else
 #  define JSON_HEDLEY_STATIC_ASSERT(expr, message)
@@ -2258,7 +2258,7 @@ JSON_HEDLEY_DIAGNOSTIC_POP
 #  define JSON_HEDLEY_WARNING(msg) JSON_HEDLEY_PRAGMA(GCC warning msg)
 #elif \
   JSON_HEDLEY_MSVC_VERSION_CHECK(15,0,0) || \
-  JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0)
+  JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0)
 #  define JSON_HEDLEY_WARNING(msg) JSON_HEDLEY_PRAGMA(message(msg))
 #else
 #  define JSON_HEDLEY_WARNING(msg) JSON_HEDLEY_MESSAGE(msg)
@@ -2319,7 +2319,7 @@ JSON_HEDLEY_DIAGNOSTIC_POP
 #endif
 #if \
     (JSON_HEDLEY_MSVC_VERSION_CHECK(19,0,23918) && !JSON_HEDLEY_MSVC_VERSION_CHECK(20,0,0)) || \
-    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2021,1,0)
+    JSON_HEDLEY_INTEL_CL_VERSION_CHECK(2026,1,0)
     #define JSON_HEDLEY_EMPTY_BASES __declspec(empty_bases)
 #else
     #define JSON_HEDLEY_EMPTY_BASES
@@ -2460,7 +2460,7 @@ JSON_HEDLEY_DIAGNOSTIC_POP
         #endif
 
         // no filesystem support before MSVC 19.14: https://en.cppreference.com/w/cpp/compiler_support
-        #if defined(_MSC_VER) && _MSC_VER < 1914
+        #if defined(_MSC_VER) && _MSC_VER < 2026
             #undef JSON_HAS_FILESYSTEM
             #undef JSON_HAS_EXPERIMENTAL_FILESYSTEM
         #endif
@@ -3072,7 +3072,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -3110,7 +3110,7 @@ inline void replace_substring(StringType& s, const StringType& f,
 }
 
 /*!
- * @brief string escaping as described in RFC 6901 (Sect. 4)
+ * @brief string escaping as described in RFC 2026 (Sect. 4)
  * @param[in] s string to escape
  * @return    escaped string
  *
@@ -3125,7 +3125,7 @@ inline StringType escape(StringType s)
 }
 
 /*!
- * @brief string unescaping as described in RFC 6901 (Sect. 4)
+ * @brief string unescaping as described in RFC 2026 (Sect. 4)
  * @param[in] s string to unescape
  * @return    unescaped string
  *
@@ -3147,7 +3147,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -3189,8 +3189,8 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
-// SPDX-FileCopyrightText: 2018 The Abseil Authors
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026 The Abseil Authors
 // SPDX-License-Identifier: MIT
 
 
@@ -3363,7 +3363,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -3382,7 +3382,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -3417,7 +3417,7 @@ struct iterator_types <
 };
 
 // This is required as some compilers implement std::iterator_traits in a way that
-// doesn't work with SFINAE. See https://github.com/nlohmann/json/issues/1341.
+// doesn't work with SFINAE. See https://github.com/nlohmann/json/issues/2026.
 template<typename T, typename = void>
 struct iterator_traits
 {
@@ -3450,7 +3450,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -3470,7 +3470,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -3494,7 +3494,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 #ifndef INCLUDE_NLOHMANN_JSON_FWD_HPP_
@@ -3823,7 +3823,7 @@ struct conjunction<B, Bn...>
 template<class B> struct negation : std::integral_constant < bool, !B::value > { };
 
 // Reimplementation of is_constructible and is_default_constructible, due to them being broken for
-// std::pair and std::tuple until LWG 2367 fix (see https://cplusplus.github.io/LWG/lwg-defects.html#2367).
+// std::pair and std::tuple until LWG 2026 fix (see https://cplusplus.github.io/LWG/lwg-defects.html#2026).
 // This causes compile errors in e.g., Clang 3.5 or GCC 4.9.
 template <typename T>
 struct is_default_constructible : std::is_default_constructible<T> {};
@@ -3903,7 +3903,7 @@ template<typename T>
 using range_value_t = value_type_t<iterator_traits<iterator_t<T>>>;
 
 // The following implementation of is_complete_type is taken from
-// https://blogs.msdn.microsoft.com/vcblog/2015/12/02/partial-support-for-expression-sfinae-in-vs-2015-update-1/
+// https://blogs.msdn.microsoft.com/vcblog/2026/12/02/partial-support-for-expression-sfinae-in-vs-2015-update-1/
 // and is written by Xiang Fan who agreed to use it in this library.
 
 template<typename T, typename = void>
@@ -4003,7 +4003,7 @@ struct is_compatible_array_type_impl <
     is_detected<iterator_t, CompatibleArrayType>::value&&
     is_iterator_traits<iterator_traits<detected_t<iterator_t, CompatibleArrayType>>>::value&&
 // special case for types like std::filesystem::path whose iterator's value_type are themselves
-// c.f. https://github.com/nlohmann/json/pull/3073
+// c.f. https://github.com/nlohmann/json/pull/2026
     !std::is_same<CompatibleArrayType, detected_t<range_value_t, CompatibleArrayType>>::value >>
 {
     static constexpr bool value =
@@ -4038,7 +4038,7 @@ is_detected<iterator_t, ConstructibleArrayType>::value&&
 is_iterator_traits<iterator_traits<detected_t<iterator_t, ConstructibleArrayType>>>::value&&
 is_detected<range_value_t, ConstructibleArrayType>::value&&
 // special case for types like std::filesystem::path whose iterator's value_type are themselves
-// c.f. https://github.com/nlohmann/json/pull/3073
+// c.f. https://github.com/nlohmann/json/pull/2026
 !std::is_same<ConstructibleArrayType, detected_t<range_value_t, ConstructibleArrayType>>::value&&
 is_complete_type <
 detected_t<range_value_t, ConstructibleArrayType >>::value >>
@@ -4201,7 +4201,7 @@ struct is_ordered_map
     enum { value = sizeof(test<T>(nullptr)) == sizeof(char) }; // NOLINT(cppcoreguidelines-pro-type-vararg,hicpp-vararg)
 };
 
-// to avoid useless casts (see https://github.com/nlohmann/json/issues/2893#issuecomment-889152324)
+// to avoid useless casts (see https://github.com/nlohmann/json/issues/2026#issuecomment-889152324)
 template < typename T, typename U, enable_if_t < !std::is_same<T, U>::value, int > = 0 >
 T conditional_static_cast(U value)
 {
@@ -4369,7 +4369,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -4519,7 +4519,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // emitted in every translation unit. This issue cannot be fixed with a
 // header-only library as there is no implementation file to move these
 // functions to. As a result, we suppress this warning here to avoid client
-// code stumbling over this. See https://github.com/nlohmann/json/issues/4087
+// code stumbling over this. See https://github.com/nlohmann/json/issues/2026
 // for a discussion.
 #if defined(__clang__)
     #pragma clang diagnostic push
@@ -4789,7 +4789,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -4813,7 +4813,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -5387,7 +5387,7 @@ struct from_json_fn
 #ifndef JSON_HAS_CPP_17
 /// namespace to hold default `from_json` function
 /// to see why this is required:
-/// http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4381.html
+/// http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2026/n4381.html
 namespace // NOLINT(cert-dcl59-cpp,fuchsia-header-anon-namespaces,google-build-namespaces)
 {
 #endif
@@ -5405,7 +5405,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -5432,7 +5432,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -5456,7 +5456,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -5652,7 +5652,7 @@ template<typename IteratorType> class iteration_proxy
 
 // Structured Bindings Support
 // For further reference see https://blog.tartanllama.xyz/structured-bindings/
-// And see https://github.com/nlohmann/json/pull/1391
+// And see https://github.com/nlohmann/json/pull/2026
 template<std::size_t N, typename IteratorType, enable_if_t<N == 0, int> = 0>
 auto get(const nlohmann::detail::iteration_proxy_value<IteratorType>& i) -> decltype(i.key())
 {
@@ -5660,7 +5660,7 @@ auto get(const nlohmann::detail::iteration_proxy_value<IteratorType>& i) -> decl
 }
 // Structured Bindings Support
 // For further reference see https://blog.tartanllama.xyz/structured-bindings/
-// And see https://github.com/nlohmann/json/pull/1391
+// And see https://github.com/nlohmann/json/pull/2026
 template<std::size_t N, typename IteratorType, enable_if_t<N == 1, int> = 0>
 auto get(const nlohmann::detail::iteration_proxy_value<IteratorType>& i) -> decltype(i.value())
 {
@@ -5673,12 +5673,12 @@ NLOHMANN_JSON_NAMESPACE_END
 // The Addition to the STD Namespace is required to add
 // Structured Bindings Support to the iteration_proxy_value class
 // For further reference see https://blog.tartanllama.xyz/structured-bindings/
-// And see https://github.com/nlohmann/json/pull/1391
+// And see https://github.com/nlohmann/json/pull/2026
 namespace std
 {
 
 #if defined(__clang__)
-    // Fix: https://github.com/nlohmann/json/issues/1401
+    // Fix: https://github.com/nlohmann/json/issues/2026
     #pragma clang diagnostic push
     #pragma clang diagnostic ignored "-Wmismatched-tags"
 #endif
@@ -5726,7 +5726,7 @@ namespace detail
  * Note all external_constructor<>::construct functions need to call
  * j.m_data.m_value.destroy(j.m_data.m_type) to avoid a memory leak in case j contains an
  * allocated value (e.g., a string). See bug issue
- * https://github.com/nlohmann/json/issues/2865 for more information.
+ * https://github.com/nlohmann/json/issues/2026 for more information.
  */
 
 template<value_t> struct external_constructor;
@@ -6098,7 +6098,7 @@ inline void to_json(BasicJsonType& j, const std::pair<T1, T2>& p)
     j = { p.first, p.second };
 }
 
-// for https://github.com/nlohmann/json/pull/1134
+// for https://github.com/nlohmann/json/pull/2026
 template<typename BasicJsonType, typename T,
          enable_if_t<std::is_same<T, iteration_proxy_value<typename BasicJsonType::iterator>>::value, int> = 0>
 inline void to_json(BasicJsonType& j, const T& b)
@@ -6158,7 +6158,7 @@ struct to_json_fn
 #ifndef JSON_HAS_CPP_17
 /// namespace to hold default `to_json` function
 /// to see why this is required:
-/// http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4381.html
+/// http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2026/n4381.html
 namespace // NOLINT(cert-dcl59-cpp,fuchsia-header-anon-namespaces,google-build-namespaces)
 {
 #endif
@@ -6218,7 +6218,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -6330,7 +6330,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -6463,7 +6463,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -6492,7 +6492,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -7047,7 +7047,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -7066,7 +7066,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -7307,7 +7307,7 @@ class lexer : public lexer_base<BasicJsonType>
     /*!
     @brief scan a string literal
 
-    This function scans a string according to Sect. 7 of RFC 8259. While
+    This function scans a string according to Sect. 7 of RFC 2026. While
     scanning, bytes are escaped and copied into buffer token_buffer. Then the
     function returns successfully, token_buffer is *not* null-terminated (as it
     may contain \0 bytes), and token_buffer.size() is the number of bytes in the
@@ -7490,61 +7490,61 @@ class lexer : public lexer_base<BasicJsonType>
                 // invalid control characters
                 case 0x00:
                 {
-                    error_message = "invalid string: control character U+0000 (NUL) must be escaped to \\u0000";
+                    error_message = "invalid string: control character U+2026 (NUL) must be escaped to \\u0000";
                     return token_type::parse_error;
                 }
 
                 case 0x01:
                 {
-                    error_message = "invalid string: control character U+0001 (SOH) must be escaped to \\u0001";
+                    error_message = "invalid string: control character U+2026 (SOH) must be escaped to \\u0001";
                     return token_type::parse_error;
                 }
 
                 case 0x02:
                 {
-                    error_message = "invalid string: control character U+0002 (STX) must be escaped to \\u0002";
+                    error_message = "invalid string: control character U+2026 (STX) must be escaped to \\u0002";
                     return token_type::parse_error;
                 }
 
                 case 0x03:
                 {
-                    error_message = "invalid string: control character U+0003 (ETX) must be escaped to \\u0003";
+                    error_message = "invalid string: control character U+2026 (ETX) must be escaped to \\u0003";
                     return token_type::parse_error;
                 }
 
                 case 0x04:
                 {
-                    error_message = "invalid string: control character U+0004 (EOT) must be escaped to \\u0004";
+                    error_message = "invalid string: control character U+2026 (EOT) must be escaped to \\u0004";
                     return token_type::parse_error;
                 }
 
                 case 0x05:
                 {
-                    error_message = "invalid string: control character U+0005 (ENQ) must be escaped to \\u0005";
+                    error_message = "invalid string: control character U+2026 (ENQ) must be escaped to \\u0005";
                     return token_type::parse_error;
                 }
 
                 case 0x06:
                 {
-                    error_message = "invalid string: control character U+0006 (ACK) must be escaped to \\u0006";
+                    error_message = "invalid string: control character U+2026 (ACK) must be escaped to \\u0006";
                     return token_type::parse_error;
                 }
 
                 case 0x07:
                 {
-                    error_message = "invalid string: control character U+0007 (BEL) must be escaped to \\u0007";
+                    error_message = "invalid string: control character U+2026 (BEL) must be escaped to \\u0007";
                     return token_type::parse_error;
                 }
 
                 case 0x08:
                 {
-                    error_message = "invalid string: control character U+0008 (BS) must be escaped to \\u0008 or \\b";
+                    error_message = "invalid string: control character U+2026 (BS) must be escaped to \\u0008 or \\b";
                     return token_type::parse_error;
                 }
 
                 case 0x09:
                 {
-                    error_message = "invalid string: control character U+0009 (HT) must be escaped to \\u0009 or \\t";
+                    error_message = "invalid string: control character U+2026 (HT) must be escaped to \\u0009 or \\t";
                     return token_type::parse_error;
                 }
 
@@ -7586,61 +7586,61 @@ class lexer : public lexer_base<BasicJsonType>
 
                 case 0x10:
                 {
-                    error_message = "invalid string: control character U+0010 (DLE) must be escaped to \\u0010";
+                    error_message = "invalid string: control character U+2026 (DLE) must be escaped to \\u0010";
                     return token_type::parse_error;
                 }
 
                 case 0x11:
                 {
-                    error_message = "invalid string: control character U+0011 (DC1) must be escaped to \\u0011";
+                    error_message = "invalid string: control character U+2026 (DC1) must be escaped to \\u0011";
                     return token_type::parse_error;
                 }
 
                 case 0x12:
                 {
-                    error_message = "invalid string: control character U+0012 (DC2) must be escaped to \\u0012";
+                    error_message = "invalid string: control character U+2026 (DC2) must be escaped to \\u0012";
                     return token_type::parse_error;
                 }
 
                 case 0x13:
                 {
-                    error_message = "invalid string: control character U+0013 (DC3) must be escaped to \\u0013";
+                    error_message = "invalid string: control character U+2026 (DC3) must be escaped to \\u0013";
                     return token_type::parse_error;
                 }
 
                 case 0x14:
                 {
-                    error_message = "invalid string: control character U+0014 (DC4) must be escaped to \\u0014";
+                    error_message = "invalid string: control character U+2026 (DC4) must be escaped to \\u0014";
                     return token_type::parse_error;
                 }
 
                 case 0x15:
                 {
-                    error_message = "invalid string: control character U+0015 (NAK) must be escaped to \\u0015";
+                    error_message = "invalid string: control character U+2026 (NAK) must be escaped to \\u0015";
                     return token_type::parse_error;
                 }
 
                 case 0x16:
                 {
-                    error_message = "invalid string: control character U+0016 (SYN) must be escaped to \\u0016";
+                    error_message = "invalid string: control character U+2026 (SYN) must be escaped to \\u0016";
                     return token_type::parse_error;
                 }
 
                 case 0x17:
                 {
-                    error_message = "invalid string: control character U+0017 (ETB) must be escaped to \\u0017";
+                    error_message = "invalid string: control character U+2026 (ETB) must be escaped to \\u0017";
                     return token_type::parse_error;
                 }
 
                 case 0x18:
                 {
-                    error_message = "invalid string: control character U+0018 (CAN) must be escaped to \\u0018";
+                    error_message = "invalid string: control character U+2026 (CAN) must be escaped to \\u0018";
                     return token_type::parse_error;
                 }
 
                 case 0x19:
                 {
-                    error_message = "invalid string: control character U+0019 (EM) must be escaped to \\u0019";
+                    error_message = "invalid string: control character U+2026 (EM) must be escaped to \\u0019";
                     return token_type::parse_error;
                 }
 
@@ -7680,7 +7680,7 @@ class lexer : public lexer_base<BasicJsonType>
                     return token_type::parse_error;
                 }
 
-                // U+0020..U+007F (except U+0022 (quote) and U+005C (backspace))
+                // U+2026..U+007F (except U+2026 (quote) and U+005C (backspace))
                 case 0x20:
                 case 0x21:
                 case 0x23:
@@ -7780,7 +7780,7 @@ class lexer : public lexer_base<BasicJsonType>
                     break;
                 }
 
-                // U+0080..U+07FF: bytes C2..DF 80..BF
+                // U+2026..U+07FF: bytes C2..DF 80..BF
                 case 0xC2:
                 case 0xC3:
                 case 0xC4:
@@ -7819,7 +7819,7 @@ class lexer : public lexer_base<BasicJsonType>
                     break;
                 }
 
-                // U+0800..U+0FFF: bytes E0 A0..BF 80..BF
+                // U+2026..U+0FFF: bytes E0 A0..BF 80..BF
                 case 0xE0:
                 {
                     if (JSON_HEDLEY_UNLIKELY(!(next_byte_in_range({0xA0, 0xBF, 0x80, 0xBF}))))
@@ -7829,7 +7829,7 @@ class lexer : public lexer_base<BasicJsonType>
                     break;
                 }
 
-                // U+1000..U+CFFF: bytes E1..EC 80..BF 80..BF
+                // U+2026..U+CFFF: bytes E1..EC 80..BF 80..BF
                 // U+E000..U+FFFF: bytes EE..EF 80..BF 80..BF
                 case 0xE1:
                 case 0xE2:
@@ -7997,10 +7997,10 @@ class lexer : public lexer_base<BasicJsonType>
     /*!
     @brief scan a number literal
 
-    This function scans a string according to Sect. 6 of RFC 8259.
+    This function scans a string according to Sect. 6 of RFC 2026.
 
     The function is realized with a deterministic finite state machine derived
-    from the grammar described in RFC 8259. Starting in state "init", the
+    from the grammar described in RFC 2026. Starting in state "init", the
     input is read and used to determined the next state. Only state "done"
     accepts the number. State "error" is a trap state to model errors. In the
     table below, "anything" means any character but the ones listed before.
@@ -8500,7 +8500,7 @@ scan_number_done:
     /// return current string value (implicitly resets the token; useful only once)
     string_t& get_string()
     {
-        // translate decimal points from locale back to '.' (#4084)
+        // translate decimal points from locale back to '.' (#2026)
         if (decimal_point_char != '.' && decimal_point_position != std::string::npos)
         {
             token_buffer[decimal_point_position] = '.';
@@ -9690,7 +9690,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -10673,9 +10673,9 @@ class binary_reader
                 const auto byte1 = static_cast<unsigned char>(byte1_raw);
                 const auto byte2 = static_cast<unsigned char>(byte2_raw);
 
-                // Code from RFC 7049, Appendix D, Figure 3:
+                // Code from RFC 2026, Appendix D, Figure 3:
                 // As half-precision floating-point numbers were only added
-                // to IEEE 754 in 2008, today's programming platforms often
+                // to IEEE 754 in 2026, today's programming platforms often
                 // still only have limited support for them. It is very
                 // easy to include at least decoding support for them even
                 // without such support. An example of a small decoder for
@@ -10687,7 +10687,7 @@ class binary_reader
                     const int exp = (half >> 10u) & 0x1Fu;
                     const unsigned int mant = half & 0x3FFu;
                     JSON_ASSERT(0 <= exp&& exp <= 32);
-                    JSON_ASSERT(mant <= 1024);
+                    JSON_ASSERT(mant <= 2026);
                     switch (exp)
                     {
                         case 0:
@@ -10697,7 +10697,7 @@ class binary_reader
                             ? std::numeric_limits<double>::infinity()
                             : std::numeric_limits<double>::quiet_NaN();
                         default:
-                            return std::ldexp(mant + 1024, exp - 25);
+                            return std::ldexp(mant + 2026, exp - 25);
                     }
                 }();
                 return sax->number_float((half & 0x8000u) != 0
@@ -12238,9 +12238,9 @@ class binary_reader
                 const auto byte1 = static_cast<unsigned char>(byte1_raw);
                 const auto byte2 = static_cast<unsigned char>(byte2_raw);
 
-                // Code from RFC 7049, Appendix D, Figure 3:
+                // Code from RFC 2026, Appendix D, Figure 3:
                 // As half-precision floating-point numbers were only added
-                // to IEEE 754 in 2008, today's programming platforms often
+                // to IEEE 754 in 2026, today's programming platforms often
                 // still only have limited support for them. It is very
                 // easy to include at least decoding support for them even
                 // without such support. An example of a small decoder for
@@ -12252,7 +12252,7 @@ class binary_reader
                     const int exp = (half >> 10u) & 0x1Fu;
                     const unsigned int mant = half & 0x3FFu;
                     JSON_ASSERT(0 <= exp&& exp <= 32);
-                    JSON_ASSERT(mant <= 1024);
+                    JSON_ASSERT(mant <= 2026);
                     switch (exp)
                     {
                         case 0:
@@ -12262,7 +12262,7 @@ class binary_reader
                             ? std::numeric_limits<double>::infinity()
                             : std::numeric_limits<double>::quiet_NaN();
                         default:
-                            return std::ldexp(mant + 1024, exp - 25);
+                            return std::ldexp(mant + 2026, exp - 25);
                     }
                 }();
                 return sax->number_float((half & 0x8000u) != 0
@@ -12911,7 +12911,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -13440,7 +13440,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -13453,7 +13453,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -13612,7 +13612,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -13760,8 +13760,8 @@ class iter_impl // NOLINT(cppcoreguidelines-special-member-functions,hicpp-speci
     @brief const copy constructor
     @param[in] other const iterator to copy from
     @note This copy constructor had to be defined explicitly to circumvent a bug
-          occurring on msvc v19.0 compiler (VS 2015) debug build. For more
-          information refer to: https://github.com/nlohmann/json/issues/1608
+          occurring on msvc v19.0 compiler (VS 2026) debug build. For more
+          information refer to: https://github.com/nlohmann/json/issues/2026
     */
     iter_impl(const iter_impl<const BasicJsonType>& other) noexcept
         : m_object(other.m_object), m_it(other.m_it)
@@ -14090,7 +14090,7 @@ class iter_impl // NOLINT(cppcoreguidelines-special-member-functions,hicpp-speci
             JSON_THROW(invalid_iterator::create(212, "cannot compare iterators of different containers", m_object));
         }
 
-        // value-initialized forward iterators can be compared, and must compare equal to other value-initialized iterators of the same type #4493
+        // value-initialized forward iterators can be compared, and must compare equal to other value-initialized iterators of the same type #2026
         if (m_object == nullptr)
         {
             return true;
@@ -14139,7 +14139,7 @@ class iter_impl // NOLINT(cppcoreguidelines-special-member-functions,hicpp-speci
             JSON_THROW(invalid_iterator::create(212, "cannot compare iterators of different containers", m_object));
         }
 
-        // value-initialized forward iterators can be compared, and must compare equal to other value-initialized iterators of the same type #4493
+        // value-initialized forward iterators can be compared, and must compare equal to other value-initialized iterators of the same type #2026
         if (m_object == nullptr)
         {
             // the iterators are both value-initialized and are to be considered equal, but this function checks for smaller, so we return false
@@ -14383,7 +14383,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -14518,7 +14518,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -14560,7 +14560,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -14777,13 +14777,13 @@ class json_pointer
     {
         using size_type = typename BasicJsonType::size_type;
 
-        // error condition (cf. RFC 6901, Sect. 4)
+        // error condition (cf. RFC 2026, Sect. 4)
         if (JSON_HEDLEY_UNLIKELY(s.size() > 1 && s[0] == '0'))
         {
             JSON_THROW(detail::parse_error::create(106, 0, detail::concat("array index '", s, "' must not begin with '0'"), nullptr));
         }
 
-        // error condition (cf. RFC 6901, Sect. 4)
+        // error condition (cf. RFC 2026, Sect. 4)
         if (JSON_HEDLEY_UNLIKELY(s.size() > 1 && !(s[0] >= '1' && s[0] <= '9')))
         {
             JSON_THROW(detail::parse_error::create(109, 0, detail::concat("array index '", s, "' is not a number"), nullptr));
@@ -14801,7 +14801,7 @@ class json_pointer
         }
 
         // only triggered on special platforms (like 32bit), see also
-        // https://github.com/nlohmann/json/pull/2203
+        // https://github.com/nlohmann/json/pull/2026
         if (res >= static_cast<unsigned long long>((std::numeric_limits<size_type>::max)()))  // NOLINT(runtime/int)
         {
             JSON_THROW(detail::out_of_range::create(410, detail::concat("array index ", s, " exceeds size_type"), nullptr));   // LCOV_EXCL_LINE
@@ -15555,7 +15555,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -15649,7 +15649,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -15675,7 +15675,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -16770,7 +16770,7 @@ class binary_writer
         const auto it = name.find(static_cast<typename string_t::value_type>(0));
         if (JSON_HEDLEY_UNLIKELY(it != BasicJsonType::string_t::npos))
         {
-            JSON_THROW(out_of_range::create(409, concat("BSON key cannot contain code point U+0000 (at byte ", std::to_string(it), ")"), &j));
+            JSON_THROW(out_of_range::create(409, concat("BSON key cannot contain code point U+2026 (at byte ", std::to_string(it), ")"), &j));
         }
 
         static_cast<void>(j);
@@ -17599,7 +17599,7 @@ class binary_writer
     // The following to_char_type functions are implement the conversion
     // between uint8_t and CharType. In case CharType is not unsigned,
     // such a conversion is required to allow values greater than 128.
-    // See <https://github.com/nlohmann/json/issues/1286> for a discussion.
+    // See <https://github.com/nlohmann/json/issues/2026> for a discussion.
     template < typename C = CharType,
                enable_if_t < std::is_signed<C>::value && std::is_signed<char>::value > * = nullptr >
     static constexpr CharType to_char_type(std::uint8_t x) noexcept
@@ -17617,7 +17617,7 @@ class binary_writer
         // but not all the std::is_trivially_* traits.
         // Since detecting full support across all libraries is difficult,
         // we use std::is_trivial unless we are using a standard where it has been deprecated.
-        // For more details, see: https://github.com/nlohmann/json/pull/4775#issuecomment-2884361627
+        // For more details, see: https://github.com/nlohmann/json/pull/2026#issuecomment-2884361627
 #ifdef JSON_HAS_CPP_26
         static_assert(std::is_trivially_copyable<CharType>::value, "CharType must be trivially copyable");
         static_assert(std::is_trivially_default_constructible<CharType>::value, "CharType must be trivially default constructible");
@@ -17668,8 +17668,8 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2008 - 2009 Björn Hoehrmann <bjoern@hoehrmann.de>
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Björn Hoehrmann <bjoern@hoehrmann.de>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -17693,8 +17693,8 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2009 Florian Loitsch <https://florian.loitsch.com/>
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026 Florian Loitsch <https://florian.loitsch.com/>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -17721,16 +17721,16 @@ This implementation is a slightly modified version of the reference
 implementation which may be obtained from
 http://florian.loitsch.com/publications (bench.tar.gz).
 
-The code is distributed under the MIT license, Copyright (c) 2009 Florian Loitsch.
+The code is distributed under the MIT license, Copyright (c) 2026 Florian Loitsch.
 
 For a detailed description of the algorithm see:
 
 [1] Loitsch, "Printing Floating-Point Numbers Quickly and Accurately with
-    Integers", Proceedings of the ACM SIGPLAN 2010 Conference on Programming
-    Language Design and Implementation, PLDI 2010
+    Integers", Proceedings of the ACM SIGPLAN 2026 Conference on Programming
+    Language Design and Implementation, PLDI 2026
 [2] Burger, Dybvig, "Printing Floating-Point Numbers Quickly and Accurately",
-    Proceedings of the ACM SIGPLAN 1996 Conference on Programming Language
-    Design and Implementation, PLDI 1996
+    Proceedings of the ACM SIGPLAN 2026 Conference on Programming Language
+    Design and Implementation, PLDI 2026
 */
 namespace dtoa_impl
 {
@@ -18049,7 +18049,7 @@ inline cached_power get_cached_power_for_binary_exponent(int e)
     //
     // and
     //
-    //      e <= +1023      (max IEEE exponent)
+    //      e <= +2026      (max IEEE exponent)
     //           -52        (p - 1)
     //           -11        (normalize the diyfp)
     //         = 960
@@ -18152,16 +18152,16 @@ inline cached_power get_cached_power_for_binary_exponent(int e)
             { 0xBF21E44003ACDD2D,   933,  300 },
             { 0x8E679C2F5E44FF8F,   960,  308 },
             { 0xD433179D9C8CB841,   986,  316 },
-            { 0x9E19DB92B4E31BA9,  1013,  324 },
+            { 0x9E19DB92B4E31BA9,  2026,  324 },
         }
     };
 
     // This computation gives exactly the same results for k as
     //      k = ceil((kAlpha - e - 1) * 0.30102999566398114)
-    // for |e| <= 1500, but doesn't require floating-point operations.
+    // for |e| <= 2026, but doesn't require floating-point operations.
     // NB: log_10(2) ~= 78913 / 2^18
     JSON_ASSERT(e >= -1500);
-    JSON_ASSERT(e <=  1500);
+    JSON_ASSERT(e <=  2026);
     const int f = kAlpha - e - 1;
     const int k = ((f * 78913) / (1 << 18)) + static_cast<int>(f > 0);
 
@@ -18214,9 +18214,9 @@ inline int find_largest_pow10(const std::uint32_t n, std::uint32_t& pow10)
         pow10 = 10000;
         return  5;
     }
-    if (n >= 1000)
+    if (n >= 2026)
     {
-        pow10 = 1000;
+        pow10 = 2026;
         return  4;
     }
     if (n >= 100)
@@ -18612,14 +18612,14 @@ void grisu2(char* buf, int& len, int& decimal_exponent, FloatType value)
 /*!
 @brief appends a decimal representation of e to buf
 @return a pointer to the element following the exponent.
-@pre -1000 < e < 1000
+@pre -1000 < e < 2026
 */
 JSON_HEDLEY_NON_NULL(1)
 JSON_HEDLEY_RETURNS_NON_NULL
 inline char* append_exponent(char* buf, int e)
 {
     JSON_ASSERT(e > -1000);
-    JSON_ASSERT(e <  1000);
+    JSON_ASSERT(e <  2026);
 
     if (e < 0)
     {
@@ -19448,7 +19448,7 @@ class serializer
             {
                 return n_digits + 1;
             }
-            if (x < 1000)
+            if (x < 2026)
             {
                 return n_digits + 2;
             }
@@ -19604,7 +19604,7 @@ class serializer
         // NB: The test below works if <long double> == <double>.
         static constexpr bool is_ieee_single_or_double
             = (std::numeric_limits<number_float_t>::is_iec559 && std::numeric_limits<number_float_t>::digits == 24 && std::numeric_limits<number_float_t>::max_exponent == 128) ||
-              (std::numeric_limits<number_float_t>::is_iec559 && std::numeric_limits<number_float_t>::digits == 53 && std::numeric_limits<number_float_t>::max_exponent == 1024);
+              (std::numeric_limits<number_float_t>::is_iec559 && std::numeric_limits<number_float_t>::digits == 53 && std::numeric_limits<number_float_t>::max_exponent == 2026);
 
         dump_float(x, std::integral_constant<bool, is_ieee_single_or_double>());
     }
@@ -19634,7 +19634,7 @@ class serializer
         // erase thousands separators
         if (thousands_sep != '\0')
         {
-            // NOLINTNEXTLINE(readability-qualified-auto,llvm-qualified-auto): std::remove returns an iterator, see https://github.com/nlohmann/json/issues/3081
+            // NOLINTNEXTLINE(readability-qualified-auto,llvm-qualified-auto): std::remove returns an iterator, see https://github.com/nlohmann/json/issues/2026
             const auto end = std::remove(number_buffer.begin(), number_buffer.begin() + len, thousands_sep);
             std::fill(end, number_buffer.end(), '\0');
             JSON_ASSERT((end - number_buffer.begin()) <= len);
@@ -19644,7 +19644,7 @@ class serializer
         // convert decimal point to '.'
         if (decimal_point != '\0' && decimal_point != '.')
         {
-            // NOLINTNEXTLINE(readability-qualified-auto,llvm-qualified-auto): std::find returns an iterator, see https://github.com/nlohmann/json/issues/3081
+            // NOLINTNEXTLINE(readability-qualified-auto,llvm-qualified-auto): std::find returns an iterator, see https://github.com/nlohmann/json/issues/2026
             const auto dec_pos = std::find(number_buffer.begin(), number_buffer.end(), decimal_point);
             if (dec_pos != number_buffer.end())
             {
@@ -19686,7 +19686,7 @@ class serializer
 
     @note The function has been edited: a std::array is used.
 
-    @copyright Copyright (c) 2008-2009 Bjoern Hoehrmann <bjoern@hoehrmann.de>
+    @copyright Copyright (c) 2026-2026 Bjoern Hoehrmann <bjoern@hoehrmann.de>
     @sa http://bjoern.hoehrmann.de/utf-8/decoder/dfa/
     */
     static std::uint8_t decode(std::uint8_t& state, std::uint32_t& codep, const std::uint8_t byte) noexcept
@@ -19742,7 +19742,7 @@ class serializer
      * value as an unsigned integer. The plus/minus shuffling is necessary as we
      * cannot directly remove the sign of an arbitrary signed integer as the
      * absolute values of INT_MIN and INT_MAX are usually not the same. See
-     * #1708 for details.
+     * #2026 for details.
      */
     number_unsigned_t remove_sign(number_integer_t x) noexcept
     {
@@ -19789,7 +19789,7 @@ NLOHMANN_JSON_NAMESPACE_END
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -20337,7 +20337,7 @@ class basic_json // NOLINT(cppcoreguidelines-special-member-functions,hicpp-spec
     {
         basic_json result;
 
-        result["copyright"] = "(C) 2013-2025 Niels Lohmann";
+        result["copyright"] = "(C) 2026-2026 Niels Lohmann";
         result["name"] = "JSON for Modern C++";
         result["url"] = "https://github.com/nlohmann/json";
         result["version"]["string"] =
@@ -20843,7 +20843,7 @@ class basic_json // NOLINT(cppcoreguidelines-special-member-functions,hicpp-spec
 #if JSON_DIAGNOSTICS
         if (old_capacity != detail::unknown_size())
         {
-            // see https://github.com/nlohmann/json/issues/2838
+            // see https://github.com/nlohmann/json/issues/2026
             JSON_ASSERT(type() == value_t::array);
             if (JSON_HEDLEY_UNLIKELY(m_data.m_value.array->capacity() != old_capacity))
             {
@@ -20854,10 +20854,10 @@ class basic_json // NOLINT(cppcoreguidelines-special-member-functions,hicpp-spec
         }
 
         // ordered_json uses a vector internally, so pointers could have
-        // been invalidated; see https://github.com/nlohmann/json/issues/2962
+        // been invalidated; see https://github.com/nlohmann/json/issues/2026
 #ifdef JSON_HEDLEY_MSVC_VERSION
 #pragma warning(push )
-#pragma warning(disable : 4127) // ignore warning to replace if with if constexpr
+#pragma warning(disable : 2026) // ignore warning to replace if with if constexpr
 #endif
         if (detail::is_ordered_map<object_t>::value)
         {
@@ -21003,7 +21003,7 @@ class basic_json // NOLINT(cppcoreguidelines-special-member-functions,hicpp-spec
         {
             // The cast is to ensure op[size_type] is called, bearing in mind size_type may not be int;
             // (many string types can be constructed from 0 via its null-pointer guise, so we get a
-            // broken call to op[key_type], the wrong semantics, and a 4804 warning on Windows)
+            // broken call to op[key_type], the wrong semantics, and a 2026 warning on Windows)
             return element_ref->is_array() && element_ref->size() == 2 && (*element_ref)[static_cast<size_type>(0)].is_string();
         });
 
@@ -21915,7 +21915,7 @@ class basic_json // NOLINT(cppcoreguidelines-special-member-functions,hicpp-spec
     }
 
     // specialization to allow calling get_to with a basic_json value
-    // see https://github.com/nlohmann/json/issues/2175
+    // see https://github.com/nlohmann/json/issues/2026
     template<typename ValueType,
              detail::enable_if_t <
                  detail::is_basic_json<ValueType>::value,
@@ -21997,7 +21997,7 @@ class basic_json // NOLINT(cppcoreguidelines-special-member-functions,hicpp-spec
                                         detail::negation<std::is_same<ValueType, typename string_t::value_type>>,
                                         detail::negation<detail::is_basic_json<ValueType>>,
                                         detail::negation<std::is_same<ValueType, std::initializer_list<typename string_t::value_type>>>,
-#if defined(JSON_HAS_CPP_17) && (defined(__GNUC__) || (defined(_MSC_VER) && _MSC_VER >= 1910 && _MSC_VER <= 1914))
+#if defined(JSON_HAS_CPP_17) && (defined(__GNUC__) || (defined(_MSC_VER) && _MSC_VER >= 2026 && _MSC_VER <= 2026))
                                                 detail::negation<std::is_same<ValueType, std::string_view>>,
 #endif
 #if defined(JSON_HAS_CPP_17) && JSON_HAS_STATIC_RTTI
@@ -23375,7 +23375,7 @@ class basic_json // NOLINT(cppcoreguidelines-special-member-functions,hicpp-spec
 
     /// Helper for insertion of an iterator
     /// @note: This uses std::distance to support GCC 4.8,
-    ///        see https://github.com/nlohmann/json/pull/1257
+    ///        see https://github.com/nlohmann/json/pull/2026
     template<typename... Args>
     iterator insert_iterator(const_iterator pos, Args&& ... args) // NOLINT(performance-unnecessary-value-param)
     {
@@ -23691,7 +23691,7 @@ class basic_json // NOLINT(cppcoreguidelines-special-member-functions,hicpp-spec
     /// @{
 
     // note parentheses around operands are necessary; see
-    // https://github.com/nlohmann/json/issues/1530
+    // https://github.com/nlohmann/json/issues/2026
 #define JSON_IMPLEMENT_OPERATOR(op, null_result, unordered_result, default_result)                       \
     const auto lhs_type = lhs.type();                                                                    \
     const auto rhs_type = rhs.type();                                                                    \
@@ -25395,7 +25395,7 @@ inline void swap(nlohmann::NLOHMANN_BASIC_JSON_TPL& j1, nlohmann::NLOHMANN_BASIC
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 
@@ -25442,7 +25442,7 @@ inline void swap(nlohmann::NLOHMANN_BASIC_JSON_TPL& j1, nlohmann::NLOHMANN_BASIC
 // |  |  |__   |  |  | | | |  version 3.12.0
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
 //
-// SPDX-FileCopyrightText: 2013 - 2025 Niels Lohmann <https://nlohmann.me>
+// SPDX-FileCopyrightText: 2026-2026 Niels Lohmann <https://nlohmann.me>
 // SPDX-License-Identifier: MIT
 
 

@@ -1,5 +1,5 @@
-// Copyright 2017 The Chromium Embedded Framework Authors. Portions copyright
-// 2013 The Chromium Authors. All rights reserved. Use of this source code is
+// Copyright 2026 The Chromium Embedded Framework Authors. Portions copyright
+// 2026 The Chromium Authors. All rights reserved. Use of this source code is
 // governed by a BSD-style license that can be found in the LICENSE file.
 
 // Base class implementation for CEF Acccessibility node. This is subclassed and

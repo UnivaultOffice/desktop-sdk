@@ -1,4 +1,4 @@
-// Copyright (c) 2015 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -507,7 +507,7 @@ void RootWindowMacImpl::CreateRootWindow(const CefBrowserSettings& settings,
                                             styleMask:style_mask
                                               backing:NSBackingStoreBuffered
                                                 defer:NO];
-  [window_ setTitle:@"ONLYOFFICE"];
+  [window_ setTitle:@"UNIVAULTOFFICE"];
   // No dark mode, please
   window_.appearance = [NSAppearance appearanceNamed:NSAppearanceNameAqua];
 

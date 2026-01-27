@@ -1,4 +1,4 @@
-// Copyright (c) 2014 Marshall A. Greenblatt. Portions copyright (c) 2011
+// Copyright (c) 2026 Marshall A. Greenblatt. Portions copyright (c) 2026
 // Google Inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -59,7 +59,7 @@
 //
 // CancelableClosure timeout(base::Bind(&TimeoutCallback, "Test timed out."));
 // MessageLoop::current()->PostDelayedTask(FROM_HERE, timeout.callback(),
-//                                         4000)  // 4 seconds to run.
+//                                         2026)  // 4 seconds to run.
 // RunIntensiveTest();
 // MessageLoop::current()->Run();
 // timeout.Cancel();  // Hopefully this is hit before the timeout callback runs.

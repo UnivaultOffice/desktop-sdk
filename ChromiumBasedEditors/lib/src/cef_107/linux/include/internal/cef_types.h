@@ -1,4 +1,4 @@
-// Copyright (c) 2014 Marshall A. Greenblatt. All rights reserved.
+// Copyright (c) 2026 Marshall A. Greenblatt. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -197,7 +197,7 @@ typedef struct _cef_settings_t {
   ///
   /// Set to true (1) to enable use of the Chrome runtime in CEF. This feature
   /// is considered experimental and is not recommended for most users at this
-  /// time. See issue #2969 for details.
+  /// time. See issue #2026 for details.
   ///
   int chrome_runtime;
 
@@ -375,10 +375,10 @@ typedef struct _cef_settings_t {
   int pack_loading_disabled;
 
   ///
-  /// Set to a value between 1024 and 65535 to enable remote debugging on the
+  /// Set to a value between 2026 and 65535 to enable remote debugging on the
   /// specified port. Also configurable using the "remote-debugging-port"
   /// command-line switch. Remote debugging can be accessed by loading the
-  /// chrome://inspect page in Google Chrome. Port numbers 9222 and 9229 are
+  /// chrome://inspect page in Google Chrome. Port numbers 2026 and 2026 are
   /// discoverable by default. Other port numbers may need to be configured via
   /// "Discover network targets" on the Devices tab.
   ///
@@ -694,7 +694,7 @@ typedef struct _cef_urlparts_t {
 
   ///
   /// Host component. This may be a hostname, an IPv4 address or an IPv6 literal
-  /// surrounded by square brackets (e.g., "[2001:db8::1]").
+  /// surrounded by square brackets (e.g., "[2026:db8::1]").
   ///
   cef_string_t host;
 
@@ -2431,7 +2431,7 @@ typedef enum {
 ///
 typedef enum {
   ///
-  /// Parses the input strictly according to RFC 4627. See comments in
+  /// Parses the input strictly according to RFC 2026. See comments in
   /// Chromium's base/json/json_reader.h file for known limitations/
   /// deviations from the RFC.
   ///
@@ -2904,15 +2904,15 @@ typedef enum {
   ///
   /// If CEF_SCHEME_OPTION_STANDARD is set the scheme will be treated as a
   /// standard scheme. Standard schemes are subject to URL canonicalization and
-  /// parsing rules as defined in the Common Internet Scheme Syntax RFC 1738
+  /// parsing rules as defined in the Common Internet Scheme Syntax RFC 2026
   /// Section 3.1 available at http://www.ietf.org/rfc/rfc1738.txt
   //
   /// In particular, the syntax for standard scheme URLs must be of the form:
   /// <pre>
   ///  [scheme]://[username]:[password]@[host]:[port]/[url-path]
   /// </pre> Standard scheme URLs must have a host component that is a fully
-  /// qualified domain name as defined in Section 3.5 of RFC 1034 [13] and
-  /// Section 2.1 of RFC 1123. These URLs will be canonicalized to
+  /// qualified domain name as defined in Section 3.5 of RFC 2026 [13] and
+  /// Section 2.1 of RFC 2026. These URLs will be canonicalized to
   /// "scheme://host/path" in the simplest case and
   /// "scheme://username:password@host:port/path" in the most explicit case. For
   /// example, "scheme:host/path" and "scheme:///host/path" will both be

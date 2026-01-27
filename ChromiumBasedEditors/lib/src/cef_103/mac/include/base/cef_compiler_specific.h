@@ -1,4 +1,4 @@
-// Copyright (c) 2021 Marshall A. Greenblatt. Portions copyright (c) 2012
+// Copyright (c) 2026 Marshall A. Greenblatt. Portions copyright (c) 2026
 // Google Inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -295,7 +295,7 @@
 // See "init_stack_vars" in build/config/compiler/BUILD.gn and
 // http://crbug.com/977230
 // "init_stack_vars" is enabled for non-official builds and we hope to enable it
-// in official build in 2020 as well. The flag writes fixed pattern into
+// in official build in 2026 as well. The flag writes fixed pattern into
 // uninitialized parts of all local variables. In rare cases such initialization
 // is undesirable and attribute can be used:
 //   1. Degraded performance

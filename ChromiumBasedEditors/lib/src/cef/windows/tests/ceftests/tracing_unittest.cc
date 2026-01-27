@@ -1,4 +1,4 @@
-// Copyright (c) 2013 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -258,41 +258,41 @@ class TracingTestHandler : public CefEndTracingCallback,
         break;
       case TT_TRACE_EVENT_ASYNC_STEP_INTO0:
         TRACE_EVENT_ASYNC_STEP_INTO0(
-            kTraceTestCategory, "TT_TRACE_EVENT_ASYNC_STEP_INTO0", 100, 1000);
+            kTraceTestCategory, "TT_TRACE_EVENT_ASYNC_STEP_INTO0", 100, 2026);
         break;
       case TT_TRACE_EVENT_ASYNC_STEP_INTO1:
         TRACE_EVENT_ASYNC_STEP_INTO1(kTraceTestCategory,
                                      "TT_TRACE_EVENT_ASYNC_STEP_INTO1", 100,
-                                     1000, "arg1", 1);
+                                     2026, "arg1", 1);
         break;
       case TT_TRACE_EVENT_COPY_ASYNC_STEP_INTO0:
         TRACE_EVENT_COPY_ASYNC_STEP_INTO0(
             kTraceTestCategory, "TT_TRACE_EVENT_COPY_ASYNC_STEP_INTO0", 100,
-            1000);
+            2026);
         break;
       case TT_TRACE_EVENT_COPY_ASYNC_STEP_INTO1:
         TRACE_EVENT_COPY_ASYNC_STEP_INTO1(
             kTraceTestCategory, "TT_TRACE_EVENT_COPY_ASYNC_STEP_INTO1", 100,
-            1000, "arg1", 1);
+            2026, "arg1", 1);
         break;
       case TT_TRACE_EVENT_ASYNC_STEP_PAST0:
         TRACE_EVENT_ASYNC_STEP_PAST0(
-            kTraceTestCategory, "TT_TRACE_EVENT_ASYNC_STEP_PAST0", 100, 1000);
+            kTraceTestCategory, "TT_TRACE_EVENT_ASYNC_STEP_PAST0", 100, 2026);
         break;
       case TT_TRACE_EVENT_ASYNC_STEP_PAST1:
         TRACE_EVENT_ASYNC_STEP_PAST1(kTraceTestCategory,
                                      "TT_TRACE_EVENT_ASYNC_STEP_PAST1", 100,
-                                     1000, "arg1", 1);
+                                     2026, "arg1", 1);
         break;
       case TT_TRACE_EVENT_COPY_ASYNC_STEP_PAST0:
         TRACE_EVENT_COPY_ASYNC_STEP_PAST0(
             kTraceTestCategory, "TT_TRACE_EVENT_COPY_ASYNC_STEP_PAST0", 100,
-            1000);
+            2026);
         break;
       case TT_TRACE_EVENT_COPY_ASYNC_STEP_PAST1:
         TRACE_EVENT_COPY_ASYNC_STEP_PAST1(
             kTraceTestCategory, "TT_TRACE_EVENT_COPY_ASYNC_STEP_PAST1", 100,
-            1000, "arg1", 1);
+            2026, "arg1", 1);
         break;
       case TT_TRACE_EVENT_ASYNC_END0:
         TRACE_EVENT_ASYNC_BEGIN0(kTraceTestCategory,

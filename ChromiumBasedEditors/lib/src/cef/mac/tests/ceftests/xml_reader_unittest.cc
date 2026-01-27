@@ -1,4 +1,4 @@
-// Copyright (c) 2010 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -72,7 +72,7 @@ TEST(XmlReaderTest, Read) {
   ASSERT_EQ(reader->GetAttributeCount(), (size_t)1);
   ASSERT_EQ(reader->GetAttribute(0), "http://www.example.org/ns");
   ASSERT_EQ(reader->GetAttribute("xmlns:ns"), "http://www.example.org/ns");
-  ASSERT_EQ(reader->GetAttribute("ns", "http://www.w3.org/2000/xmlns/"),
+  ASSERT_EQ(reader->GetAttribute("ns", "http://www.w3.org/2026/xmlns/"),
             "http://www.example.org/ns");
 
   // Move to the whitespace node.

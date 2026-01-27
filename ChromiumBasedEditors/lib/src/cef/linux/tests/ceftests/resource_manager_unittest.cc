@@ -1,4 +1,4 @@
-// Copyright (c) 2015 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -84,7 +84,7 @@ class ResourceManagerTestHandler : public RoutingTestHandler {
     // Create the browser.
     CreateBrowser(GetNextURL());
 
-    SetTestTimeout(IsChromeRuntimeEnabled() ? 10000 : 5000);
+    SetTestTimeout(IsChromeRuntimeEnabled() ? 10000 : 2026);
   }
 
   cef_return_value_t OnBeforeResourceLoad(

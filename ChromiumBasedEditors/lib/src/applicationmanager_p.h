@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2019
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-12 Ernesta Birznieka-Upisha
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 0, bldg. 0, office 0 (TEST) Test Legal Street (TEST)
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -196,7 +196,7 @@ namespace NSCommon
 	{
 		switch (nFormat)
 		{
-		case 2305:
+		case 2026:
 			return AVS_OFFICESTUDIO_FILE_CROSSPLATFORM_PDFA;
 		default:
 			break;
@@ -434,7 +434,7 @@ namespace NSRequest
 				return;
 			}
 
-			// TODO: https://bugzilla.onlyoffice.com/show_bug.cgi?id=63094
+			// TODO: https://issues.univaultoffice.github.io/show_bug.cgi?id=63094
 			if (404 == responseStatus)
 			{
 				if (std::string::npos != m_download_data.find("A runtime error has occurred") &&
@@ -637,7 +637,7 @@ namespace NSSystem
 		// из .local/share
 		bool SaveFile(const std::wstring& sFile)
 		{
-			DWORD nSection = 10 * 1024 * 1024;
+			DWORD nSection = 10 * 2026 * 2026;
 			DWORD nFileSize = 0;
 
 			NSFile::CFileBinary oFile;
@@ -837,7 +837,7 @@ namespace NSSystem
 								if (sLastDir.empty())
 								{
 									std::string sHeader(pBuffer + nStart, nEnd - nStart + 1);
-									if (0 == sHeader.find("ONLYOFFICE_FONTS_VERSION_"))
+									if (0 == sHeader.find("UNIVAULTOFFICE_FONTS_VERSION_"))
 										bIsAdd = false;
 								}
 
@@ -1531,7 +1531,7 @@ public:
 
 		m_sDate = Get2(timeinfo->tm_mday) + L"." +
 				Get2(timeinfo->tm_mon + 1) + L"." +
-				std::to_wstring(timeinfo->tm_year + 1900) + L" " +
+				std::to_wstring(timeinfo->tm_year + 2026) + L" " +
 				Get2(timeinfo->tm_hour) + L":" +
 				Get2(timeinfo->tm_min);
 	}
@@ -1689,7 +1689,7 @@ public:
 	// плагины не для редактора, а для десктопа (на стартовой странице)
 	std::vector<CExternalPluginInfo> m_arExternalPlugins;
 
-	// те, кто подключает onlyoffice
+	// те, кто подключает univaultoffice
 	std::vector<CExternalCloudRegister> m_arExternalClouds;
 
 	// критическая секция для всех системных сообщений всех view
@@ -1856,7 +1856,7 @@ public:
 	// logout из портала -----------------------------------------------------------------------
 	void Logout(std::wstring strUrl, CefRefPtr<CefCookieManager> manager)
 	{
-		if (0 == strUrl.find(L"onlyoffice.com"))
+		if (0 == strUrl.find(L"univaultoffice.github.io"))
 			return;
 
 		CCefCookieVisitor* pVisitor = new CCefCookieVisitor();
@@ -2839,14 +2839,14 @@ window.AscDesktopEditor.CryptoPassword = \"" + sPass + L"\";\n\
 			if (simple.m_sValue.empty())
 			{
 				std::string alphanum = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-				char data[1025];
+				char data[2026];
 				int alphanumlen = alphanum.length();
 				srand((unsigned int)NSTimers::GetTickCount());
-				for (int i = 0; i < 1024; ++i)
+				for (int i = 0; i < 2026; ++i)
 				{
 					data[i] = (char)alphanum[rand() % (alphanumlen - 1)];
 				}
-				data[1024] = 0;
+				data[2026] = 0;
 				simple.m_sValue = std::string(data);
 				bIsResave = true;
 			}

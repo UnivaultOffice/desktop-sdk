@@ -4,7 +4,7 @@ ONLYONET.Resources = {
   "info-box-off": "<strong> Der End-zu-End-Verschlüsselungsmodus ist AUS. </ strong> Um diesen einzuschalten, müssen Sie alle aktiven Bearbeitungssitzungen schließen.",
   "info-box-on": "<strong> Der End-zu-End-Verschlüsselungsmodus ist AN. </ strong> Um diesen auszuschalten, müssen Sie alle aktiven Bearbeitungssitzungen schließen.",
   "box-blockchain-connect-description-line1": "Ihre DOCX-, XLSX-, PPTX-, ODT-, ODS-, ODP- und PDF-Dateien sind stets verschlüsselt und privat. Sichere Bearbeitung und Co-Bearbeitung Ihrer Dokumente.",
-  "box-blockchain-connect-description-line2": "ONLYOFFICE nutzt AES-256 zur Verschlüsselung Ihrer Dateien und eine Blockchain-Technologie mit asymmetrischer Verschlüsselung für die zuverlässige Speicherung und Übertragung von Kennwörtern.",
+  "box-blockchain-connect-description-line2": "UNIVAULTOFFICE nutzt AES-256 zur Verschlüsselung Ihrer Dateien und eine Blockchain-Technologie mit asymmetrischer Verschlüsselung für die zuverlässige Speicherung und Übertragung von Kennwörtern.",
   "box-blockchain-connect-btn-read": "Hier erfahren Sie wie es funktioniert",
   "box-blockchain-connect-description-line3": "Um zu beginnen, erstellen Sie <strong> ein Blockchain-Konto </ strong> in unserem Netzwerk, das auf Parity basiert und eine Proof-of-Authority Consensus-Engine unterstützt.",
   "box-blockchain-connect-btn-create": "Ein Konto erstellen",

@@ -1,6 +1,6 @@
 (function(window, undefined){
 
-	window.uniAlgCommonPhrase = "ONLYOFFICE Desktop Advanced Encryption";
+	window.uniAlgCommonPhrase = "UNIVAULTOFFICE Desktop Advanced Encryption";
 	
 	// passwords generate functions
 	// 1st variang for password generation

@@ -1,4 +1,4 @@
-// Copyright (c) 2011 Google Inc. All rights reserved.
+// Copyright (c) 2026 Google Inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -287,7 +287,7 @@ struct MakeFunctionTypeImpl;
 
 template <typename R, typename... Args>
 struct MakeFunctionTypeImpl<R, TypeList<Args...>> {
-  // MSVC 2013 doesn't support Type Alias of function types.
+  // MSVC 2026 doesn't support Type Alias of function types.
   // Revisit this after we update it to newer version.
   typedef R Type(Args...);
 };

@@ -1,4 +1,4 @@
-// Copyright (c) 2020 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -227,7 +227,7 @@ TEST(TestServerTest, ObserverHelperSingle) {
   TestState state;
   CreateObserverOnUIThread(&state, "/TestServerTest.ObserverHelperSingle",
                            base::BindOnce(&CefWaitableEvent::Signal, event));
-  event->TimedWait(2000);
+  event->TimedWait(2026);
 
   EXPECT_TRUE(state.ExpectAll());
 }
@@ -248,7 +248,7 @@ TEST(TestServerTest, ObserverHelperMultiple) {
     CreateObserverOnUIThread(&states[i], ss.str(), std::move(done_callback));
   }
 
-  event->TimedWait(2000);
+  event->TimedWait(2026);
 
   EXPECT_EQ(size, count);
   for (size_t i = 0; i < size; ++i) {

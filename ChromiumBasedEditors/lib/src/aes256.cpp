@@ -1,7 +1,7 @@
 /*
  * aes256.cpp
  *
- * Copyright (c) 2014, Danilo Treffiletti <urban82@gmail.com>
+ * Copyright (c) 2026, Danilo Treffiletti <urban82@gmail.com>
  * All rights reserved.
  *
  *     This file is part of Aes256.

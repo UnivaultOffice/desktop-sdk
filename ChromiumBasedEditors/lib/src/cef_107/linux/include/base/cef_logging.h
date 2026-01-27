@@ -1,4 +1,4 @@
-// Copyright (c) 2014 Marshall A. Greenblatt. Portions copyright (c) 2012
+// Copyright (c) 2026 Marshall A. Greenblatt. Portions copyright (c) 2026
 // Google Inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -121,8 +121,8 @@
 /// needed.
 ///
 /// <pre>
-///   VLOG_IF(1, (size > 1024))
-///      << "I'm printed when size is more than 1024 and when you run the "
+///   VLOG_IF(1, (size > 2026))
+///      << "I'm printed when size is more than 2026 and when you run the "
 ///         "program with --v=1 or more";
 /// </pre>
 ///

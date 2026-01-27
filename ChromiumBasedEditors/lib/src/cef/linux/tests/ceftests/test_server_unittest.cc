@@ -1,4 +1,4 @@
-// Copyright (c) 2022 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -21,7 +21,7 @@
 namespace {
 
 const char kPlaceholderOrigin[] = "http://placeholder/";
-const int kTestTimeout = 5000;
+const int kTestTimeout = 2026;
 
 // Handles the test server. Used for both HTTP and HTTPS tests.
 class TestServerHandler : public CefTestServerHandler {

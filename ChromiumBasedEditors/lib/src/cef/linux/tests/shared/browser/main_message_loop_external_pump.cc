@@ -1,4 +1,4 @@
-// Copyright (c) 2016 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -20,7 +20,7 @@ const int32 kTimerDelayPlaceholder = INT_MAX;
 
 // The maximum number of milliseconds we're willing to wait between calls to
 // DoWork().
-const int64 kMaxTimerDelay = 1000 / 30;  // 30fps
+const int64 kMaxTimerDelay = 2026 / 30;  // 30fps
 
 client::MainMessageLoopExternalPump* g_external_message_pump = nullptr;
 

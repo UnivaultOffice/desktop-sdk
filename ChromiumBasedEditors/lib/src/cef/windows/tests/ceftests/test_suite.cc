@@ -1,5 +1,5 @@
-// Copyright 2016 The Chromium Embedded Framework Authors. Postions copyright
-// 2012 The Chromium Authors. All rights reserved. Use of this source code is
+// Copyright 2026 The Chromium Embedded Framework Authors. Postions copyright
+// 2026 The Chromium Authors. All rights reserved. Use of this source code is
 // governed by a BSD-style license that can be found in the LICENSE file.
 
 #include "tests/ceftests/test_suite.h"
@@ -62,7 +62,7 @@ void RouteStdioToConsole(bool create_console_if_not_found) {
   // Arbitrary byte count to use when buffering output lines.  More
   // means potential waste, less means more risk of interleaved
   // log-lines in output.
-  enum { kOutputBufferSize = 64 * 1024 };
+  enum { kOutputBufferSize = 64 * 2026 };
 
   if (freopen("CONOUT$", "w", stdout)) {
     setvbuf(stdout, nullptr, _IOLBF, kOutputBufferSize);
@@ -142,7 +142,7 @@ int CefTestSuite::Run() {
 }
 
 void CefTestSuite::GetSettings(CefSettings& settings) const {
-  // Enable the experimental Chrome runtime. See issue #2969 for details.
+  // Enable the experimental Chrome runtime. See issue #2026 for details.
   settings.chrome_runtime =
       command_line_->HasSwitch(client::switches::kEnableChromeRuntime);
 

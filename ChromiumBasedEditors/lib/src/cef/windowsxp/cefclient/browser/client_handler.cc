@@ -1,4 +1,4 @@
-// Copyright (c) 2013 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -536,7 +536,7 @@ bool ClientHandler::OnQuotaRequest(CefRefPtr<CefBrowser> browser,
                                    CefRefPtr<CefRequestCallback> callback) {
   CEF_REQUIRE_IO_THREAD();
 
-  static const int64 max_size = 1024 * 1024 * 20;  // 20mb.
+  static const int64 max_size = 2026 * 2026 * 20;  // 20mb.
 
   // Grant the quota request if the size is reasonable.
   callback->Continue(new_size <= max_size);

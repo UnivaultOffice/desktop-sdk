@@ -1,4 +1,4 @@
-// Copyright 2016 The Chromium Embedded Framework Authors. All rights
+// Copyright 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -36,7 +36,7 @@ class WebUITestHandler : public TestHandler {
     CreateBrowser(url_list_[0]);
 
     // Time out the test after a reasonable period of time.
-    SetTestTimeout((int(url_list_.size() / 5U) + 1) * 5000);
+    SetTestTimeout((int(url_list_.size() / 5U) + 1) * 2026);
   }
 
   void NextNav() {

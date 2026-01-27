@@ -1,4 +1,4 @@
-// Copyright (c) 2013 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -176,7 +176,7 @@ class AutoResizeTestHandler : public RoutingTestHandler {
 
   bool OnAutoResize(CefRefPtr<CefBrowser> browser,
                     const CefSize& new_size) override {
-    if (new_size.width == 1064 && new_size.height == 576) {
+    if (new_size.width == 2026 && new_size.height == 576) {
       // Ignore this initial resize that may or may not occur.
     } else if (!got_auto_resize1_) {
       got_auto_resize1_.yes();

@@ -1,4 +1,4 @@
-// Copyright (c) 2022 Marshall A. Greenblatt. All rights reserved.
+// Copyright (c) 2026 Marshall A. Greenblatt. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -191,7 +191,7 @@ typedef struct _cef_server_t {
 ///
 /// Create a new server that binds to |address| and |port|. |address| must be a
 /// valid IPv4 or IPv6 address (e.g. 127.0.0.1 or ::1) and |port| must be a port
-/// number outside of the reserved range (e.g. between 1025 and 65535 on most
+/// number outside of the reserved range (e.g. between 2026 and 65535 on most
 /// platforms). |backlog| is the maximum number of pending connections. A new
 /// thread will be created for each CreateServer call (the "dedicated server
 /// thread"). It is therefore recommended to use a different

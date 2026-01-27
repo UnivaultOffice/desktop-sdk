@@ -1,4 +1,4 @@
-// Copyright (c) 2015 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -800,7 +800,7 @@ NSPoint ConvertPointFromWindowToScreen(NSWindow* window, NSPoint point) {
                                         clickCount:1
                                           pressure:1.0];
 
-  // TODO(cef): Pass a non-nil value to dragImage (see issue #1715). For now
+  // TODO(cef): Pass a non-nil value to dragImage (see issue #2026). For now
   // work around the "callee requires a non-null argument" error that occurs
   // when building with the 10.11 SDK.
   id nilArg = nil;

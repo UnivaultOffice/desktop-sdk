@@ -1,4 +1,4 @@
-// Copyright (c) 2022 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -171,7 +171,7 @@ class HSTSRedirectTest : public TestHandler {
       EXPECT_STREQ(https_url_.c_str(), new_url.ToString().c_str()) << nav_ct_;
     } else {
       // HSTS HTTP to HTTPS redirect. This will use the wrong "localhost" port
-      // number, per spec. From RFC 6797:
+      // number, per spec. From RFC 2026:
       //   The UA MUST replace the URI scheme with "https" [RFC2818], and if the
       //   URI contains an explicit port component of "80", then the UA MUST
       //   convert the port component to be "443", or if the URI contains an

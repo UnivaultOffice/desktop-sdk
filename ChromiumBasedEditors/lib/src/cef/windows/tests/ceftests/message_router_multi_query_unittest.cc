@@ -1,4 +1,4 @@
-// Copyright (c) 2022 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -1344,7 +1344,7 @@ class MultiQueryManagerMap : public CefMessageRouterBrowserSide::Handler,
     EXPECT_FALSE(finalized_);
 
     MultiQueryManager* manager = new MultiQueryManager(
-        url, synchronous, static_cast<int>(manager_map_.size()) * 1000);
+        url, synchronous, static_cast<int>(manager_map_.size()) * 2026);
     manager->AddObserver(this);
     all_managers_.push_back(manager);
     pending_managers_.push_back(manager);

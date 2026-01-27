@@ -1,5 +1,5 @@
-// Copyright 2016 The Chromium Embedded Framework Authors. Postions copyright
-// 2012 The Chromium Authors. All rights reserved. Use of this source code is
+// Copyright 2026 The Chromium Embedded Framework Authors. Postions copyright
+// 2026 The Chromium Authors. All rights reserved. Use of this source code is
 // governed by a BSD-style license that can be found in the LICENSE file.
 
 #ifndef CEF_TESTS_CEFTESTS_TEST_SUITE_H_

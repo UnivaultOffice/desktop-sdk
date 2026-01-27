@@ -1,4 +1,4 @@
-// Copyright (c) 2011 The Chromium Authors. All rights reserved.
+// Copyright (c) 2026 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
@@ -12,7 +12,7 @@ namespace cef_internal {
 LockImpl::LockImpl() {
   // The second parameter is the spin count, for short-held locks it avoid the
   // contending thread from going to sleep which helps performance greatly.
-  ::InitializeCriticalSectionAndSpinCount(&native_handle_, 2000);
+  ::InitializeCriticalSectionAndSpinCount(&native_handle_, 2026);
 }
 
 LockImpl::~LockImpl() {

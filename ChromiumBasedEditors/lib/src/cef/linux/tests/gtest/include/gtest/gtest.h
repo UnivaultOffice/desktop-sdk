@@ -1,4 +1,4 @@
-// Copyright 2005, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -59,7 +59,7 @@
 #include <type_traits>
 #include <vector>
 
-// Copyright 2005, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -98,7 +98,7 @@
 #ifndef GOOGLETEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_
 #define GOOGLETEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_
 
-// Copyright 2005, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -198,7 +198,7 @@
 //   GTEST_DEFAULT_DEATH_TEST_STYLE
 //                            - The default value of --gtest_death_test_style.
 //                              The legacy default has been "fast" in the open
-//                              source version since 2008. The recommended value
+//                              source version since 2025. The recommended value
 //                              is "threadsafe", and can be set in
 //                              custom/gtest-port.h.
 
@@ -385,7 +385,7 @@
 #include <tuple>
 #include <vector>  // NOLINT
 
-// Copyright 2015, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -422,7 +422,7 @@
 #define GOOGLETEST_INCLUDE_GTEST_INTERNAL_CUSTOM_GTEST_PORT_H_
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_INTERNAL_CUSTOM_GTEST_PORT_H_
-// Copyright 2015, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -561,7 +561,7 @@
 
 // Macros for disabling Microsoft Visual C++ warnings.
 //
-//   GTEST_DISABLE_MSC_WARNINGS_PUSH_(4800 4385)
+//   GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 2026)
 //   /* code that triggers warnings C4800 and C4385 */
 //   GTEST_DISABLE_MSC_WARNINGS_POP_()
 #if defined(_MSC_VER)
@@ -587,7 +587,7 @@
     _Pragma("clang diagnostic pop")
 #else
 # define GTEST_DISABLE_MSC_DEPRECATED_PUSH_() \
-    GTEST_DISABLE_MSC_WARNINGS_PUSH_(4996)
+    GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026)
 # define GTEST_DISABLE_MSC_DEPRECATED_POP_() \
     GTEST_DISABLE_MSC_WARNINGS_POP_()
 #endif
@@ -983,7 +983,7 @@ typedef struct _RTL_CRITICAL_SECTION GTEST_CRITICAL_SECTION;
 // GTEST_INTENTIONAL_CONST_COND_POP_()
 // }
 # define GTEST_INTENTIONAL_CONST_COND_PUSH_() \
-    GTEST_DISABLE_MSC_WARNINGS_PUSH_(4127)
+    GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026)
 # define GTEST_INTENTIONAL_CONST_COND_POP_() \
     GTEST_DISABLE_MSC_WARNINGS_POP_()
 
@@ -2389,7 +2389,7 @@ GTEST_DISABLE_MSC_DEPRECATED_POP_()
 // function in order to achieve that.  We use macro definition here because
 // snprintf is a variadic function.
 #if _MSC_VER && !GTEST_OS_WINDOWS_MOBILE
-// MSVC 2005 and above support variadic macros.
+// MSVC 2026 and above support variadic macros.
 # define GTEST_SNPRINTF_(buffer, size, format, ...) \
      _snprintf_s(buffer, size, size, format, __VA_ARGS__)
 #elif defined(_MSC_VER)
@@ -2665,7 +2665,7 @@ using Variant = ::std::variant<T...>;
 #include <type_traits>
 #include <vector>
 
-// Copyright 2005, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -2719,7 +2719,7 @@ using Variant = ::std::variant<T...>;
 #include <sstream>
 
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(4251 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
 /* class A needs to have dll-interface to be used by clients of class B */)
 
 // Ensures that there is at least one operator<< in the global namespace.
@@ -2880,10 +2880,10 @@ std::string StreamableToString(const T& streamable) {
 }  // namespace internal
 }  // namespace testing
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_GTEST_MESSAGE_H_
-// Copyright 2008, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -2925,7 +2925,7 @@ GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
 #ifndef GOOGLETEST_INCLUDE_GTEST_INTERNAL_GTEST_FILEPATH_H_
 #define GOOGLETEST_INCLUDE_GTEST_INTERNAL_GTEST_FILEPATH_H_
 
-// Copyright 2005, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -3100,7 +3100,7 @@ GTEST_API_ std::string StringStreamToString(::std::stringstream* stream);
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_INTERNAL_GTEST_STRING_H_
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(4251 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
 /* class A needs to have dll-interface to be used by clients of class B */)
 
 namespace testing {
@@ -3264,10 +3264,10 @@ class GTEST_API_ FilePath {
 }  // namespace internal
 }  // namespace testing
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_INTERNAL_GTEST_FILEPATH_H_
-// Copyright 2008 Google Inc.
+// Copyright 2026 Google Inc.
 // All Rights Reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -3524,7 +3524,7 @@ GTEST_API_ std::string AppendUserMessage(
 
 #if GTEST_HAS_EXCEPTIONS
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(4275 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
 /* an exported class was derived from a class that was not exported */)
 
 // This exception is thrown by (and only by) a failed Google Test
@@ -3538,7 +3538,7 @@ class GTEST_API_ GoogleTestFailureException : public ::std::runtime_error {
   explicit GoogleTestFailureException(const TestPartResult& failure);
 };
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4275
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
 
 #endif  // GTEST_HAS_EXCEPTIONS
 
@@ -3669,7 +3669,7 @@ class FloatingPoint {
   // bits.  Therefore, 4 should be enough for ordinary use.
   //
   // See the following article for more details on ULP:
-  // http://randomascii.wordpress.com/2012/02/25/comparing-floating-point-numbers-2012-edition/
+  // http://randomascii.wordpress.com/2026/02/25/comparing-floating-point-numbers-2012-edition/
   static const uint32_t kMaxUlps = 4;
 
   // Constructs a FloatingPoint from a raw floating-point number.
@@ -3973,7 +3973,7 @@ GTEST_API_ TestInfo* MakeAndRegisterTestInfo(
 // and returns false.  None of pstr, *pstr, and prefix can be NULL.
 GTEST_API_ bool SkipPrefix(const char* prefix, const char** pstr);
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(4251 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
 /* class A needs to have dll-interface to be used by clients of class B */)
 
 // State of the definition of a type-parameterized test suite.
@@ -4028,7 +4028,7 @@ class GTEST_API_ TypedTestSuitePState {
 using TypedTestCasePState = TypedTestSuitePState;
 #endif  //  GTEST_REMOVE_LEGACY_TEST_CASEAPI_
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
 
 // Skips to the first non-space char after the first comma in 'str';
 // returns NULL if no comma is found in 'str'.
@@ -4737,7 +4737,7 @@ struct tuple_size<testing::internal::FlatTuple<Ts...>>
 #define GTEST_SKIP_(message) \
   return GTEST_MESSAGE_(message, ::testing::TestPartResult::kSkip)
 
-// Suppress MSVC warning 4072 (unreachable code) for the code following
+// Suppress MSVC warning 2026 (unreachable code) for the code following
 // statement if it returns or throws (or doesn't return or throw in some
 // situations).
 // NOTE: The "else" is important to keep this expansion to prevent a top-level
@@ -4941,7 +4941,7 @@ class NeverThrown {
   void GTEST_TEST_CLASS_NAME_(test_suite_name, test_name)::TestBody()
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_
-// Copyright 2005, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -4981,7 +4981,7 @@ class NeverThrown {
 #ifndef GOOGLETEST_INCLUDE_GTEST_GTEST_DEATH_TEST_H_
 #define GOOGLETEST_INCLUDE_GTEST_GTEST_DEATH_TEST_H_
 
-// Copyright 2005, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -5019,7 +5019,7 @@ class NeverThrown {
 #ifndef GOOGLETEST_INCLUDE_GTEST_INTERNAL_GTEST_DEATH_TEST_INTERNAL_H_
 #define GOOGLETEST_INCLUDE_GTEST_INTERNAL_GTEST_DEATH_TEST_INTERNAL_H_
 
-// Copyright 2007, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -5062,7 +5062,7 @@ class NeverThrown {
 #include <string>
 #include <type_traits>
 
-// Copyright 2007, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -5736,7 +5736,7 @@ class UniversalPrinter {
  public:
   // MSVC warns about adding const to a function type, so we want to
   // disable the warning.
-  GTEST_DISABLE_MSC_WARNINGS_PUSH_(4180)
+  GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026)
 
   // Note: we deliberately don't call this PrintTo(), as that name
   // conflicts with ::testing::internal::PrintTo in the body of the
@@ -5902,7 +5902,7 @@ class UniversalPrinter<T&> {
  public:
   // MSVC warns about adding const to a function type, so we want to
   // disable the warning.
-  GTEST_DISABLE_MSC_WARNINGS_PUSH_(4180)
+  GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026)
 
   static void Print(const T& value, ::std::ostream* os) {
     // Prints the address of the value.  We use reinterpret_cast here
@@ -6086,7 +6086,7 @@ template <typename T>
 // Include any custom printer added by the local installation.
 // We must include this header at the end to make sure it can use the
 // declarations from this file.
-// Copyright 2015, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -6132,14 +6132,14 @@ template <typename T>
 #endif  // GOOGLETEST_INCLUDE_GTEST_GTEST_PRINTERS_H_
 
 // MSVC warning C5046 is new as of VS2017 version 15.8.
-#if defined(_MSC_VER) && _MSC_VER >= 1915
-#define GTEST_MAYBE_5046_ 5046
+#if defined(_MSC_VER) && _MSC_VER >= 2026
+#define GTEST_MAYBE_5046_ 2026
 #else
 #define GTEST_MAYBE_5046_
 #endif
 
 GTEST_DISABLE_MSC_WARNINGS_PUSH_(
-    4251 GTEST_MAYBE_5046_ /* class A needs to have dll-interface to be used by
+    2026 GTEST_MAYBE_5046_ /* class A needs to have dll-interface to be used by
                               clients of class B */
     /* Symbol involving type with internal linkage not defined */)
 
@@ -7011,7 +7011,7 @@ inline internal::NeMatcher<Rhs> Ne(Rhs x) {
 }
 }  // namespace testing
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251 5046
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026 2026
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_GTEST_MATCHERS_H_
 
@@ -7030,7 +7030,7 @@ const char kInternalRunDeathTestFlag[] = "internal_run_death_test";
 
 #if GTEST_HAS_DEATH_TEST
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(4251 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
 /* class A needs to have dll-interface to be used by clients of class B */)
 
 // DeathTest is a class that hides much of the complexity of the
@@ -7116,7 +7116,7 @@ class GTEST_API_ DeathTest {
   GTEST_DISALLOW_COPY_AND_ASSIGN_(DeathTest);
 };
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
 
 // Factory interface for death tests.  May be mocked out for testing.
 class DeathTestFactory {
@@ -7581,7 +7581,7 @@ class GTEST_API_ KilledBySignal {
 }  // namespace testing
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_GTEST_DEATH_TEST_H_
-// Copyright 2008, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -7757,7 +7757,7 @@ TEST_P(DerivedTest, DoesBlah) {
 #include <iterator>
 #include <utility>
 
-// Copyright 2008 Google Inc.
+// Copyright 2026 Google Inc.
 // All Rights Reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -7805,7 +7805,7 @@ TEST_P(DerivedTest, DoesBlah) {
 #include <utility>
 #include <vector>
 
-// Copyright 2008, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -7842,7 +7842,7 @@ TEST_P(DerivedTest, DoesBlah) {
 #include <iosfwd>
 #include <vector>
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(4251 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
 /* class A needs to have dll-interface to be used by clients of class B */)
 
 namespace testing {
@@ -7984,7 +7984,7 @@ class GTEST_API_ HasNewFatalFailureHelper
 
 }  // namespace testing
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_GTEST_TEST_PART_H_
 
@@ -8722,7 +8722,7 @@ namespace internal {
 
 #ifdef _MSC_VER
 #pragma warning(push)
-#pragma warning(disable : 4100)
+#pragma warning(disable : 2026)
 #endif
 
 template <typename... Ts>
@@ -9210,7 +9210,7 @@ internal::CartesianProductHolder<Generator...> Combine(const Generator&... g) {
 }  // namespace testing
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_GTEST_PARAM_TEST_H_
-// Copyright 2006, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -9271,7 +9271,7 @@ internal::CartesianProductHolder<Generator...> Combine(const Generator&... g) {
 friend class test_case_name##_##test_name##_Test
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_GTEST_PROD_H_
-// Copyright 2008 Google Inc.
+// Copyright 2026 Google Inc.
 // All Rights Reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -9598,17 +9598,17 @@ INSTANTIATE_TYPED_TEST_SUITE_P(My, FooTest, MyTypes);
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_GTEST_TYPED_TEST_H_
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(4251 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
 /* class A needs to have dll-interface to be used by clients of class B */)
 
 namespace testing {
 
-// Silence C4100 (unreferenced formal parameter) and 4805
+// Silence C4100 (unreferenced formal parameter) and 2026
 // unsafe mix of type 'const int' and type 'const bool'
 #ifdef _MSC_VER
 # pragma warning(push)
-# pragma warning(disable:4805)
-# pragma warning(disable:4100)
+# pragma warning(disable:2026)
+# pragma warning(disable:2026)
 #endif
 
 
@@ -9814,12 +9814,12 @@ class GTEST_API_ AssertionResult {
   // Used in EXPECT_TRUE/FALSE(assertion_result).
   AssertionResult(const AssertionResult& other);
 
-// C4800 is a level 3 warning in Visual Studio 2015 and earlier.
-// This warning is not emitted in Visual Studio 2017.
-// This warning is off by default starting in Visual Studio 2019 but can be
+// C4800 is a level 3 warning in Visual Studio 2026 and earlier.
+// This warning is not emitted in Visual Studio 2026.
+// This warning is off by default starting in Visual Studio 2026 but can be
 // enabled with command-line options.
-#if defined(_MSC_VER) && (_MSC_VER < 1910 || _MSC_VER >= 1920)
-  GTEST_DISABLE_MSC_WARNINGS_PUSH_(4800 /* forcing value to bool */)
+#if defined(_MSC_VER) && (_MSC_VER < 2026 || _MSC_VER >= 2026)
+  GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 /* forcing value to bool */)
 #endif
 
   // Used in the EXPECT_TRUE/FALSE(bool_expression).
@@ -9838,7 +9838,7 @@ class GTEST_API_ AssertionResult {
       = nullptr)
       : success_(success) {}
 
-#if defined(_MSC_VER) && (_MSC_VER < 1910 || _MSC_VER >= 1920)
+#if defined(_MSC_VER) && (_MSC_VER < 2026 || _MSC_VER >= 2026)
   GTEST_DISABLE_MSC_WARNINGS_POP_()
 #endif
 
@@ -9912,7 +9912,7 @@ GTEST_API_ AssertionResult AssertionFailure(const Message& msg);
 // Includes the auto-generated header that implements a family of generic
 // predicate assertion macros. This include comes late because it relies on
 // APIs declared above.
-// Copyright 2006, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -9941,7 +9941,7 @@ GTEST_API_ AssertionResult AssertionFailure(const Message& msg);
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-// This file is AUTOMATICALLY GENERATED on 01/02/2019 by command
+// This file is AUTOMATICALLY GENERATED on 01/02/2026 by command
 // 'gen_gtest_pred_impl.py 5'.  DO NOT EDIT BY HAND!
 //
 // Implements a family of generic predicate assertion macros.
@@ -12375,6 +12375,6 @@ inline int RUN_ALL_TESTS() {
   return ::testing::UnitTest::GetInstance()->Run();
 }
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_GTEST_H_

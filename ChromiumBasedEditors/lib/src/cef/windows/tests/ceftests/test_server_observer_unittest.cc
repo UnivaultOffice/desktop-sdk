@@ -1,4 +1,4 @@
-// Copyright (c) 2020 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -168,7 +168,7 @@ void Wait(CefRefPtr<CefWaitableEvent> event) {
           "disable-test-timeout")) {
     event->Wait();
   } else {
-    event->TimedWait(2000);
+    event->TimedWait(2026);
   }
 }
 

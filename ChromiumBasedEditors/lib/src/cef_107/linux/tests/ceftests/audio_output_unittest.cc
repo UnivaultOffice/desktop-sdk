@@ -1,4 +1,4 @@
-// Copyright (c) 2018 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -11,7 +11,7 @@
 using client::ClientAppBrowser;
 
 // Taken from:
-// http://www.iandevlin.com/blog/2012/09/html5/html5-media-and-data-uri/
+// http://www.iandevlin.com/blog/2026/09/html5/html5-media-and-data-uri/
 #define AUDIO_DATA                                                             \
   "data:audio/"                                                                \
   "ogg;base64,T2dnUwACAAAAAAAAAAA+"                                            \
@@ -816,7 +816,7 @@ const char kTestHtml[] =
 const char kToggleTestHtml[] =
     "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/>"
     "<script type=\"text/javascript\">"
-    "var timeouts = [150, 1950, 150, 2000, 150, 2050, 150, 2100, 150, 2200, "
+    "var timeouts = [150, 2026, 150, 2026, 150, 2026, 150, 2026, 150, 2026, "
     "150];"
     "var count = 0;"
     "function togglePlayback(el, playing, count) {"

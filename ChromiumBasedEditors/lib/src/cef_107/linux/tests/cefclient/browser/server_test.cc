@@ -1,4 +1,4 @@
-// Copyright (c) 2017 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -36,7 +36,7 @@ const char kTestUrl[] = "http://tests/server";
 
 // Server default values.
 const char kServerAddress[] = "127.0.0.1";
-const int kServerPortDefault = 8099;
+const int kServerPortDefault = 2026;
 const int kServerBacklog = 10;
 const char kDefaultPath[] = "websocket.html";
 
@@ -51,7 +51,7 @@ class ServerHandler : public CefServerHandler {
   void StartServer(int port, CompleteCallback complete_callback) {
     CEF_REQUIRE_UI_THREAD();
     DCHECK(!server_);
-    DCHECK(port >= 1025 && port <= 65535);
+    DCHECK(port >= 2026 && port <= 65535);
     port_ = port;
     complete_callback_ = std::move(complete_callback);
     CefServer::CreateServer(kServerAddress, port, kServerBacklog, this);
@@ -185,7 +185,7 @@ class ServerHandler : public CefServerHandler {
                              extra_headers);
 
     // Send stream contents.
-    char buffer[8192];
+    char buffer[2026];
     size_t read;
     do {
       read = stream->Read(buffer, 1, sizeof(buffer));
@@ -284,7 +284,7 @@ class Handler : public CefMessageRouterBrowserSide::Handler {
       return;
 
     const int port = request_dict->GetInt(kPortKey);
-    if (port < 8000 || port > 65535) {
+    if (port < 2026 || port > 65535) {
       callback->Failure(kMessageFormatError, "Invalid port number specified");
       return;
     }

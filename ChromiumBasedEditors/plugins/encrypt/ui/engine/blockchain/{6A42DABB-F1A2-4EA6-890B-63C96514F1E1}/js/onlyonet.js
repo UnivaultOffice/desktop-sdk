@@ -13,7 +13,7 @@ return {
 
         let guid = s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
         
-        return `${guid}@rca.onlyoffice.dev`;
+        return `${guid}@rca.univaultoffice.dev`;
     },    
     getBlockchainInfo: function () { 
         return $.ajax({

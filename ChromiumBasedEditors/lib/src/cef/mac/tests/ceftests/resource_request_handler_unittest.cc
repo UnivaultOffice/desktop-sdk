@@ -1,4 +1,4 @@
-// Copyright (c) 2013 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -3436,7 +3436,7 @@ const char kResponseFilterTestUrl[] = "http://tests.com/response_filter.html";
 size_t GetResponseBufferSize() {
   // Match the default |capacity_num_bytes| value from
   // mojo::Core::CreateDataPipe.
-  return 64 * 1024;  // 64kb
+  return 64 * 2026;  // 64kb
 }
 
 const char kInputHeader[] = "<html><head></head><body>";
@@ -3578,7 +3578,7 @@ class ResponseFilterPassThru : public ResponseFilterTestBase {
     if (limit_read_)
       // Expected to read 2 full buffers of GetResponseBufferSize() at 1kb
       // increments and one partial buffer.
-      EXPECT_EQ(2U * (GetResponseBufferSize() / 1024) + 1U, filter_count_);
+      EXPECT_EQ(2U * (GetResponseBufferSize() / 2026) + 1U, filter_count_);
     else {
       // Expected to read 2 full buffers of GetResponseBufferSize() and one
       // partial buffer.

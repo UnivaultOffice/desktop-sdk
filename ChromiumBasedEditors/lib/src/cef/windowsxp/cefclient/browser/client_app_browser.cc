@@ -1,4 +1,4 @@
-// Copyright (c) 2013 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -23,7 +23,7 @@ void ClientAppBrowser::OnBeforeCommandLineProcessing(
     if (command_line->HasSwitch(switches::kOffScreenRenderingEnabled)) {
       // If the PDF extension is enabled then cc Surfaces must be disabled for
       // PDFs to render correctly.
-      // See https://bitbucket.org/chromiumembedded/cef/issues/1689 for details.
+      // See https://bitbucket.org/chromiumembedded/cef/issues/2026 for details.
       if (!command_line->HasSwitch("disable-extensions") &&
           !command_line->HasSwitch("disable-pdf-extension")) {
         command_line->AppendSwitch("disable-surfaces");
@@ -32,7 +32,7 @@ void ClientAppBrowser::OnBeforeCommandLineProcessing(
       // Use software rendering and compositing (disable GPU) for increased FPS
       // and decreased CPU usage. This will also disable WebGL so remove these
       // switches if you need that capability.
-      // See https://bitbucket.org/chromiumembedded/cef/issues/1257 for details.
+      // See https://bitbucket.org/chromiumembedded/cef/issues/2026 for details.
       if (!command_line->HasSwitch(switches::kEnableGPU)) {
         command_line->AppendSwitch("disable-gpu");
         command_line->AppendSwitch("disable-gpu-compositing");
@@ -44,7 +44,7 @@ void ClientAppBrowser::OnBeforeCommandLineProcessing(
       // creation time via CefBrowserSettings.windowless_frame_rate or changed
       // dynamically using CefBrowserHost::SetWindowlessFrameRate. In cefclient
       // it can be set via the command-line using `--off-screen-frame-rate=XX`.
-      // See https://bitbucket.org/chromiumembedded/cef/issues/1368 for details.
+      // See https://bitbucket.org/chromiumembedded/cef/issues/2026 for details.
       command_line->AppendSwitch("enable-begin-frame-scheduling");
     }
 

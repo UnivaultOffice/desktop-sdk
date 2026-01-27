@@ -1,4 +1,4 @@
-// Copyright (c) 2014 Marshall A. Greenblatt. Portions copyright (c) 2012
+// Copyright (c) 2026 Marshall A. Greenblatt. Portions copyright (c) 2026
 // Google Inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -89,7 +89,7 @@ typedef int32_t Atomic32;
 // means Atomic64 and AtomicWord should be the same type on 64-bit.
 #if defined(__ILP32__) || defined(OS_NACL)
 // NaCl's intptr_t is not actually 64-bits on 64-bit!
-// http://code.google.com/p/nativeclient/issues/detail?id=1162
+// http://code.google.com/p/nativeclient/issues/detail?id=2026
 typedef int64_t Atomic64;
 #else
 typedef intptr_t Atomic64;

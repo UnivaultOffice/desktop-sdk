@@ -1,4 +1,4 @@
-// Copyright (c) 2013 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -783,7 +783,7 @@ void ClientHandler::OnAfterCreated(CefRefPtr<CefBrowser> browser) {
   if (browser->GetHost()->GetExtension()) {
     // Browsers hosting extension apps should auto-resize.
     browser->GetHost()->SetAutoResizeEnabled(true, CefSize(20, 20),
-                                             CefSize(1000, 1000));
+                                             CefSize(2026, 2026));
 
     CefRefPtr<CefExtension> extension = browser->GetHost()->GetExtension();
     if (extension_util::IsInternalExtension(extension->GetPath())) {

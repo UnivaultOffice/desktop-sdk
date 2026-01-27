@@ -1,4 +1,4 @@
-// Copyright (c) 2012 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -2751,7 +2751,7 @@ class RequestTestHandler : public TestHandler {
 
   void RunTest() override {
     // Time out the test after a reasonable period of time.
-    SetTestTimeout(IsChromeRuntimeEnabled() ? 10000 : 5000);
+    SetTestTimeout(IsChromeRuntimeEnabled() ? 10000 : 2026);
 
     // Start pre-setup actions.
     PreSetupStart();
@@ -2993,7 +2993,7 @@ class RequestTestHandler : public TestHandler {
     SetSignalCompletionWhenAllBrowsersClose(false);
     CefPostDelayedTask(
         TID_UI, base::BindOnce(&TestHandler::CloseBrowser, GetBrowser(), false),
-        1000);
+        2026);
   }
 
   // Test run is complete. It ran in either the browser or render process.

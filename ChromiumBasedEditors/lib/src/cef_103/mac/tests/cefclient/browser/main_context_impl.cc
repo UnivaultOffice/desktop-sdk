@@ -1,4 +1,4 @@
-// Copyright (c) 2015 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -89,7 +89,7 @@ MainContextImpl::MainContextImpl(CefRefPtr<CefCommandLine> command_line,
 #endif
   }
 
-  // Enable experimental Chrome runtime. See issue #2969 for details.
+  // Enable experimental Chrome runtime. See issue #2026 for details.
   use_chrome_runtime_ =
       command_line_->HasSwitch(switches::kEnableChromeRuntime);
 

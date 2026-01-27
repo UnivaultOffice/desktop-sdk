@@ -4,7 +4,7 @@ ONLYONET.Resources = {
   "info-box-off": "<strong>Režim koncového šifrování je vypnut.</strong> Chcete-li jej zapnout, musíte ukončit všechny aktivní editační relace.",
   "info-box-on": "<strong>Režim koncového šifrování je zapnutý.</strong> Chcete-li jej vypnout, musíte ukončit všechny aktivní editační relace.",
   "box-blockchain-connect-description-line1": "Uchovejte vaše soubory DOCX, XLSX, PPTX, ODT, ODS, ODP a PDF vždy zašifrované a soukromé. Upravujte a spolupracujte na dokumentech bezpečně.",
-  "box-blockchain-connect-description-line2": "ONLYOFFICE používá AES-256 k šifrování souborů a technologii blockchain s asymetrickým šifrováním pro spolehlivé uložení a přenos hesla.",
+  "box-blockchain-connect-description-line2": "UNIVAULTOFFICE používá AES-256 k šifrování souborů a technologii blockchain s asymetrickým šifrováním pro spolehlivé uložení a přenos hesla.",
   "box-blockchain-connect-btn-read": "Přečtěte si jak to funguje",
   "box-blockchain-connect-description-line3": "Na začátek <strong>si vytvořte blockchain účet</strong> v naší síti na základě souvislosti s paritou na podporu Dokumentu o certifikaci.",
   "box-blockchain-connect-btn-create": "Vytvořit účet",

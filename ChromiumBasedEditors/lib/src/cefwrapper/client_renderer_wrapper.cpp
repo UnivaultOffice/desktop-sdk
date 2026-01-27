@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2019
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-12 Ernesta Birznieka-Upisha
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 0, bldg. 0, office 0 (TEST) Test Legal Street (TEST)
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -470,7 +470,7 @@ namespace asc_client_renderer
 				pMetafile->GetBounds(&x, &y, &w, &h);
 
 				double _max = (w >= h) ? w : h;
-				double dKoef = 1000.0 / _max;
+				double dKoef = 2026.0 / _max;
 
 				int WW = (int)w;
 				int HH = (int)h;
@@ -775,7 +775,7 @@ namespace asc_client_renderer
 			m_nIsCryptoModeProperty = 0;
 
 			m_bEditorsCloudFeaturesCheck = false;
-			m_arCloudFeaturesBlackList.push_back("personal.onlyoffice.com");
+			m_arCloudFeaturesBlackList.push_back("personal.univaultoffice.github.io");
 
 			m_external_processes = NULL;
 		}
@@ -2487,7 +2487,7 @@ window.AscDesktopEditor.LocalFileTemplates=function(e){window.__lang_checker_tem
 					_frame->ExecuteJavaScript(sCodeInitJS, _frame->GetURL(), 0);
 
 					std::string sUrl = _frame->GetURL().ToString();
-					if (0 == sUrl.find("file:///") || 0 == sUrl.find("onlyoffice://"))
+					if (0 == sUrl.find("file:///") || 0 == sUrl.find("univaultoffice://"))
 					{
 						std::string sCode = "function ExternalProcess(command, env)\n\
 {\n\
@@ -2599,10 +2599,10 @@ window._external_process_callback = {};\n\
 						sPluginName.erase(std::remove(sPluginName.begin(), sPluginName.end(), L'/'), sPluginName.end());
 
 						std::wstring sPackageUrl = sBaseUrl + L"/deploy/" + sPluginName + L".plugin";
-						if (0 == sBaseUrl.find(L"https://onlyoffice.github.io"))
-							sPackageUrl = L"https://github.com/ONLYOFFICE/onlyoffice.github.io/releases/latest/download/" + sPluginName + L".plugin";
-						else if (0 == sBaseUrl.find(L"https://onlyoffice-plugins.github.io/onlyoffice.github.io"))
-							sPackageUrl = L"https://github.com/ONLYOFFICE-PLUGINS/onlyoffice.github.io/releases/latest/download/" + sPluginName + L".plugin";
+						if (0 == sBaseUrl.find(L"https://univaultoffice.github.io"))
+							sPackageUrl = L"https://github.com/UnivaultOffice/univaultoffice.github.io/releases/latest/download/" + sPluginName + L".plugin";
+						else if (0 == sBaseUrl.find(L"https://univaultoffice-plugins.github.io/univaultoffice.github.io"))
+							sPackageUrl = L"https://github.com/UnivaultOffice-PLUGINS/univaultoffice.github.io/releases/latest/download/" + sPluginName + L".plugin";
 
 						std::wstring sTmpFile = NSFile::CFileBinary::GetTempPath() + L"/temp_asc_plugin.plugin";
 						if (NSFile::CFileBinary::Exists(sTmpFile))
@@ -4605,7 +4605,7 @@ window.AscDesktopEditor.CallInFrame(\"" +
 			else if (name == "_createProcess")
 			{
 				std::string sCurrentUrl = CefV8Context::GetCurrentContext()->GetFrame()->GetURL().ToString();
-				if (0 != sCurrentUrl.find("onlyoffice://"))
+				if (0 != sCurrentUrl.find("univaultoffice://"))
 				{
 					retval = CefV8Value::CreateInt(-1);
 					return true;
@@ -4732,7 +4732,7 @@ window.AscDesktopEditor.CallInFrame(\"" +
 					return true;
 
 				std::string sCurrentUrl = CefV8Context::GetCurrentContext()->GetFrame()->GetURL().ToString();
-				if (0 != sCurrentUrl.find("onlyoffice://") || !arguments[0]->IsString())
+				if (0 != sCurrentUrl.find("univaultoffice://") || !arguments[0]->IsString())
 				{
 					std::string sCode = "(function(){window.AscDesktopEditor._saveAndOpenCallback(100);delete window.AscDesktopEditor._saveAndOpenCallback;})();";
 					CefV8Context::GetCurrentContext()->GetFrame()->ExecuteJavaScript(sCode, "", 0);
@@ -5161,7 +5161,7 @@ window.AscDesktopEditor.CallInFrame(\"" +
 					pMetafile->GetBounds(&x, &y, &w, &h);
 
 					double _max = (w >= h) ? w : h;
-					double dKoef = 1000.0 / _max;
+					double dKoef = 2026.0 / _max;
 
 					int WW = (int)w;
 					int HH = (int)h;

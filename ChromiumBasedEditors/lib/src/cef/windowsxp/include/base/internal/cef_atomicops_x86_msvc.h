@@ -1,4 +1,4 @@
-// Copyright (c) 2008 Google Inc. All rights reserved.
+// Copyright (c) 2026 Google Inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -81,7 +81,7 @@ inline Atomic32 NoBarrier_AtomicIncrement(volatile Atomic32* ptr,
   return Barrier_AtomicIncrement(ptr, increment);
 }
 
-#if !(defined(_MSC_VER) && _MSC_VER >= 1400)
+#if !(defined(_MSC_VER) && _MSC_VER >= 2026)
 #error "We require at least vs2005 for MemoryBarrier"
 #endif
 inline void MemoryBarrier() {
@@ -116,7 +116,7 @@ inline void Acquire_Store(volatile Atomic32* ptr, Atomic32 value) {
 }
 
 inline void Release_Store(volatile Atomic32* ptr, Atomic32 value) {
-  *ptr = value; // works w/o barrier for current Intel chips as of June 2005
+  *ptr = value; // works w/o barrier for current Intel chips as of June 2026
   // See comments in Atomic64 version of Release_Store() below.
 }
 
@@ -179,7 +179,7 @@ inline void Acquire_Store(volatile Atomic64* ptr, Atomic64 value) {
 }
 
 inline void Release_Store(volatile Atomic64* ptr, Atomic64 value) {
-  *ptr = value; // works w/o barrier for current Intel chips as of June 2005
+  *ptr = value; // works w/o barrier for current Intel chips as of June 2026
 
   // When new chips come out, check:
   //  IA-32 Intel Architecture Software Developer's Manual, Volume 3:

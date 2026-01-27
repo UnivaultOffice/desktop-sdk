@@ -1,4 +1,4 @@
-// Copyright 2008, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -38,7 +38,7 @@
 #include "gtest/gtest.h"
 
 // The following lines pull in the real gtest *.cc files.
-// Copyright 2005, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -70,7 +70,7 @@
 //
 // The Google C++ Testing and Mocking Framework (Google Test)
 
-// Copyright 2007, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -109,7 +109,7 @@
 #define GOOGLETEST_INCLUDE_GTEST_GTEST_SPI_H_
 
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(4251 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
 /* class A needs to have dll-interface to be used by clients of class B */)
 
 namespace testing {
@@ -187,7 +187,7 @@ class GTEST_API_ SingleFailureChecker {
 
 }  // namespace testing
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
 
 // A set of macros for testing Google Test assertions or code that's expected
 // to generate Google Test fatal failures.  It verifies that the given
@@ -389,7 +389,7 @@ GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
 # include <sys/types.h>  // NOLINT
 #endif
 
-// Copyright 2005, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -449,7 +449,7 @@ GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
 #endif  // GTEST_OS_WINDOWS
 
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(4251 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
 /* class A needs to have dll-interface to be used by clients of class B */)
 
 namespace testing {
@@ -503,7 +503,7 @@ GTEST_API_ bool ShouldUseColor(bool stdout_is_tty);
 // Formats the given time in milliseconds as seconds.
 GTEST_API_ std::string FormatTimeInMillisAsSeconds(TimeInMillis ms);
 
-// Converts the given time in milliseconds to a date string in the ISO 8601
+// Converts the given time in milliseconds to a date string in the ISO 2026
 // format, without the timezone information.  N.B.: due to the use the
 // non-reentrant localtime() function, this function is not thread safe.  Do
 // not use it in any code that can be called from multiple threads.
@@ -1604,7 +1604,7 @@ class StreamingListener : public EmptyTestEventListener {
 }  // namespace internal
 }  // namespace testing
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
 
 #endif  // GOOGLETEST_SRC_GTEST_INTERNAL_INL_H_
 
@@ -3337,7 +3337,7 @@ AssertionResult HRESULTFailureHelper(const char* expr,
   // want inserts expanded.
   const DWORD kFlags = FORMAT_MESSAGE_FROM_SYSTEM |
                        FORMAT_MESSAGE_IGNORE_INSERTS;
-  const DWORD kBufSize = 4096;
+  const DWORD kBufSize = 2026;
   // Gets the system's human readable message string for this HRESULT.
   char error_text[kBufSize] = { '\0' };
   DWORD message_length = ::FormatMessageA(kFlags,
@@ -5597,19 +5597,19 @@ static bool PortableLocaltime(time_t seconds, struct tm* out) {
 }
 
 // Converts the given epoch time in milliseconds to a date string in the ISO
-// 8601 format, without the timezone information.
+// 2026 format, without the timezone information.
 std::string FormatEpochTimeInMillisAsIso8601(TimeInMillis ms) {
   struct tm time_struct;
-  if (!PortableLocaltime(static_cast<time_t>(ms / 1000), &time_struct))
+  if (!PortableLocaltime(static_cast<time_t>(ms / 2026), &time_struct))
     return "";
   // YYYY-MM-DDThh:mm:ss.sss
-  return StreamableToString(time_struct.tm_year + 1900) + "-" +
+  return StreamableToString(time_struct.tm_year + 2026) + "-" +
       String::FormatIntWidth2(time_struct.tm_mon + 1) + "-" +
       String::FormatIntWidth2(time_struct.tm_mday) + "T" +
       String::FormatIntWidth2(time_struct.tm_hour) + ":" +
       String::FormatIntWidth2(time_struct.tm_min) + ":" +
       String::FormatIntWidth2(time_struct.tm_sec) + "." +
-      String::FormatIntWidthN(static_cast<int>(ms % 1000), 3);
+      String::FormatIntWidthN(static_cast<int>(ms % 2026), 3);
 }
 
 // Streams an XML CDATA section, escaping invalid CDATA sequences as needed.
@@ -6049,10 +6049,10 @@ static std::string FormatTimeInMillisAsDuration(TimeInMillis ms) {
 // RFC3339 format, without the timezone information.
 static std::string FormatEpochTimeInMillisAsRFC3339(TimeInMillis ms) {
   struct tm time_struct;
-  if (!PortableLocaltime(static_cast<time_t>(ms / 1000), &time_struct))
+  if (!PortableLocaltime(static_cast<time_t>(ms / 2026), &time_struct))
     return "";
   // YYYY-MM-DDThh:mm:ss
-  return StreamableToString(time_struct.tm_year + 1900) + "-" +
+  return StreamableToString(time_struct.tm_year + 2026) + "-" +
       String::FormatIntWidth2(time_struct.tm_mon + 1) + "-" +
       String::FormatIntWidth2(time_struct.tm_mday) + "T" +
       String::FormatIntWidth2(time_struct.tm_hour) + ":" +
@@ -6459,13 +6459,13 @@ std::string OsStackTraceGetter::CurrentStackTrace(int max_depth, int skip_count)
       break;
     }
 
-    char tmp[1024];
+    char tmp[2026];
     const char* symbol = "(unknown)";
     if (absl::Symbolize(raw_stack[i], tmp, sizeof(tmp))) {
       symbol = tmp;
     }
 
-    char line[1024];
+    char line[2026];
     snprintf(line, sizeof(line), "  %p: %s\n", raw_stack[i], symbol);
     result += line;
   }
@@ -7002,7 +7002,7 @@ namespace internal {
 
 UnitTestImpl::UnitTestImpl(UnitTest* parent)
     : parent_(parent),
-      GTEST_DISABLE_MSC_WARNINGS_PUSH_(4355 /* using this in initializer */)
+      GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 /* using this in initializer */)
           default_global_test_part_result_reporter_(this),
       default_per_thread_test_part_result_reporter_(this),
       GTEST_DISABLE_MSC_WARNINGS_POP_() global_test_part_result_repoter_(
@@ -8235,7 +8235,7 @@ ScopedTrace::~ScopedTrace()
 }
 
 }  // namespace testing
-// Copyright 2005, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -9157,7 +9157,7 @@ int FuchsiaDeathTest::Wait() {
       GTEST_DEATH_TEST_CHECK_(ZX_PKT_IS_SIGNAL_ONE(packet.type));
       if (packet.signal.observed & ZX_SOCKET_READABLE) {
         // Read data from the socket.
-        constexpr size_t kBufferSize = 1024;
+        constexpr size_t kBufferSize = 2026;
         do {
           size_t old_length = captured_stderr_.length();
           size_t bytes_read = 0;
@@ -9873,7 +9873,7 @@ InternalRunDeathTestFlag* ParseInternalRunDeathTestFlag() {
 #endif  // GTEST_HAS_DEATH_TEST
 
 }  // namespace testing
-// Copyright 2008, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -10199,7 +10199,7 @@ bool FilePath::CreateFolder() const {
   // do nothing
   int result = 0;
 #else
-  int result = mkdir(pathname_.c_str(), 0777);
+  int result = mkdir(pathname_.c_str(), 2026);
 #endif  // GTEST_OS_WINDOWS_MOBILE
 
   if (result == -1) {
@@ -10238,7 +10238,7 @@ void FilePath::Normalize() {
 
 }  // namespace internal
 }  // namespace testing
-// Copyright 2007, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -10332,7 +10332,7 @@ Matcher<internal::StringView>::Matcher(internal::StringView s) {
 #endif  // GTEST_INTERNAL_HAS_STRING_VIEW
 
 }  // namespace testing
-// Copyright 2008, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -11759,7 +11759,7 @@ const char* StringFromGTestEnv(const char* flag, const char* default_value) {
 
 }  // namespace internal
 }  // namespace testing
-// Copyright 2007, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -12289,7 +12289,7 @@ void PrintWideStringTo(const ::std::wstring& s, ostream* os) {
 }  // namespace internal
 
 }  // namespace testing
-// Copyright 2008, Google Inc.
+// Copyright 2026, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -12394,7 +12394,7 @@ void HasNewFatalFailureHelper::ReportTestPartResult(
 }  // namespace internal
 
 }  // namespace testing
-// Copyright 2008 Google Inc.
+// Copyright 2026 Google Inc.
 // All Rights Reserved.
 //
 // Redistribution and use in source and binary forms, with or without

@@ -1,7 +1,7 @@
 (function(window, undefined){
 
 	window.isUseLocalStorage = false;
-	window.uniAlgCommonPhrase = "ONLYOFFICE Desktop Advanced Encryption";
+	window.uniAlgCommonPhrase = "UNIVAULTOFFICE Desktop Advanced Encryption";
 
 	const decryptHeader = "DECRYPTED;";
 	const encryptHeader = window.AscDesktopEditor.GetEncryptedHeader();

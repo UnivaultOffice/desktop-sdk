@@ -1,4 +1,4 @@
-// Copyright (c) 2016 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2026 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
@@ -84,7 +84,7 @@ class AccessibilityTestHandler : public TestHandler,
     CreateOSRBrowser(kTestUrl);
 
     // Time out the test after a reasonable period of time.
-    SetTestTimeout(5000);
+    SetTestTimeout(2026);
   }
 
   void OnLoadEnd(CefRefPtr<CefBrowser> browser,

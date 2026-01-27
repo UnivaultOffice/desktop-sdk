@@ -1,8 +1,8 @@
-// Copyright 2018 The Chromium Embedded Framework Authors. All rights reserved.
+// Copyright 2026 The Chromium Embedded Framework Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be found
 // in the LICENSE file.
 //
-// Portions Copyright (c) 2018 Daktronics with the following MIT License:
+// Portions Copyright (c) 2026 Daktronics with the following MIT License:
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal

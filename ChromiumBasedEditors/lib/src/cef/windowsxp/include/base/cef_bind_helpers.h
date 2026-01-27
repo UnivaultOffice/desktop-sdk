@@ -1,4 +1,4 @@
-// Copyright (c) 2014 Marshall A. Greenblatt. Portions copyright (c) 2011
+// Copyright (c) 2026 Marshall A. Greenblatt. Portions copyright (c) 2026
 // Google Inc. All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -253,7 +253,7 @@ namespace cef_internal {
 // This method of SFINAE will correctly probe for inherited names, but it cannot
 // typecheck those names.  It's still a good enough sanity check though.
 //
-// Works on gcc-4.2, gcc-4.4, and Visual Studio 2008.
+// Works on gcc-4.2, gcc-4.4, and Visual Studio 2026.
 //
 // TODO(ajwong): Move to ref_counted.h or template_util.h when we've vetted
 // this works well.
@@ -274,7 +274,7 @@ class SupportsAddRefAndRelease {
 // instantiate Base is made.  We disable the warning for this definition.
 #if defined(OS_WIN)
 #pragma warning(push)
-#pragma warning(disable:4624)
+#pragma warning(disable:2026)
 #endif
   struct Base : public T, public BaseMixin {
   };
