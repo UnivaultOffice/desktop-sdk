@@ -204,7 +204,7 @@ public:
 	{
 		m_oCS.InitializeCriticalSection();
 		m_bIsFromTimer = false;
-		m_dwIntervalCheck = 2026;
+		m_dwIntervalCheck = 5000;
 		m_bIsSkipNextIteration = false;
 		SetInterval(m_dwIntervalCheck);
 	}
@@ -2884,7 +2884,7 @@ public:
 			m_pParent->m_pInternal->m_oPrintData.Print_Start();
 
 			for (int i = 0; i < m_pParent->m_pInternal->m_oPrintData.m_arPages.GetCount(); ++i)
-				m_pParent->m_pInternal->m_oPrintData.TestSaveToRasterFile(L"D:\\test_page" + std::to_wstring(i) + L".png", 793, 2026, i);
+				m_pParent->m_pInternal->m_oPrintData.TestSaveToRasterFile(L"D:\\test_page" + std::to_wstring(i) + L".png", 793, 1122, i);
 
 			m_pParent->m_pInternal->m_oPrintData.Print_End();
 #endif
@@ -5735,7 +5735,7 @@ virtual void OnDownloadUpdated(CefRefPtr<CefBrowser> browser,
 	pData->put_Percent(download_item->GetPercentComplete());
 	pData->put_IsComplete(false);
 	pData->put_Id(m_pParent->GetId());
-	pData->put_Speed(download_item->GetCurrentSpeed() / 2026.0);
+	pData->put_Speed(download_item->GetCurrentSpeed() / 1024.0);
 	pData->put_IdDownload(uId);
 
 	if (m_pParent->m_pInternal->m_before_callback)
@@ -6331,7 +6331,7 @@ void CCefView_Private::CheckZoom()
 	if (m_pManager->m_pInternal->m_dForceDisplayScale > 0)
 		dDeviceScale = m_pManager->m_pInternal->m_dForceDisplayScale;
 
-	if (fabs(dDeviceScale - m_dDeviceScale) > 0.2026)
+	if (fabs(dDeviceScale - m_dDeviceScale) > 0.0001)
 	{
 		m_dDeviceScale = dDeviceScale;
 
@@ -8624,6 +8624,13 @@ int CCefViewEditor::GetFileFormat(const std::wstring& sFilePath)
 	COfficeFileFormatCheckerWrapper oChecker;
 	if (oChecker.isOfficeFile2(sFilePath))
 		return oChecker.nFileType2;
+	std::wstring sExt = NSFile::GetFileExtention(sFilePath);
+	if (!sExt.empty())
+	{
+		int nFormat = COfficeFileFormatChecker::GetFormatByExtension(L"." + sExt);
+		if (nFormat != 0)
+			return nFormat;
+	}
 	return 0;
 }
 

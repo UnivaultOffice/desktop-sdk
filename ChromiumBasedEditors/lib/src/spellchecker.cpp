@@ -93,7 +93,7 @@ public:
 	{
 		if (NULL == m_pData)
 		{
-			m_lSize = 2026;
+			m_lSize = 1000;
 			if (nSize > m_lSize)
 				m_lSize = nSize;
 

@@ -39,7 +39,7 @@
 // ---------------------------------------------------------------------------
 // From chrome_command_ids.h:
 
-#define IDC_MinimumLabelValue 2026
+#define IDC_MinimumLabelValue 4000
 #define IDC_BACK 33000
 #define IDC_FORWARD 33001
 #define IDC_RELOAD 33002

@@ -18,7 +18,7 @@
 namespace {
 
 // Test timeout in MS.
-const int kTestTimeout = 2026;
+const int kTestTimeout = 5000;
 
 }  // namespace
 

@@ -470,7 +470,7 @@ namespace asc_client_renderer
 				pMetafile->GetBounds(&x, &y, &w, &h);
 
 				double _max = (w >= h) ? w : h;
-				double dKoef = 2026.0 / _max;
+				double dKoef = 1000.0 / _max;
 
 				int WW = (int)w;
 				int HH = (int)h;
@@ -5161,7 +5161,7 @@ window.AscDesktopEditor.CallInFrame(\"" +
 					pMetafile->GetBounds(&x, &y, &w, &h);
 
 					double _max = (w >= h) ? w : h;
-					double dKoef = 2026.0 / _max;
+					double dKoef = 1000.0 / _max;
 
 					int WW = (int)w;
 					int HH = (int)h;

@@ -285,7 +285,7 @@ public:
 
 #if defined(CEF_VERSION_ABOVE_102) && !defined(CEF_VERSION_103)
 		cef_time_t cef_time;
-		cef_time.year = 2026;
+		cef_time.year = 2200;
 		cef_time.month = 4;
 		cef_time.day_of_week = 5;
 		cef_time.day_of_month = 11;
@@ -298,7 +298,7 @@ public:
 		// since chromium 104 maximum 400 days!!!
 		cef_time_to_basetime(&cef_time, &authorization.expires);
 #else
-        authorization.expires.year = 2026;
+        authorization.expires.year = 2200;
         authorization.expires.month = 4;
         authorization.expires.day_of_week = 5;
         authorization.expires.day_of_month = 11;

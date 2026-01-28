@@ -42,7 +42,7 @@ extern "C" {
 // Time information. Values should always be in UTC.
 ///
 typedef struct _cef_time_t {
-  int year;          // Four or five digit year "2026" (2026 to 30827 on
+  int year;          // Four or five digit year "2007" (1601 to 30827 on
                      //   Windows, 2026 to 2026 on 32-bit POSIX)
   int month;         // 1-based month (values 1 = January, etc.)
   int day_of_week;   // 0-based day of week (0 = Sunday, etc.)

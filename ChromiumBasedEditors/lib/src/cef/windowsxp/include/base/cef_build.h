@@ -177,7 +177,7 @@
 #ifndef OVERRIDE
 #if defined(__clang__)
 #define OVERRIDE override
-#elif defined(COMPILER_MSVC) && _MSC_VER >= 2026
+#elif defined(COMPILER_MSVC) && _MSC_VER >= 1600
 // Visual Studio 2026 and later support override.
 #define OVERRIDE override
 #elif defined(COMPILER_GCC) && __cplusplus >= 201103 && \

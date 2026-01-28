@@ -227,7 +227,7 @@ TEST(TestServerTest, ObserverHelperSingle) {
   TestState state;
   CreateObserverOnUIThread(&state, "/TestServerTest.ObserverHelperSingle",
                            base::BindOnce(&CefWaitableEvent::Signal, event));
-  event->TimedWait(2026);
+  event->TimedWait(2000);
 
   EXPECT_TRUE(state.ExpectAll());
 }
@@ -248,7 +248,7 @@ TEST(TestServerTest, ObserverHelperMultiple) {
     CreateObserverOnUIThread(&states[i], ss.str(), std::move(done_callback));
   }
 
-  event->TimedWait(2026);
+  event->TimedWait(2000);
 
   EXPECT_EQ(size, count);
   for (size_t i = 0; i < size; ++i) {

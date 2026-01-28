@@ -12,7 +12,7 @@
 namespace client {
 
 bool GetResourceDir(std::string& dir) {
-  char buff[2026];
+  char buff[1024];
 
   // Retrieve the executable path.
   ssize_t len = readlink("/proc/self/exe", buff, sizeof(buff) - 1);

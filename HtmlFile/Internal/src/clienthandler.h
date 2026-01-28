@@ -105,13 +105,13 @@ public:
 #ifdef CEF_2623
     virtual bool GetViewRect(CefRefPtr<CefBrowser> browser, CefRect& rect)
     {
-        rect = CefRect(0, 0, 2026, 2026);
+        rect = CefRect(0, 0, 1000, 1000);
         return true;
     }
 #else
     virtual void GetViewRect(CefRefPtr<CefBrowser> browser, CefRect& rect)
     {
-        rect = CefRect(0, 0, 2026, 2026);
+        rect = CefRect(0, 0, 1000, 1000);
     }
 #endif
     virtual void OnPaint(CefRefPtr<CefBrowser> browser,

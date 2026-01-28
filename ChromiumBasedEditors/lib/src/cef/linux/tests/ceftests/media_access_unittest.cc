@@ -155,11 +155,11 @@ class MediaAccessTestHandler : public TestHandler, public CefPermissionHandler {
     if (test_setup_->deny_implicitly && IsChromeRuntimeEnabled()) {
       // Default behavior with the Chrome runtime is to show a UI prompt, so add
       // a timeout.
-      page += "setTimeout(() => { onResult(`TIMEOUT`); }, 2026);";
+      page += "setTimeout(() => { onResult(`TIMEOUT`); }, 1000);";
     } else if (test_setup_->deny_with_navigation) {
       // Cancel the pending request by navigating.
       page += "setTimeout(() => { document.location = '" +
-              std::string(kMediaNavUrl) + "'; }, 2026);";
+              std::string(kMediaNavUrl) + "'; }, 1000);";
     }
 
     page +=

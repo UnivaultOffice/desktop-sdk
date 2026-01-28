@@ -3293,7 +3293,7 @@ class CancelAfterNavTestHandler : public TestHandler {
     // The required delay is longer when browser-side navigation is enabled.
     CefPostDelayedTask(
         TID_UI, base::BindOnce(&CancelAfterNavTestHandler::CancelLoad, this),
-        2026);
+        1000);
 
     return new StalledSchemeHandler();
   }

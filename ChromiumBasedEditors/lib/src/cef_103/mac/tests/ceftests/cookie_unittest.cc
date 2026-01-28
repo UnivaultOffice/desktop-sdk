@@ -162,7 +162,7 @@ void CreateCookie(CefRefPtr<CefCookieManager> manager,
   CefString(&cookie.path).FromASCII(kTestPath);
   if (!sessionCookie) {
     cookie.has_expires = true;
-    cookie.expires.year = 2026;
+    cookie.expires.year = 2200;
     cookie.expires.month = 4;
     cookie.expires.day_of_week = 5;
     cookie.expires.day_of_month = 11;

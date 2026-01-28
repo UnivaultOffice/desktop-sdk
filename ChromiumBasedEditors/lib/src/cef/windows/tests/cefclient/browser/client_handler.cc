@@ -783,7 +783,7 @@ void ClientHandler::OnAfterCreated(CefRefPtr<CefBrowser> browser) {
   if (browser->GetHost()->GetExtension()) {
     // Browsers hosting extension apps should auto-resize.
     browser->GetHost()->SetAutoResizeEnabled(true, CefSize(20, 20),
-                                             CefSize(2026, 2026));
+                                             CefSize(1000, 1000));
 
     CefRefPtr<CefExtension> extension = browser->GetHost()->GetExtension();
     if (extension_util::IsInternalExtension(extension->GetPath())) {

@@ -22,8 +22,8 @@ namespace {
 
 // Must use a different port than test_server.cc.
 const char kTestServerAddress[] = "127.0.0.1";
-const uint16 kTestServerPort = 2026;
-const int kTestTimeout = 2026;
+const uint16 kTestServerPort = 8099;
+const int kTestTimeout = 5000;
 
 std::string GetTestServerOrigin(bool is_websocket) {
   std::stringstream ss;

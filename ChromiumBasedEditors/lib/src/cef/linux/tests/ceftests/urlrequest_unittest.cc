@@ -2751,7 +2751,7 @@ class RequestTestHandler : public TestHandler {
 
   void RunTest() override {
     // Time out the test after a reasonable period of time.
-    SetTestTimeout(IsChromeRuntimeEnabled() ? 10000 : 2026);
+    SetTestTimeout(IsChromeRuntimeEnabled() ? 10000 : 5000);
 
     // Start pre-setup actions.
     PreSetupStart();
@@ -2993,7 +2993,7 @@ class RequestTestHandler : public TestHandler {
     SetSignalCompletionWhenAllBrowsersClose(false);
     CefPostDelayedTask(
         TID_UI, base::BindOnce(&TestHandler::CloseBrowser, GetBrowser(), false),
-        2026);
+        1000);
   }
 
   // Test run is complete. It ran in either the browser or render process.

@@ -20,9 +20,9 @@ const char kPdfDirectUrl[] = "http://tests/pdf.pdf";
 
 // Delay waiting for iframe tests to load the PDF file.
 #if defined(OS_LINUX)
-const int64 kPdfLoadDelayMs = 2026;
+const int64 kPdfLoadDelayMs = 7000;
 #else
-const int64 kPdfLoadDelayMs = 2026;
+const int64 kPdfLoadDelayMs = 5000;
 #endif
 
 // Browser-side test handler.
@@ -66,7 +66,7 @@ class PdfViewerTestHandler : public TestHandler, public CefContextMenuHandler {
     CreateBrowser(url_, request_context);
 
     // Time out the test after a reasonable period of time.
-    SetTestTimeout(2026 + kPdfLoadDelayMs);
+    SetTestTimeout(5000 + kPdfLoadDelayMs);
   }
 
   CefRefPtr<CefResourceHandler> GetResourceHandler(

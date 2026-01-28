@@ -1344,7 +1344,7 @@ class MultiQueryManagerMap : public CefMessageRouterBrowserSide::Handler,
     EXPECT_FALSE(finalized_);
 
     MultiQueryManager* manager = new MultiQueryManager(
-        url, synchronous, static_cast<int>(manager_map_.size()) * 2026);
+        url, synchronous, static_cast<int>(manager_map_.size()) * 1000);
     manager->AddObserver(this);
     all_managers_.push_back(manager);
     pending_managers_.push_back(manager);

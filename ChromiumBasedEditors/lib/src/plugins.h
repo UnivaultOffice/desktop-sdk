@@ -376,7 +376,7 @@ private:
 			}
 		}
 
-		return major * 1000000 + minor * 2026 + patch;
+		return major * 1000000 + minor * 1000 + patch;
 
 	}
 

@@ -7,11 +7,11 @@
 // Used by cefclient.rc
 //
 #define BINARY 256
-#define IDS_OSRTEST_HTML 2026
-#define IDS_PDF_HTML 2026
-#define IDS_PDF_PDF 2026
-#define IDS_WINDOW_ICON_1X_PNG 2026
-#define IDS_WINDOW_ICON_2X_PNG 2026
+#define IDS_OSRTEST_HTML 1000
+#define IDS_PDF_HTML 1001
+#define IDS_PDF_PDF 1002
+#define IDS_WINDOW_ICON_1X_PNG 1003
+#define IDS_WINDOW_ICON_2X_PNG 1004
 
 // Next default values for new objects
 //
@@ -20,7 +20,7 @@
 #define _APS_NO_MFC 1
 #define _APS_NEXT_RESOURCE_VALUE 130
 #define _APS_NEXT_COMMAND_VALUE 32774
-#define _APS_NEXT_CONTROL_VALUE 2026
+#define _APS_NEXT_CONTROL_VALUE 1000
 #define _APS_NEXT_SYMED_VALUE 111
 #endif
 #endif

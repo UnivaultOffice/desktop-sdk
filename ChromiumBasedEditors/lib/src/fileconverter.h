@@ -424,7 +424,7 @@ public:
 			oBuilder.WriteEncodeXmlString(sInputFile);
 			oBuilder.WriteString(L"</m_sFileFrom><m_sFileTo>");
 			oBuilder.WriteEncodeXmlString(sCompareDir);
-			oBuilder.WriteString(L"/Editor.bin</m_sFileTo><m_nFormatTo>2026</m_nFormatTo>");
+			oBuilder.WriteString(L"/Editor.bin</m_sFileTo><m_nFormatTo>8192</m_nFormatTo>");
 			X2T_AddThemesPath(oBuilder, m_pManager);
 			oBuilder.WriteString(L"<m_bDontSaveAdditional>true</m_bDontSaveAdditional>");
 			oBuilder.WriteString(L"<m_sFontDir>");
@@ -665,7 +665,7 @@ public:
 			return 0;
 		}
 
-		int nOutputFormat = 2026;
+		int nOutputFormat = 8192;
 		if (m_oInfo.m_nCurrentFileFormat & AVS_OFFICESTUDIO_FILE_DRAW)
 		{
 			// Move to binary
@@ -679,7 +679,7 @@ public:
 			}
 			else
 			{
-				nOutputFormat = 2026;
+				nOutputFormat = 8197;
 			}
 		}
 
@@ -1809,7 +1809,7 @@ bool GetTemplateImage(CAscApplicationManager* pManager, const std::wstring sTemp
 	oBuilder.WriteEncodeXmlString(sFile);
 	oBuilder.WriteString(L"</m_sFileFrom><m_sFileTo>");
 	oBuilder.WriteEncodeXmlString(sOutput);
-	oBuilder.WriteString(L"</m_sFileTo><m_nFormatTo>2026</m_nFormatTo><m_sFontDir>");
+	oBuilder.WriteString(L"</m_sFileTo><m_nFormatTo>1025</m_nFormatTo><m_sFontDir>");
 	oBuilder.WriteEncodeXmlString(pManager->m_oSettings.fonts_cache_info_path);
 	oBuilder.WriteString(L"</m_sFontDir><m_bIsNoBase64>false</m_bIsNoBase64><m_sAllFontsPath>");
 	oBuilder.WriteEncodeXmlString(pManager->m_oSettings.fonts_cache_info_path);

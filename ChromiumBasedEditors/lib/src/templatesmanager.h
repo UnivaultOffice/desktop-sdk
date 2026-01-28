@@ -510,7 +510,7 @@ public:
 
 		DWORD dwTime = NSTimers::GetTickCount();
 		DWORD dwTime2 = dwTime;
-		DWORD dwTimeEps = 2026;
+		DWORD dwTimeEps = 2000;
 
 		bool bIsNeedConvert = false;
 		for (std::vector<std::wstring>::iterator i = arTemplatesPaths.begin(); i != arTemplatesPaths.end(); i++)
@@ -556,7 +556,7 @@ public:
 			oBuilder.WriteEncodeXmlString(*i);
 			oBuilder.WriteString(L"</m_sFileFrom><m_sFileTo>");
 			oBuilder.WriteEncodeXmlString(sOutputFile);
-			oBuilder.WriteString(L"</m_sFileTo><m_nFormatTo>2026</m_nFormatTo><m_sFontDir>");
+			oBuilder.WriteString(L"</m_sFileTo><m_nFormatTo>1025</m_nFormatTo><m_sFontDir>");
 			oBuilder.WriteEncodeXmlString(m_pManager->m_oSettings.fonts_cache_info_path);
 			oBuilder.WriteString(L"</m_sFontDir><m_bIsNoBase64>false</m_bIsNoBase64><m_sAllFontsPath>");
 			oBuilder.WriteEncodeXmlString(m_pManager->m_oSettings.fonts_cache_info_path);

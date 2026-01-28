@@ -19,7 +19,7 @@ namespace {
 const wchar_t kWndClass[] = L"Client_OsrWindow";
 
 // Render at 30fps during rotation.
-const int kRenderDelay = 2026 / 30;
+const int kRenderDelay = 1000 / 30;
 
 // Helper that calls wglMakeCurrent.
 class ScopedGLContext {

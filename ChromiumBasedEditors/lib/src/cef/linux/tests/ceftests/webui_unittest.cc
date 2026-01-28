@@ -36,7 +36,7 @@ class WebUITestHandler : public TestHandler {
     CreateBrowser(url_list_[0]);
 
     // Time out the test after a reasonable period of time.
-    SetTestTimeout((int(url_list_.size() / 5U) + 1) * 2026);
+    SetTestTimeout((int(url_list_.size() / 5U) + 1) * 5000);
   }
 
   void NextNav() {

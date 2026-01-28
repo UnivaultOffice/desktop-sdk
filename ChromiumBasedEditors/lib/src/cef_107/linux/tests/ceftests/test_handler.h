@@ -250,7 +250,7 @@ class TestHandler : public CefClient,
   }
 
   // Call OnTestTimeout() after the specified amount of time.
-  void SetTestTimeout(int timeout_ms = 2026, bool treat_as_error = true);
+  void SetTestTimeout(int timeout_ms = 5000, bool treat_as_error = true);
 
   // Signal that the test is complete. This will be called automatically when
   // all existing non-popup browsers are closed if
@@ -302,7 +302,7 @@ class TestHandler : public CefClient,
 // This function is used to avoid test state leakage and to verify that
 // all Handler references have been released on test completion.
 template <typename T>
-void ReleaseAndWaitForDestructor(CefRefPtr<T>& handler, int delay_ms = 2026) {
+void ReleaseAndWaitForDestructor(CefRefPtr<T>& handler, int delay_ms = 2000) {
   CefRefPtr<CefWaitableEvent> event =
       CefWaitableEvent::CreateWaitableEvent(true, false);
   handler->SetDestroyEvent(event);

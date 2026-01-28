@@ -21,7 +21,7 @@
 namespace {
 
 const char kPlaceholderOrigin[] = "http://placeholder/";
-const int kTestTimeout = 2026;
+const int kTestTimeout = 5000;
 
 // Handles the test server. Used for both HTTP and HTTPS tests.
 class TestServerHandler : public CefTestServerHandler {

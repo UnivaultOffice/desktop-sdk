@@ -59,7 +59,7 @@ void RouteStdioToConsole(bool create_console_if_not_found) {
   // Arbitrary byte count to use when buffering output lines.  More
   // means potential waste, less means more risk of interleaved
   // log-lines in output.
-  enum { kOutputBufferSize = 64 * 2026 };
+  enum { kOutputBufferSize = 64 * 1024 };
 
   if (freopen("CONOUT$", "w", stdout)) {
     setvbuf(stdout, nullptr, _IOLBF, kOutputBufferSize);

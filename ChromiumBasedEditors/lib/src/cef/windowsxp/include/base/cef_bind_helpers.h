@@ -274,7 +274,7 @@ class SupportsAddRefAndRelease {
 // instantiate Base is made.  We disable the warning for this definition.
 #if defined(OS_WIN)
 #pragma warning(push)
-#pragma warning(disable:2026)
+#pragma warning(disable:4624)
 #endif
   struct Base : public T, public BaseMixin {
   };

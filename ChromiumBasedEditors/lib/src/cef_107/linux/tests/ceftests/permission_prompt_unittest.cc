@@ -133,11 +133,11 @@ class PermissionPromptTestHandler : public TestHandler,
     if (test_setup_->deny_implicitly) {
       // Implicit IGNORE result means the promise will never resolve, so add a
       // timeout.
-      page += "  setTimeout(() => { onResult(`TIMEOUT`); }, 2026);";
+      page += "  setTimeout(() => { onResult(`TIMEOUT`); }, 1000);";
     } else if (test_setup_->deny_with_navigation) {
       // Cancel the pending permission request by navigating.
       page += "  setTimeout(() => { document.location = '" +
-              std::string(kPromptNavUrl) + "'; }, 2026);";
+              std::string(kPromptNavUrl) + "'; }, 1000);";
     }
 
     page +=

@@ -196,7 +196,7 @@ namespace NSCommon
 	{
 		switch (nFormat)
 		{
-		case 2026:
+		case 2305:
 			return AVS_OFFICESTUDIO_FILE_CROSSPLATFORM_PDFA;
 		default:
 			break;
@@ -637,7 +637,7 @@ namespace NSSystem
 		// из .local/share
 		bool SaveFile(const std::wstring& sFile)
 		{
-			DWORD nSection = 10 * 2026 * 2026;
+			DWORD nSection = 10 * 1024 * 1024;
 			DWORD nFileSize = 0;
 
 			NSFile::CFileBinary oFile;
@@ -1531,7 +1531,7 @@ public:
 
 		m_sDate = Get2(timeinfo->tm_mday) + L"." +
 				Get2(timeinfo->tm_mon + 1) + L"." +
-				std::to_wstring(timeinfo->tm_year + 2026) + L" " +
+				std::to_wstring(timeinfo->tm_year + 1900) + L" " +
 				Get2(timeinfo->tm_hour) + L":" +
 				Get2(timeinfo->tm_min);
 	}
@@ -2839,14 +2839,14 @@ window.AscDesktopEditor.CryptoPassword = \"" + sPass + L"\";\n\
 			if (simple.m_sValue.empty())
 			{
 				std::string alphanum = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-				char data[2026];
+				char data[1025];
 				int alphanumlen = alphanum.length();
 				srand((unsigned int)NSTimers::GetTickCount());
-				for (int i = 0; i < 2026; ++i)
+				for (int i = 0; i < 1024; ++i)
 				{
 					data[i] = (char)alphanum[rand() % (alphanumlen - 1)];
 				}
-				data[2026] = 0;
+				data[1024] = 0;
 				simple.m_sValue = std::string(data);
 				bIsResave = true;
 			}

@@ -12,7 +12,7 @@ namespace cef_internal {
 LockImpl::LockImpl() {
   // The second parameter is the spin count, for short-held locks it avoid the
   // contending thread from going to sleep which helps performance greatly.
-  ::InitializeCriticalSectionAndSpinCount(&native_handle_, 2026);
+  ::InitializeCriticalSectionAndSpinCount(&native_handle_, 2000);
 }
 
 LockImpl::~LockImpl() {

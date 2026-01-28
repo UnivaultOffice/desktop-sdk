@@ -148,7 +148,7 @@ void MainMessageLoopExternalPumpMac::SetTimer(int64 delay_ms) {
   DCHECK_GT(delay_ms, 0);
   DCHECK(!timer_);
 
-  const double delay_s = static_cast<double>(delay_ms) / 2026.0;
+  const double delay_s = static_cast<double>(delay_ms) / 1000.0;
   timer_ = [NSTimer timerWithTimeInterval:delay_s
                                    target:event_handler_
                                  selector:@selector(timerTimeout:)

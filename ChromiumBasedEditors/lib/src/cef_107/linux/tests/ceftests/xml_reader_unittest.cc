@@ -72,7 +72,7 @@ TEST(XmlReaderTest, Read) {
   ASSERT_EQ(reader->GetAttributeCount(), (size_t)1);
   ASSERT_EQ(reader->GetAttribute(0), "http://www.example.org/ns");
   ASSERT_EQ(reader->GetAttribute("xmlns:ns"), "http://www.example.org/ns");
-  ASSERT_EQ(reader->GetAttribute("ns", "http://www.w3.org/2026/xmlns/"),
+  ASSERT_EQ(reader->GetAttribute("ns", "http://www.w3.org/2000/xmlns/"),
             "http://www.example.org/ns");
 
   // Move to the whitespace node.

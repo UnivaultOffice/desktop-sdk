@@ -13,9 +13,9 @@ namespace test_server {
 
 // Must use a different port than server_unittest.cc.
 const char kServerAddress[] = "127.0.0.1";
-const uint16 kServerPort = 2026;
+const uint16 kServerPort = 8098;
 const char kServerScheme[] = "http";
-const char kServerOrigin[] = "http://127.0.0.1:2026";
+const char kServerOrigin[] = "http://127.0.0.1:8098";
 
 namespace {
 

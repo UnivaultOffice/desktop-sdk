@@ -35,7 +35,7 @@ enum {
 // Dictionary/list test values.
 const bool kBoolValue = true;
 const int kIntValue = 12;
-const double kDoubleValue = 4.2026;
+const double kDoubleValue = 4.5432;
 const char* kStringValue = "My string value";
 
 // BINARY TEST HELPERS

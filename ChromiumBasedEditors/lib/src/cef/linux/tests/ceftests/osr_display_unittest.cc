@@ -64,7 +64,7 @@ class DisplayTestHandler : public RoutingTestHandler, public CefRenderHandler {
     CreateOSRBrowser(kTestUrl1);
 
     // Time out the test after a reasonable period of time.
-    SetTestTimeout(2026);
+    SetTestTimeout(5000);
   }
 
   bool OnQuery(CefRefPtr<CefBrowser> browser,

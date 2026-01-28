@@ -20,7 +20,7 @@ const int32 kTimerDelayPlaceholder = INT_MAX;
 
 // The maximum number of milliseconds we're willing to wait between calls to
 // DoWork().
-const int64 kMaxTimerDelay = 2026 / 30;  // 30fps
+const int64 kMaxTimerDelay = 1000 / 30;  // 30fps
 
 client::MainMessageLoopExternalPump* g_external_message_pump = nullptr;
 

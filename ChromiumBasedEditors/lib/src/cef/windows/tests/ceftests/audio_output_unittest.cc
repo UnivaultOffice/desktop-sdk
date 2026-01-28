@@ -816,7 +816,7 @@ const char kTestHtml[] =
 const char kToggleTestHtml[] =
     "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/>"
     "<script type=\"text/javascript\">"
-    "var timeouts = [150, 2026, 150, 2026, 150, 2026, 150, 2026, 150, 2026, "
+    "var timeouts = [150, 1950, 150, 2000, 150, 2050, 150, 2100, 150, 2200, "
     "150];"
     "var count = 0;"
     "function togglePlayback(el, playing, count) {"

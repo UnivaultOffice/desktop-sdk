@@ -109,7 +109,7 @@
 #define GOOGLETEST_INCLUDE_GTEST_GTEST_SPI_H_
 
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(4251 \
 /* class A needs to have dll-interface to be used by clients of class B */)
 
 namespace testing {
@@ -187,7 +187,7 @@ class GTEST_API_ SingleFailureChecker {
 
 }  // namespace testing
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
 
 // A set of macros for testing Google Test assertions or code that's expected
 // to generate Google Test fatal failures.  It verifies that the given
@@ -449,7 +449,7 @@ GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
 #endif  // GTEST_OS_WINDOWS
 
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(4251 \
 /* class A needs to have dll-interface to be used by clients of class B */)
 
 namespace testing {
@@ -1604,7 +1604,7 @@ class StreamingListener : public EmptyTestEventListener {
 }  // namespace internal
 }  // namespace testing
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
 
 #endif  // GOOGLETEST_SRC_GTEST_INTERNAL_INL_H_
 
@@ -3337,7 +3337,7 @@ AssertionResult HRESULTFailureHelper(const char* expr,
   // want inserts expanded.
   const DWORD kFlags = FORMAT_MESSAGE_FROM_SYSTEM |
                        FORMAT_MESSAGE_IGNORE_INSERTS;
-  const DWORD kBufSize = 2026;
+  const DWORD kBufSize = 4096;
   // Gets the system's human readable message string for this HRESULT.
   char error_text[kBufSize] = { '\0' };
   DWORD message_length = ::FormatMessageA(kFlags,
@@ -5600,16 +5600,16 @@ static bool PortableLocaltime(time_t seconds, struct tm* out) {
 // 2026 format, without the timezone information.
 std::string FormatEpochTimeInMillisAsIso8601(TimeInMillis ms) {
   struct tm time_struct;
-  if (!PortableLocaltime(static_cast<time_t>(ms / 2026), &time_struct))
+  if (!PortableLocaltime(static_cast<time_t>(ms / 1000), &time_struct))
     return "";
   // YYYY-MM-DDThh:mm:ss.sss
-  return StreamableToString(time_struct.tm_year + 2026) + "-" +
+  return StreamableToString(time_struct.tm_year + 1900) + "-" +
       String::FormatIntWidth2(time_struct.tm_mon + 1) + "-" +
       String::FormatIntWidth2(time_struct.tm_mday) + "T" +
       String::FormatIntWidth2(time_struct.tm_hour) + ":" +
       String::FormatIntWidth2(time_struct.tm_min) + ":" +
       String::FormatIntWidth2(time_struct.tm_sec) + "." +
-      String::FormatIntWidthN(static_cast<int>(ms % 2026), 3);
+      String::FormatIntWidthN(static_cast<int>(ms % 1000), 3);
 }
 
 // Streams an XML CDATA section, escaping invalid CDATA sequences as needed.
@@ -6049,10 +6049,10 @@ static std::string FormatTimeInMillisAsDuration(TimeInMillis ms) {
 // RFC3339 format, without the timezone information.
 static std::string FormatEpochTimeInMillisAsRFC3339(TimeInMillis ms) {
   struct tm time_struct;
-  if (!PortableLocaltime(static_cast<time_t>(ms / 2026), &time_struct))
+  if (!PortableLocaltime(static_cast<time_t>(ms / 1000), &time_struct))
     return "";
   // YYYY-MM-DDThh:mm:ss
-  return StreamableToString(time_struct.tm_year + 2026) + "-" +
+  return StreamableToString(time_struct.tm_year + 1900) + "-" +
       String::FormatIntWidth2(time_struct.tm_mon + 1) + "-" +
       String::FormatIntWidth2(time_struct.tm_mday) + "T" +
       String::FormatIntWidth2(time_struct.tm_hour) + ":" +
@@ -6459,13 +6459,13 @@ std::string OsStackTraceGetter::CurrentStackTrace(int max_depth, int skip_count)
       break;
     }
 
-    char tmp[2026];
+    char tmp[1024];
     const char* symbol = "(unknown)";
     if (absl::Symbolize(raw_stack[i], tmp, sizeof(tmp))) {
       symbol = tmp;
     }
 
-    char line[2026];
+    char line[1024];
     snprintf(line, sizeof(line), "  %p: %s\n", raw_stack[i], symbol);
     result += line;
   }
@@ -7002,7 +7002,7 @@ namespace internal {
 
 UnitTestImpl::UnitTestImpl(UnitTest* parent)
     : parent_(parent),
-      GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 /* using this in initializer */)
+      GTEST_DISABLE_MSC_WARNINGS_PUSH_(4355 /* using this in initializer */)
           default_global_test_part_result_reporter_(this),
       default_per_thread_test_part_result_reporter_(this),
       GTEST_DISABLE_MSC_WARNINGS_POP_() global_test_part_result_repoter_(
@@ -9157,7 +9157,7 @@ int FuchsiaDeathTest::Wait() {
       GTEST_DEATH_TEST_CHECK_(ZX_PKT_IS_SIGNAL_ONE(packet.type));
       if (packet.signal.observed & ZX_SOCKET_READABLE) {
         // Read data from the socket.
-        constexpr size_t kBufferSize = 2026;
+        constexpr size_t kBufferSize = 1024;
         do {
           size_t old_length = captured_stderr_.length();
           size_t bytes_read = 0;
@@ -10199,7 +10199,7 @@ bool FilePath::CreateFolder() const {
   // do nothing
   int result = 0;
 #else
-  int result = mkdir(pathname_.c_str(), 2026);
+  int result = mkdir(pathname_.c_str(), 0777);
 #endif  // GTEST_OS_WINDOWS_MOBILE
 
   if (result == -1) {

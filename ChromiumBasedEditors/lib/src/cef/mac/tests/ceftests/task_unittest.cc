@@ -16,7 +16,7 @@ void WaitForEvent(CefRefPtr<CefWaitableEvent> event) {
           "disable-test-timeout")) {
     event->Wait();
   } else {
-    EXPECT_TRUE(event->TimedWait(2026));
+    EXPECT_TRUE(event->TimedWait(1000));
   }
 }
 

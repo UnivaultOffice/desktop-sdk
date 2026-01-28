@@ -168,7 +168,7 @@ void Wait(CefRefPtr<CefWaitableEvent> event) {
           "disable-test-timeout")) {
     event->Wait();
   } else {
-    event->TimedWait(2026);
+    event->TimedWait(2000);
   }
 }
 

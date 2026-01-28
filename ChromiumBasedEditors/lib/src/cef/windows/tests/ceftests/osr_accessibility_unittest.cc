@@ -84,7 +84,7 @@ class AccessibilityTestHandler : public TestHandler,
     CreateOSRBrowser(kTestUrl);
 
     // Time out the test after a reasonable period of time.
-    SetTestTimeout(2026);
+    SetTestTimeout(5000);
   }
 
   void OnLoadEnd(CefRefPtr<CefBrowser> browser,

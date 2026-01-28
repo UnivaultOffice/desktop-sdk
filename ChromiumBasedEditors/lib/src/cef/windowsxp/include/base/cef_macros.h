@@ -68,7 +68,7 @@
 //
 // Compiler warning C4355: 'this': used in base member initializer list:
 // http://msdn.microsoft.com/en-us/library/3c594ae3(VS.80).aspx
-#define ALLOW_THIS_IN_INITIALIZER_LIST(code) MSVC_PUSH_DISABLE_WARNING(2026) \
+#define ALLOW_THIS_IN_INITIALIZER_LIST(code) MSVC_PUSH_DISABLE_WARNING(4355) \
                                              code \
                                              MSVC_POP_WARNING()
 #else  // !COMPILER_MSVC

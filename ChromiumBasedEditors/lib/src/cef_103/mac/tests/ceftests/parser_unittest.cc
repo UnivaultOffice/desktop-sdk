@@ -276,8 +276,8 @@ TEST(ParserTest, FormatUrlForSecurityDisplay) {
   EXPECT_STREQ("http://tests.com", result.ToString().c_str());
 
   // Don't omit non-standard ports.
-  result = CefFormatUrlForSecurityDisplay("http://tests.com:2026/foo.html");
-  EXPECT_STREQ("http://tests.com:2026", result.ToString().c_str());
+  result = CefFormatUrlForSecurityDisplay("http://tests.com:8088/foo.html");
+  EXPECT_STREQ("http://tests.com:8088", result.ToString().c_str());
 
   // Don't omit the protocol for file URLs.
   result = CefFormatUrlForSecurityDisplay("file:///c/tests/foo.html");

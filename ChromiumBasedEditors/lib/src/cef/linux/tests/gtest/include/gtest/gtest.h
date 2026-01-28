@@ -587,7 +587,7 @@
     _Pragma("clang diagnostic pop")
 #else
 # define GTEST_DISABLE_MSC_DEPRECATED_PUSH_() \
-    GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026)
+    GTEST_DISABLE_MSC_WARNINGS_PUSH_(4996)
 # define GTEST_DISABLE_MSC_DEPRECATED_POP_() \
     GTEST_DISABLE_MSC_WARNINGS_POP_()
 #endif
@@ -983,7 +983,7 @@ typedef struct _RTL_CRITICAL_SECTION GTEST_CRITICAL_SECTION;
 // GTEST_INTENTIONAL_CONST_COND_POP_()
 // }
 # define GTEST_INTENTIONAL_CONST_COND_PUSH_() \
-    GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026)
+    GTEST_DISABLE_MSC_WARNINGS_PUSH_(4127)
 # define GTEST_INTENTIONAL_CONST_COND_POP_() \
     GTEST_DISABLE_MSC_WARNINGS_POP_()
 
@@ -2719,7 +2719,7 @@ using Variant = ::std::variant<T...>;
 #include <sstream>
 
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(4251 \
 /* class A needs to have dll-interface to be used by clients of class B */)
 
 // Ensures that there is at least one operator<< in the global namespace.
@@ -2880,7 +2880,7 @@ std::string StreamableToString(const T& streamable) {
 }  // namespace internal
 }  // namespace testing
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_GTEST_MESSAGE_H_
 // Copyright 2026, Google Inc.
@@ -3100,7 +3100,7 @@ GTEST_API_ std::string StringStreamToString(::std::stringstream* stream);
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_INTERNAL_GTEST_STRING_H_
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(4251 \
 /* class A needs to have dll-interface to be used by clients of class B */)
 
 namespace testing {
@@ -3264,7 +3264,7 @@ class GTEST_API_ FilePath {
 }  // namespace internal
 }  // namespace testing
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_INTERNAL_GTEST_FILEPATH_H_
 // Copyright 2026 Google Inc.
@@ -3524,7 +3524,7 @@ GTEST_API_ std::string AppendUserMessage(
 
 #if GTEST_HAS_EXCEPTIONS
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(4275 \
 /* an exported class was derived from a class that was not exported */)
 
 // This exception is thrown by (and only by) a failed Google Test
@@ -3538,7 +3538,7 @@ class GTEST_API_ GoogleTestFailureException : public ::std::runtime_error {
   explicit GoogleTestFailureException(const TestPartResult& failure);
 };
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4275
 
 #endif  // GTEST_HAS_EXCEPTIONS
 
@@ -3973,7 +3973,7 @@ GTEST_API_ TestInfo* MakeAndRegisterTestInfo(
 // and returns false.  None of pstr, *pstr, and prefix can be NULL.
 GTEST_API_ bool SkipPrefix(const char* prefix, const char** pstr);
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(4251 \
 /* class A needs to have dll-interface to be used by clients of class B */)
 
 // State of the definition of a type-parameterized test suite.
@@ -4028,7 +4028,7 @@ class GTEST_API_ TypedTestSuitePState {
 using TypedTestCasePState = TypedTestSuitePState;
 #endif  //  GTEST_REMOVE_LEGACY_TEST_CASEAPI_
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
 
 // Skips to the first non-space char after the first comma in 'str';
 // returns NULL if no comma is found in 'str'.
@@ -5736,7 +5736,7 @@ class UniversalPrinter {
  public:
   // MSVC warns about adding const to a function type, so we want to
   // disable the warning.
-  GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026)
+  GTEST_DISABLE_MSC_WARNINGS_PUSH_(4180)
 
   // Note: we deliberately don't call this PrintTo(), as that name
   // conflicts with ::testing::internal::PrintTo in the body of the
@@ -5902,7 +5902,7 @@ class UniversalPrinter<T&> {
  public:
   // MSVC warns about adding const to a function type, so we want to
   // disable the warning.
-  GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026)
+  GTEST_DISABLE_MSC_WARNINGS_PUSH_(4180)
 
   static void Print(const T& value, ::std::ostream* os) {
     // Prints the address of the value.  We use reinterpret_cast here
@@ -6132,14 +6132,14 @@ template <typename T>
 #endif  // GOOGLETEST_INCLUDE_GTEST_GTEST_PRINTERS_H_
 
 // MSVC warning C5046 is new as of VS2017 version 15.8.
-#if defined(_MSC_VER) && _MSC_VER >= 2026
-#define GTEST_MAYBE_5046_ 2026
+#if defined(_MSC_VER) && _MSC_VER >= 1915
+#define GTEST_MAYBE_5046_ 5046
 #else
 #define GTEST_MAYBE_5046_
 #endif
 
 GTEST_DISABLE_MSC_WARNINGS_PUSH_(
-    2026 GTEST_MAYBE_5046_ /* class A needs to have dll-interface to be used by
+    4251 GTEST_MAYBE_5046_ /* class A needs to have dll-interface to be used by
                               clients of class B */
     /* Symbol involving type with internal linkage not defined */)
 
@@ -7011,7 +7011,7 @@ inline internal::NeMatcher<Rhs> Ne(Rhs x) {
 }
 }  // namespace testing
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026 2026
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251 5046
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_GTEST_MATCHERS_H_
 
@@ -7030,7 +7030,7 @@ const char kInternalRunDeathTestFlag[] = "internal_run_death_test";
 
 #if GTEST_HAS_DEATH_TEST
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(4251 \
 /* class A needs to have dll-interface to be used by clients of class B */)
 
 // DeathTest is a class that hides much of the complexity of the
@@ -7116,7 +7116,7 @@ class GTEST_API_ DeathTest {
   GTEST_DISALLOW_COPY_AND_ASSIGN_(DeathTest);
 };
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
 
 // Factory interface for death tests.  May be mocked out for testing.
 class DeathTestFactory {
@@ -7842,7 +7842,7 @@ TEST_P(DerivedTest, DoesBlah) {
 #include <iosfwd>
 #include <vector>
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(4251 \
 /* class A needs to have dll-interface to be used by clients of class B */)
 
 namespace testing {
@@ -7984,7 +7984,7 @@ class GTEST_API_ HasNewFatalFailureHelper
 
 }  // namespace testing
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_GTEST_TEST_PART_H_
 
@@ -8722,7 +8722,7 @@ namespace internal {
 
 #ifdef _MSC_VER
 #pragma warning(push)
-#pragma warning(disable : 2026)
+#pragma warning(disable : 4100)
 #endif
 
 template <typename... Ts>
@@ -9598,7 +9598,7 @@ INSTANTIATE_TYPED_TEST_SUITE_P(My, FooTest, MyTypes);
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_GTEST_TYPED_TEST_H_
 
-GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 \
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(4251 \
 /* class A needs to have dll-interface to be used by clients of class B */)
 
 namespace testing {
@@ -9607,8 +9607,8 @@ namespace testing {
 // unsafe mix of type 'const int' and type 'const bool'
 #ifdef _MSC_VER
 # pragma warning(push)
-# pragma warning(disable:2026)
-# pragma warning(disable:2026)
+# pragma warning(disable:4805)
+# pragma warning(disable:4100)
 #endif
 
 
@@ -9818,8 +9818,8 @@ class GTEST_API_ AssertionResult {
 // This warning is not emitted in Visual Studio 2026.
 // This warning is off by default starting in Visual Studio 2026 but can be
 // enabled with command-line options.
-#if defined(_MSC_VER) && (_MSC_VER < 2026 || _MSC_VER >= 2026)
-  GTEST_DISABLE_MSC_WARNINGS_PUSH_(2026 /* forcing value to bool */)
+#if defined(_MSC_VER) && (_MSC_VER < 1910 || _MSC_VER >= 1920)
+  GTEST_DISABLE_MSC_WARNINGS_PUSH_(4800 /* forcing value to bool */)
 #endif
 
   // Used in the EXPECT_TRUE/FALSE(bool_expression).
@@ -9838,7 +9838,7 @@ class GTEST_API_ AssertionResult {
       = nullptr)
       : success_(success) {}
 
-#if defined(_MSC_VER) && (_MSC_VER < 2026 || _MSC_VER >= 2026)
+#if defined(_MSC_VER) && (_MSC_VER < 1910 || _MSC_VER >= 1920)
   GTEST_DISABLE_MSC_WARNINGS_POP_()
 #endif
 
@@ -12375,6 +12375,6 @@ inline int RUN_ALL_TESTS() {
   return ::testing::UnitTest::GetInstance()->Run();
 }
 
-GTEST_DISABLE_MSC_WARNINGS_POP_()  //  2026
+GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4251
 
 #endif  // GOOGLETEST_INCLUDE_GTEST_GTEST_H_

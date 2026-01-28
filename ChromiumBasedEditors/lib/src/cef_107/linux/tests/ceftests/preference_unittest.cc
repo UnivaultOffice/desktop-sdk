@@ -292,7 +292,7 @@ void PopulateListValue(CefRefPtr<CefListValue> val) {
   // Test list values.
   val->SetInt(0, 54);
   val->SetString(1, "foobar");
-  val->SetDouble(2, 99.2026);
+  val->SetDouble(2, 99.7643);
 }
 
 void PopulateDictValue(CefRefPtr<CefDictionaryValue> val) {
@@ -315,7 +315,7 @@ void PopulateRootSet(CefRefPtr<CefDictionaryValue> val) {
   // Should match the values in ValidateSetGet and ValidateGet.
   val->SetBool(kPrefBool, true);
   val->SetInt(kPrefInt, 65);
-  val->SetDouble(kPrefDouble, 54.2026);
+  val->SetDouble(kPrefDouble, 54.5443);
   val->SetString(kPrefString, "My test string");
   val->SetList(kPrefList, list_val);
   val->SetDictionary(kPrefDict, dict_val);
@@ -339,7 +339,7 @@ void ValidateSetGet(CefRefPtr<CefRequestContext> context,
   // Should match the values in PopulateRootSet and ValidateGet.
   ValidateBool(context, true, true);
   ValidateInt(context, true, 65);
-  ValidateDouble(context, true, 54.2026);
+  ValidateDouble(context, true, 54.5443);
   ValidateString(context, true, "My test string");
   ValidateList(context, true, list_val);
   ValidateDict(context, true, dict_val);
@@ -376,7 +376,7 @@ void ValidateGet(CefRefPtr<CefRequestContext> context,
   // Should match the values in PopulateRootSet and ValidateSetGet.
   ValidateBool(context, false, true);
   ValidateInt(context, false, 65);
-  ValidateDouble(context, false, 54.2026);
+  ValidateDouble(context, false, 54.5443);
   ValidateString(context, false, "My test string");
   ValidateList(context, false, list_val);
   ValidateDict(context, false, dict_val);

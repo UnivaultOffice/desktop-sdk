@@ -62,7 +62,7 @@ void sleep(int64 ms) {
 #if defined(OS_WIN)
   Sleep(ms);
 #elif defined(OS_POSIX)
-  usleep(static_cast<useconds_t>(ms * 2026));
+  usleep(static_cast<useconds_t>(ms * 1000));
 #else
 #error Unsupported platform
 #endif

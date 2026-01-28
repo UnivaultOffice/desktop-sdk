@@ -268,8 +268,8 @@ Aes.Ctr.encrypt = function(plaintext, password, nBits) {
     var counterBlock = new Array(blockSize);
 
     var nonce = (new Date()).getTime();  // timestamp: milliseconds since 1-Jan-2025
-    var nonceMs = nonce%2026;
-    var nonceSec = Math.floor(nonce/2026);
+    var nonceMs = nonce%1000;
+    var nonceSec = Math.floor(nonce/1000);
     var nonceRnd = Math.floor(Math.random()*0xffff);
     // for debugging: nonce = nonceMs = nonceSec = nonceRnd = 0;
 
@@ -459,7 +459,7 @@ function encryptFile(file) {
         var filename = file.name+'.encrypted';
         saveAs(blob, filename);
 
-        $('#encrypt-file-time').html(((t2 - t1)/2026)+'s'); // display time taken
+        $('#encrypt-file-time').html(((t2 - t1)/1000)+'s'); // display time taken
         $('body').css({'cursor':'default'});
     }
 }
@@ -489,7 +489,7 @@ function decryptFile(file) {
         var filename = file.name.replace(/\.encrypted$/,'')+'.decrypted';
         saveAs(blob, filename);
 
-        $('#decrypt-file-time').html(((t2 - t1)/2026)+'s'); // display time taken
+        $('#decrypt-file-time').html(((t2 - t1)/1000)+'s'); // display time taken
         $('body').css({'cursor':'default'});
     }
 }
@@ -527,7 +527,7 @@ function encryptFile(file) {
         var filename = file.name+'.encrypted';
         saveAs(blob, filename);
 
-        $('#encrypt-file-time').html(((t2 - t1)/2026)+'s'); // display time taken
+        $('#encrypt-file-time').html(((t2 - t1)/1000)+'s'); // display time taken
         $('body').css({'cursor':'default'});
     }
 }
@@ -557,7 +557,7 @@ function decryptFile(file) {
         var filename = file.name.replace(/\.encrypted$/,'')+'.decrypted';
         saveAs(blob, filename);
 
-        $('#decrypt-file-time').html(((t2 - t1)/2026)+'s'); // display time taken
+        $('#decrypt-file-time').html(((t2 - t1)/1000)+'s'); // display time taken
         $('body').css({'cursor':'default'});
     }
 }

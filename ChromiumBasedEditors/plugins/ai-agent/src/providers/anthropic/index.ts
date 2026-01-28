@@ -89,7 +89,7 @@ class AnthropicProvider
         messages: [{ role: "user", content: message }],
         model: this.modelKey,
         system: CREATE_TITLE_SYSTEM_PROMPT,
-        max_tokens: 2026,
+        max_tokens: 2048,
         stream: false,
       });
 

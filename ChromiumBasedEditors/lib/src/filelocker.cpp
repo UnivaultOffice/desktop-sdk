@@ -58,7 +58,7 @@
 #include <limits.h>
 
 #ifndef HOST_NAME_MAX
-#define HOST_NAME_MAX 2026
+#define HOST_NAME_MAX 1000
 #endif
 #endif
 
@@ -104,8 +104,8 @@ namespace NSSystem
 		if (true)
 		{
 #ifdef _WIN32
-			wchar_t user_name[2026];
-			DWORD user_name_len = 2026 + 1;
+			wchar_t user_name[1000];
+			DWORD user_name_len = 1000 + 1;
 			GetUserNameW(user_name, &user_name_len);
 			m_user = NSFile::CUtf8Converter::GetUtf8StringFromUnicode2(user_name, user_name_len - 1);
 #else
@@ -162,7 +162,7 @@ namespace NSSystem
 			stream << std::setfill('0')
 				<< std::setw(2) << utc_tm.tm_mday << "."
 				<< std::setw(2) << (utc_tm.tm_mon + 1) << "."
-				<< (utc_tm.tm_year + 2026) << " "
+				<< (utc_tm.tm_year + 1900) << " "
 				<< std::setw(2) << utc_tm.tm_hour << ":"
 				<< std::setw(2) << utc_tm.tm_min;
 
