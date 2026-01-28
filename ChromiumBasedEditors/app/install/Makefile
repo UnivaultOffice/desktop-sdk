@@ -1,4 +1,4 @@
-COMPANY_NAME := onlyoffice
+COMPANY_NAME := univaultoffice
 PRODUCT_NAME := desktopeditors
 PACKAGE_NAME := $(COMPANY_NAME)-$(PRODUCT_NAME)
 PRODUCT_VERSION := 3.6.0
@@ -87,8 +87,8 @@ deploy-rpm: $(RPM)
 	cp -rv $(RPM) $(REPO);
 	createrepo -v $(REPO);
 
-	aws s3 sync $(REPO) s3://repo-doc-onlyoffice-com/$(RPM_REPO_DIR)/$(PACKAGE_NAME)/$(SVN_TAG)/$(PACKAGE_VERSION)/ --acl public-read --delete
-	aws s3 sync $(REPO) s3://repo-doc-onlyoffice-com/$(RPM_REPO_DIR)/$(PACKAGE_NAME)/$(SVN_TAG)/latest/ --acl public-read --delete
+	aws s3 sync $(REPO) s3://repo-doc-univaultoffice-com/$(RPM_REPO_DIR)/$(PACKAGE_NAME)/$(SVN_TAG)/$(PACKAGE_VERSION)/ --acl public-read --delete
+	aws s3 sync $(REPO) s3://repo-doc-univaultoffice-com/$(RPM_REPO_DIR)/$(PACKAGE_NAME)/$(SVN_TAG)/latest/ --acl public-read --delete
 
 deploy-deb: $(DEB)
 	rm -rfv $(REPO)
@@ -97,8 +97,8 @@ deploy-deb: $(DEB)
 	cp -rv $(DEB) $(REPO);
 	dpkg-scanpackages -m repo /dev/null | gzip -9c > $(REPO)/Packages.gz
 
-	aws s3 sync $(REPO) s3://repo-doc-onlyoffice-com/$(DEB_REPO_DIR)/$(PACKAGE_NAME)/$(SVN_TAG)/$(PACKAGE_VERSION)/repo --acl public-read --delete
-	aws s3 sync $(REPO) s3://repo-doc-onlyoffice-com/$(DEB_REPO_DIR)/$(PACKAGE_NAME)/$(SVN_TAG)/latest/repo --acl public-read --delete
+	aws s3 sync $(REPO) s3://repo-doc-univaultoffice-com/$(DEB_REPO_DIR)/$(PACKAGE_NAME)/$(SVN_TAG)/$(PACKAGE_VERSION)/repo --acl public-read --delete
+	aws s3 sync $(REPO) s3://repo-doc-univaultoffice-com/$(DEB_REPO_DIR)/$(PACKAGE_NAME)/$(SVN_TAG)/latest/repo --acl public-read --delete
 
 deploy-apt-rpm: $(APT_RPM)
 	rm -rfv $(REPO)
@@ -112,7 +112,7 @@ deploy-apt-rpm: $(APT_RPM)
 
 	genbasedir --topdir=$(REPO) $(RPM_ARCH) repo
 
-	aws s3 sync $(REPO) s3://repo-doc-onlyoffice-com/$(ALT_REPO_DIR)/$(PACKAGE_NAME)/$(SVN_TAG)/$(PACKAGE_VERSION)/ --acl public-read --delete
-	aws s3 sync $(REPO) s3://repo-doc-onlyoffice-com/$(ALT_REPO_DIR)/$(PACKAGE_NAME)/$(SVN_TAG)/latest/ --acl public-read --delete
+	aws s3 sync $(REPO) s3://repo-doc-univaultoffice-com/$(ALT_REPO_DIR)/$(PACKAGE_NAME)/$(SVN_TAG)/$(PACKAGE_VERSION)/ --acl public-read --delete
+	aws s3 sync $(REPO) s3://repo-doc-univaultoffice-com/$(ALT_REPO_DIR)/$(PACKAGE_NAME)/$(SVN_TAG)/latest/ --acl public-read --delete
 
 deploy: deploy-rpm deploy-deb deploy-apt-rpm
