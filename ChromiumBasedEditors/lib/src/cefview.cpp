@@ -8624,13 +8624,6 @@ int CCefViewEditor::GetFileFormat(const std::wstring& sFilePath)
 	COfficeFileFormatCheckerWrapper oChecker;
 	if (oChecker.isOfficeFile2(sFilePath))
 		return oChecker.nFileType2;
-	std::wstring sExt = NSFile::GetFileExtention(sFilePath);
-	if (!sExt.empty())
-	{
-		int nFormat = COfficeFileFormatChecker::GetFormatByExtension(L"." + sExt);
-		if (nFormat != 0)
-			return nFormat;
-	}
 	return 0;
 }
 
