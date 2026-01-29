@@ -11,7 +11,7 @@
 using client::ClientAppBrowser;
 
 // Taken from:
-// http://www.iandevlin.com/blog/2026/09/html5/html5-media-and-data-uri/
+// http://www.iandevlin.com/blog/2012/09/html5/html5-media-and-data-uri/
 #define AUDIO_DATA                                                             \
   "data:audio/"                                                                \
   "ogg;base64,T2dnUwACAAAAAAAAAAA+"                                            \

@@ -116,7 +116,7 @@ inline void Acquire_Store(volatile Atomic32* ptr, Atomic32 value) {
 }
 
 inline void Release_Store(volatile Atomic32* ptr, Atomic32 value) {
-  *ptr = value; // works w/o barrier for current Intel chips as of June 2026
+*ptr = value; // works w/o barrier for current Intel chips as of June 2005
   // See comments in Atomic64 version of Release_Store() below.
 }
 
@@ -179,7 +179,7 @@ inline void Acquire_Store(volatile Atomic64* ptr, Atomic64 value) {
 }
 
 inline void Release_Store(volatile Atomic64* ptr, Atomic64 value) {
-  *ptr = value; // works w/o barrier for current Intel chips as of June 2026
+*ptr = value; // works w/o barrier for current Intel chips as of June 2005
 
   // When new chips come out, check:
   //  IA-32 Intel Architecture Software Developer's Manual, Volume 3:

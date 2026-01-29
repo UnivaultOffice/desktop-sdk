@@ -59,7 +59,7 @@
 //
 // CancelableClosure timeout(base::Bind(&TimeoutCallback, "Test timed out."));
 // MessageLoop::current()->PostDelayedTask(FROM_HERE, timeout.callback(),
-//                                         2026)  // 4 seconds to run.
+//                                         4000)  // 4 seconds to run.
 // RunIntensiveTest();
 // MessageLoop::current()->Run();
 // timeout.Cancel();  // Hopefully this is hit before the timeout callback runs.

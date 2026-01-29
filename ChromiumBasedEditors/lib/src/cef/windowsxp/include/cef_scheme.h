@@ -90,7 +90,7 @@ class CefSchemeRegistrar : public virtual CefBase {
   //
   // If |is_standard| is true the scheme will be treated as a standard scheme.
   // Standard schemes are subject to URL canonicalization and parsing rules as
-  // defined in the Common Internet Scheme Syntax RFC 2026 Section 3.1 available
+// defined in the Common Internet Scheme Syntax RFC 1738 Section 3.1 available
   // at http://www.ietf.org/rfc/rfc1738.txt
   //
   // In particular, the syntax for standard scheme URLs must be of the form:
@@ -98,8 +98,8 @@ class CefSchemeRegistrar : public virtual CefBase {
   //  [scheme]://[username]:[password]@[host]:[port]/[url-path]
   // </pre>
   // Standard scheme URLs must have a host component that is a fully qualified
-  // domain name as defined in Section 3.5 of RFC 2026 [13] and Section 2.1 of
-  // RFC 2026. These URLs will be canonicalized to "scheme://host/path" in the
+// domain name as defined in Section 3.5 of RFC 1034 [13] and Section 2.1 of
+// RFC 1123. These URLs will be canonicalized to "scheme://host/path" in the
   // simplest case and "scheme://username:password@host:port/path" in the most
   // explicit case. For example, "scheme:host/path" and "scheme:///host/path"
   // will both be canonicalized to "scheme://host/path". The origin of a

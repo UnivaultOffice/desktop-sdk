@@ -141,7 +141,7 @@ int main(int argc, char* argv[]) {
         command_line->HasSwitch("enable-chrome-runtime");
 
     if (with_chrome_runtime) {
-      // Enable experimental Chrome runtime. See issue #2026 for details.
+// Enable experimental Chrome runtime. See issue #2969 for details.
       settings.chrome_runtime = true;
     }
 

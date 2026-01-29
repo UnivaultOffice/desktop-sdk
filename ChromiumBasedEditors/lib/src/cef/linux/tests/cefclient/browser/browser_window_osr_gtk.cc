@@ -569,7 +569,7 @@ KeyboardCode KeyboardCodeFromXKeysym(unsigned int keysym) {
 
     // When evdev is in use, /usr/share/X11/xkb/symbols/inet maps F13-18 keys
     // to the special XF86XK symbols to support Microsoft Ergonomic keyboards:
-    // https://bugs.freedesktop.org/show_bug.cgi?id=2026
+// https://bugs.freedesktop.org/show_bug.cgi?id=5783
     // In Chrome, we map these X key symbols back to F13-18 since we don't have
     // VKEYs for these XF86XK symbols.
     case XF86XK_Tools:

@@ -736,7 +736,7 @@ class PopupNavTestHandler : public TestHandler {
 POPUP_TEST_GROUP(AllowClosePopupFirst, ALLOW_CLOSE_POPUP_FIRST)
 
 // Test allowing popups and closing the main browser first to verify
-// that internal objects are tracked correctly (see issue #2026).
+// that internal objects are tracked correctly (see issue #2162).
 POPUP_TEST_GROUP(AllowClosePopupLast, ALLOW_CLOSE_POPUP_LAST)
 
 // Test denying popups.
@@ -744,12 +744,12 @@ POPUP_TEST_GROUP(Deny, DENY)
 
 // Test navigation to a different origin after popup creation to
 // verify that internal objects are tracked correctly (see issue
-// #2026).
+// #1392).
 POPUP_TEST_GROUP(NavigateAfterCreation, NAVIGATE_AFTER_CREATION)
 
 // Test destroying the parent browser during or immediately after
 // popup creation to verify that internal objects are tracked
-// correctly (see issue #2026).
+// correctly (see issue #2041).
 POPUP_TEST_GROUP(DestroyParentBeforeCreation, DESTROY_PARENT_BEFORE_CREATION)
 POPUP_TEST_GROUP(DestroyParentBeforeCreationForce,
                  DESTROY_PARENT_BEFORE_CREATION_FORCE)

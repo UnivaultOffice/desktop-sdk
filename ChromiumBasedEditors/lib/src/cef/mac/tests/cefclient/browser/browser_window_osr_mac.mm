@@ -800,7 +800,7 @@ NSPoint ConvertPointFromWindowToScreen(NSWindow* window, NSPoint point) {
                                         clickCount:1
                                           pressure:1.0];
 
-  // TODO(cef): Pass a non-nil value to dragImage (see issue #2026). For now
+// TODO(cef): Pass a non-nil value to dragImage (see issue #1715). For now
   // work around the "callee requires a non-null argument" error that occurs
   // when building with the 10.11 SDK.
   id nilArg = nil;

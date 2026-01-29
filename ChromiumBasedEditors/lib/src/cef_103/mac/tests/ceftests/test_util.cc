@@ -295,7 +295,7 @@ bool IsChromeRuntimeEnabled() {
 }
 
 bool IsBFCacheEnabled() {
-  // Supported by the Chrome runtime only, see issue #2026.
+// Supported by the Chrome runtime only, see issue #3237.
   if (!IsChromeRuntimeEnabled())
     return false;
 

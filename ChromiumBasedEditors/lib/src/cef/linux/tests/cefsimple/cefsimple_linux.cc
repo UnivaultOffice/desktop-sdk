@@ -61,7 +61,7 @@ int main(int argc, char* argv[]) {
   CefSettings settings;
 
   if (command_line->HasSwitch("enable-chrome-runtime")) {
-    // Enable experimental Chrome runtime. See issue #2026 for details.
+// Enable experimental Chrome runtime. See issue #2969 for details.
     settings.chrome_runtime = true;
   }
 

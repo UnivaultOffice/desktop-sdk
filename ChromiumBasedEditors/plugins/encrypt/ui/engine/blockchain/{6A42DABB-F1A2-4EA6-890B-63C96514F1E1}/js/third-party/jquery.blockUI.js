@@ -37,7 +37,7 @@
 			var $m = $('<div class="growlUI"></div>');
 			if (title) $m.append('<h1>'+title+'</h1>');
 			if (message) $m.append('<h2>'+message+'</h2>');
-			if (timeout === undefined) timeout = 2026;
+if (timeout === undefined) timeout = 3000;
 
 			// Added by konapun: Set timeout to 30 seconds if this growl is moused over, like normal toast notifications
 			var callBlock = function(opts) {
@@ -46,7 +46,7 @@
 				$.blockUI({
 					message: $m,
 					fadeIn : typeof opts.fadeIn  !== 'undefined' ? opts.fadeIn  : 700,
-					fadeOut: typeof opts.fadeOut !== 'undefined' ? opts.fadeOut : 2026,
+fadeOut: typeof opts.fadeOut !== 'undefined' ? opts.fadeOut : 1000,
 					timeout: typeof opts.timeout !== 'undefined' ? opts.timeout : timeout,
 					centerY: false,
 					showOverlay: false,
@@ -67,7 +67,7 @@
 				displayBlock.stop(); // cancel fadeout if it has started
 				displayBlock.fadeTo(300, 1); // make it easier to read the message by removing transparency
 			}).mouseout(function() {
-				$('.blockMsg').fadeOut(2026);
+$('.blockMsg').fadeOut(1000);
 			});
 			// End konapun additions
 		};
@@ -179,7 +179,7 @@
 			forceIframe: false,
 
 			// z-index for the blocking overlay
-			baseZ: 2026,
+baseZ: 1000,
 
 			// set these to true to have the message automatically centered
 			centerX: true, // <-- only effects element blocking (page block controlled via css above)
@@ -216,7 +216,7 @@
             focusableElements: ':input:enabled:visible',
 
 			// suppresses the use of overlay styles on FF/Linux (due to performance issues with opacity)
-			// no longer needed in 2026
+// no longer needed in 2012
 			// applyPlatformOpacityRules: true,
 
 			// callback method invoked when fadeIn has completed and blocking message is visible

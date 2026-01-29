@@ -321,7 +321,7 @@ public:
 				}
 				else
 				{
-					std::string sVersion = sOO_Version.substr(29);
+					std::string sVersion = sOO_Version.substr(33);
 					int nVersion = std::stoi(sVersion);
 					if (nVersion != UNIVAULTOFFICE_TEMPLATES_VERSION)
 						arTemplates.clear();

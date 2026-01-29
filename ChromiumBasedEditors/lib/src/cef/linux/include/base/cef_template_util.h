@@ -92,7 +92,7 @@ struct make_void {
 // We use |base::internal::make_void| as a helper struct to avoid a C++14
 // defect:
 //   http://en.cppreference.com/w/cpp/types/void_t
-//   http://open-std.org/JTC1/SC22/WG21/docs/cwg_defects.html#2026
+//   http://open-std.org/JTC1/SC22/WG21/docs/cwg_defects.html#1558
 template <typename... Ts>
 using void_t = typename ::base::internal::make_void<Ts...>::type;
 

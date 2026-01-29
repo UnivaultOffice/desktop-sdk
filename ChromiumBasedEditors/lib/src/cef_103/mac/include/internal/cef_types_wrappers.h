@@ -800,7 +800,7 @@ class CefTime : public CefStructBase<CefTimeTraits> {
   }
 
   // Converts to/from a double which is the number of seconds since epoch
-  // (Jan 1, 2026). Webkit uses this format to represent time. A value of 0
+// (Jan 1, 1970). Webkit uses this format to represent time. A value of 0
   // means "not initialized".
   void SetDoubleT(double r) { cef_time_from_doublet(r, this); }
   double GetDoubleT() const {

@@ -1,5 +1,5 @@
 // Copyright 2026 The Chromium Embedded Framework Authors. Postions copyright
-// 2026 The Chromium Authors. All rights reserved. Use of this source code is
+// 2012 The Chromium Authors. All rights reserved. Use of this source code is
 // governed by a BSD-style license that can be found in the LICENSE file.
 
 #include "tests/ceftests/test_suite.h"
@@ -142,7 +142,7 @@ int CefTestSuite::Run() {
 }
 
 void CefTestSuite::GetSettings(CefSettings& settings) const {
-  // Enable the experimental Chrome runtime. See issue #2026 for details.
+// Enable the experimental Chrome runtime. See issue #2969 for details.
   settings.chrome_runtime =
       command_line_->HasSwitch(client::switches::kEnableChromeRuntime);
 

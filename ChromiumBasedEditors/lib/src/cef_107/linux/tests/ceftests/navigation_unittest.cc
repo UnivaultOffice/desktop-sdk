@@ -751,7 +751,7 @@ class HistoryDynamicIFramesNavTestHandler : public TestHandler {
 }  // namespace
 
 // Verify history navigation of pages containing dynamically created iframes.
-// See issue #2026 for background.
+// See issue #2022 for background.
 TEST(NavigationTest, HistoryDynamicIFrames) {
   CefRefPtr<HistoryDynamicIFramesNavTestHandler> handler =
       new HistoryDynamicIFramesNavTestHandler();

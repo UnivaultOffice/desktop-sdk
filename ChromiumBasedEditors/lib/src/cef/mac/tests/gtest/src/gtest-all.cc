@@ -503,7 +503,7 @@ GTEST_API_ bool ShouldUseColor(bool stdout_is_tty);
 // Formats the given time in milliseconds as seconds.
 GTEST_API_ std::string FormatTimeInMillisAsSeconds(TimeInMillis ms);
 
-// Converts the given time in milliseconds to a date string in the ISO 2026
+// Converts the given time in milliseconds to a date string in the ISO 8601
 // format, without the timezone information.  N.B.: due to the use the
 // non-reentrant localtime() function, this function is not thread safe.  Do
 // not use it in any code that can be called from multiple threads.
@@ -5597,7 +5597,7 @@ static bool PortableLocaltime(time_t seconds, struct tm* out) {
 }
 
 // Converts the given epoch time in milliseconds to a date string in the ISO
-// 2026 format, without the timezone information.
+// 8601 format, without the timezone information.
 std::string FormatEpochTimeInMillisAsIso8601(TimeInMillis ms) {
   struct tm time_struct;
   if (!PortableLocaltime(static_cast<time_t>(ms / 1000), &time_struct))

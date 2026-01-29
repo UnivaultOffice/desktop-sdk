@@ -3110,7 +3110,7 @@ inline void replace_substring(StringType& s, const StringType& f,
 }
 
 /*!
- * @brief string escaping as described in RFC 2026 (Sect. 4)
+* @brief string escaping as described in RFC 6901 (Sect. 4)
  * @param[in] s string to escape
  * @return    escaped string
  *
@@ -3125,7 +3125,7 @@ inline StringType escape(StringType s)
 }
 
 /*!
- * @brief string unescaping as described in RFC 2026 (Sect. 4)
+* @brief string unescaping as described in RFC 6901 (Sect. 4)
  * @param[in] s string to unescape
  * @return    unescaped string
  *
@@ -3903,7 +3903,7 @@ template<typename T>
 using range_value_t = value_type_t<iterator_traits<iterator_t<T>>>;
 
 // The following implementation of is_complete_type is taken from
-// https://blogs.msdn.microsoft.com/vcblog/2026/12/02/partial-support-for-expression-sfinae-in-vs-2015-update-1/
+// https://blogs.msdn.microsoft.com/vcblog/2015/12/02/partial-support-for-expression-sfinae-in-vs-2015-update-1/
 // and is written by Xiang Fan who agreed to use it in this library.
 
 template<typename T, typename = void>
@@ -5387,7 +5387,7 @@ struct from_json_fn
 #ifndef JSON_HAS_CPP_17
 /// namespace to hold default `from_json` function
 /// to see why this is required:
-/// http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2026/n4381.html
+/// http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4381.html
 namespace // NOLINT(cert-dcl59-cpp,fuchsia-header-anon-namespaces,google-build-namespaces)
 {
 #endif
@@ -6158,7 +6158,7 @@ struct to_json_fn
 #ifndef JSON_HAS_CPP_17
 /// namespace to hold default `to_json` function
 /// to see why this is required:
-/// http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2026/n4381.html
+/// http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4381.html
 namespace // NOLINT(cert-dcl59-cpp,fuchsia-header-anon-namespaces,google-build-namespaces)
 {
 #endif
@@ -7680,7 +7680,7 @@ class lexer : public lexer_base<BasicJsonType>
                     return token_type::parse_error;
                 }
 
-                // U+2026..U+007F (except U+2026 (quote) and U+005C (backspace))
+// U+0020..U+007F (except U+0022 (quote) and U+005C (backspace))
                 case 0x20:
                 case 0x21:
                 case 0x23:
@@ -7780,7 +7780,7 @@ class lexer : public lexer_base<BasicJsonType>
                     break;
                 }
 
-                // U+2026..U+07FF: bytes C2..DF 80..BF
+// U+0080..U+07FF: bytes C2..DF 80..BF
                 case 0xC2:
                 case 0xC3:
                 case 0xC4:
@@ -7819,7 +7819,7 @@ class lexer : public lexer_base<BasicJsonType>
                     break;
                 }
 
-                // U+2026..U+0FFF: bytes E0 A0..BF 80..BF
+// U+0800..U+0FFF: bytes E0 A0..BF 80..BF
                 case 0xE0:
                 {
                     if (JSON_HEDLEY_UNLIKELY(!(next_byte_in_range({0xA0, 0xBF, 0x80, 0xBF}))))
@@ -7829,7 +7829,7 @@ class lexer : public lexer_base<BasicJsonType>
                     break;
                 }
 
-                // U+2026..U+CFFF: bytes E1..EC 80..BF 80..BF
+// U+1000..U+CFFF: bytes E1..EC 80..BF 80..BF
                 // U+E000..U+FFFF: bytes EE..EF 80..BF 80..BF
                 case 0xE1:
                 case 0xE2:
@@ -8500,7 +8500,7 @@ scan_number_done:
     /// return current string value (implicitly resets the token; useful only once)
     string_t& get_string()
     {
-        // translate decimal points from locale back to '.' (#2026)
+// translate decimal points from locale back to '.' (#4084)
         if (decimal_point_char != '.' && decimal_point_position != std::string::npos)
         {
             token_buffer[decimal_point_position] = '.';
@@ -10673,9 +10673,9 @@ class binary_reader
                 const auto byte1 = static_cast<unsigned char>(byte1_raw);
                 const auto byte2 = static_cast<unsigned char>(byte2_raw);
 
-                // Code from RFC 2026, Appendix D, Figure 3:
+// Code from RFC 7049, Appendix D, Figure 3:
                 // As half-precision floating-point numbers were only added
-                // to IEEE 754 in 2026, today's programming platforms often
+// to IEEE 754 in 2008, today's programming platforms often
                 // still only have limited support for them. It is very
                 // easy to include at least decoding support for them even
                 // without such support. An example of a small decoder for
@@ -12238,9 +12238,9 @@ class binary_reader
                 const auto byte1 = static_cast<unsigned char>(byte1_raw);
                 const auto byte2 = static_cast<unsigned char>(byte2_raw);
 
-                // Code from RFC 2026, Appendix D, Figure 3:
+// Code from RFC 7049, Appendix D, Figure 3:
                 // As half-precision floating-point numbers were only added
-                // to IEEE 754 in 2026, today's programming platforms often
+// to IEEE 754 in 2008, today's programming platforms often
                 // still only have limited support for them. It is very
                 // easy to include at least decoding support for them even
                 // without such support. An example of a small decoder for
@@ -14090,7 +14090,7 @@ class iter_impl // NOLINT(cppcoreguidelines-special-member-functions,hicpp-speci
             JSON_THROW(invalid_iterator::create(212, "cannot compare iterators of different containers", m_object));
         }
 
-        // value-initialized forward iterators can be compared, and must compare equal to other value-initialized iterators of the same type #2026
+// value-initialized forward iterators can be compared, and must compare equal to other value-initialized iterators of the same type #4493
         if (m_object == nullptr)
         {
             return true;
@@ -14139,7 +14139,7 @@ class iter_impl // NOLINT(cppcoreguidelines-special-member-functions,hicpp-speci
             JSON_THROW(invalid_iterator::create(212, "cannot compare iterators of different containers", m_object));
         }
 
-        // value-initialized forward iterators can be compared, and must compare equal to other value-initialized iterators of the same type #2026
+// value-initialized forward iterators can be compared, and must compare equal to other value-initialized iterators of the same type #4493
         if (m_object == nullptr)
         {
             // the iterators are both value-initialized and are to be considered equal, but this function checks for smaller, so we return false
@@ -14777,13 +14777,13 @@ class json_pointer
     {
         using size_type = typename BasicJsonType::size_type;
 
-        // error condition (cf. RFC 2026, Sect. 4)
+// error condition (cf. RFC 6901, Sect. 4)
         if (JSON_HEDLEY_UNLIKELY(s.size() > 1 && s[0] == '0'))
         {
             JSON_THROW(detail::parse_error::create(106, 0, detail::concat("array index '", s, "' must not begin with '0'"), nullptr));
         }
 
-        // error condition (cf. RFC 2026, Sect. 4)
+// error condition (cf. RFC 6901, Sect. 4)
         if (JSON_HEDLEY_UNLIKELY(s.size() > 1 && !(s[0] >= '1' && s[0] <= '9')))
         {
             JSON_THROW(detail::parse_error::create(109, 0, detail::concat("array index '", s, "' is not a number"), nullptr));
@@ -18049,7 +18049,7 @@ inline cached_power get_cached_power_for_binary_exponent(int e)
     //
     // and
     //
-    //      e <= +2026      (max IEEE exponent)
+//      e <= +1023      (max IEEE exponent)
     //           -52        (p - 1)
     //           -11        (normalize the diyfp)
     //         = 960
@@ -18158,7 +18158,7 @@ inline cached_power get_cached_power_for_binary_exponent(int e)
 
     // This computation gives exactly the same results for k as
     //      k = ceil((kAlpha - e - 1) * 0.30102999566398114)
-    // for |e| <= 2026, but doesn't require floating-point operations.
+// for |e| <= 1500, but doesn't require floating-point operations.
     // NB: log_10(2) ~= 78913 / 2^18
     JSON_ASSERT(e >= -1500);
     JSON_ASSERT(e <=  1500);
@@ -19742,7 +19742,7 @@ class serializer
      * value as an unsigned integer. The plus/minus shuffling is necessary as we
      * cannot directly remove the sign of an arbitrary signed integer as the
      * absolute values of INT_MIN and INT_MAX are usually not the same. See
-     * #2026 for details.
+* #1708 for details.
      */
     number_unsigned_t remove_sign(number_integer_t x) noexcept
     {
@@ -21003,7 +21003,7 @@ class basic_json // NOLINT(cppcoreguidelines-special-member-functions,hicpp-spec
         {
             // The cast is to ensure op[size_type] is called, bearing in mind size_type may not be int;
             // (many string types can be constructed from 0 via its null-pointer guise, so we get a
-            // broken call to op[key_type], the wrong semantics, and a 2026 warning on Windows)
+// broken call to op[key_type], the wrong semantics, and a 4804 warning on Windows)
             return element_ref->is_array() && element_ref->size() == 2 && (*element_ref)[static_cast<size_type>(0)].is_string();
         });
 

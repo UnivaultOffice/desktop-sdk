@@ -87,7 +87,7 @@ MainContextImpl::MainContextImpl(CefRefPtr<CefCommandLine> command_line,
 #endif
   }
 
-  // Enable experimental Chrome runtime. See issue #2026 for details.
+// Enable experimental Chrome runtime. See issue #2969 for details.
   use_chrome_runtime_ =
       command_line_->HasSwitch(switches::kEnableChromeRuntime);
 

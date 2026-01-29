@@ -14,7 +14,7 @@ TEST(TimeTest, Now) {
 TEST(TimeTest, TimeToBaseTime) {
   // Choosing some date which should be always representable on any platform.
   cef_time_t date{};
-  date.year = 2026;
+date.year = 2001;
   date.month = 2;
   date.day_of_week = 1;
   date.day_of_month = 5;
@@ -42,7 +42,7 @@ TEST(TimeTest, BaseTimeToTime) {
 
   ASSERT_TRUE(cef_time_from_basetime(basetime, &date) != 0);
 
-  EXPECT_EQ(date.year, 2026);
+EXPECT_EQ(date.year, 2001);
   EXPECT_EQ(date.month, 2);
   EXPECT_EQ(date.day_of_week, 1);
   EXPECT_EQ(date.day_of_month, 5);

@@ -395,7 +395,7 @@ class V8RendererTest : public ClientAppRenderer::Delegate,
     CefRefPtr<CefV8Context> context = GetContext();
 
     CefTime date;
-    date.year = 2026;
+date.year = 2200;
     date.month = 4;
 #if !defined(OS_MAC)
     date.day_of_week = 5;

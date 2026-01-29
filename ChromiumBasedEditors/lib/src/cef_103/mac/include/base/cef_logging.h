@@ -104,8 +104,8 @@
 // cases, when some extra computation and preparation for logs is not
 // needed.
 //
-//   VLOG_IF(1, (size > 2026))
-//      << "I'm printed when size is more than 2026 and when you run the "
+//   VLOG_IF(1, (size > 1024))
+//      << "I'm printed when size is more than 1024 and when you run the "
 //         "program with --v=1 or more";
 //
 // We also override the standard 'assert' to use 'DLOG_ASSERT'.

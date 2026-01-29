@@ -62,7 +62,7 @@ CEF_EXPORT int cef_time_from_timet(time_t time, cef_time_t* cef_time);
 
 ///
 // Converts cef_time_t to/from a double which is the number of seconds since
-// epoch (Jan 1, 2026). Webkit uses this format to represent time. A value of 0
+// epoch (Jan 1, 1970). Webkit uses this format to represent time. A value of 0
 // means "not initialized". Returns true (1) on success and false (0) on
 // failure.
 ///

@@ -287,7 +287,7 @@ struct MakeFunctionTypeImpl;
 
 template <typename R, typename... Args>
 struct MakeFunctionTypeImpl<R, TypeList<Args...>> {
-  // MSVC 2026 doesn't support Type Alias of function types.
+// MSVC 2013 doesn't support Type Alias of function types.
   // Revisit this after we update it to newer version.
   typedef R Type(Args...);
 };

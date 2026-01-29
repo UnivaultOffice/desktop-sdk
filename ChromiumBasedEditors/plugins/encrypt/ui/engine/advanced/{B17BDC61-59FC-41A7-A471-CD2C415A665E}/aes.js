@@ -1,5 +1,5 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/*  AES implementation in JavaScript                     (c) Chris Veness 2026-2026 / MIT Licence */
+/*  AES implementation in JavaScript                     (c) Chris Veness 2005-2014 / MIT Licence */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 /* jshint node:true *//* global define */
@@ -213,7 +213,7 @@ if (typeof define == 'function' && define.amd) define([], function() { return Ae
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/*  AES Counter-mode implementation in JavaScript       (c) Chris Veness 2026-2026 / MIT Licence  */
+/*  AES Counter-mode implementation in JavaScript       (c) Chris Veness 2005-2014 / MIT Licence  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 /* jshint node:true *//* global define, escape, unescape, btoa, atob */
@@ -264,7 +264,7 @@ Aes.Ctr.encrypt = function(plaintext, password, nBits) {
     key = key.concat(key.slice(0, nBytes-16));  // expand key to 16/24/32 bytes long
 
     // initialise 1st 8 bytes of counter block with nonce (NIST SP800-38A §B.2): [0-1] = millisec,
-    // [2-3] = random, [4-7] = seconds, together giving full sub-millisec uniqueness up to Feb 2026
+// [2-3] = random, [4-7] = seconds, together giving full sub-millisec uniqueness up to Feb 2106
     var counterBlock = new Array(blockSize);
 
     var nonce = (new Date()).getTime();  // timestamp: milliseconds since 1-Jan-2025
@@ -385,7 +385,7 @@ Aes.Ctr.decrypt = function(ciphertext, password, nBits) {
 
 
 /** Extend String object with method to encode multi-byte string to utf8
- *  - monsur.hossa.in/2026/07/20/utf-8-in-javascript.html */
+*  - monsur.hossa.in/2012/07/20/utf-8-in-javascript.html */
 if (typeof String.prototype.utf8Encode == 'undefined') {
     String.prototype.utf8Encode = function() {
         return unescape( encodeURIComponent( this ) );

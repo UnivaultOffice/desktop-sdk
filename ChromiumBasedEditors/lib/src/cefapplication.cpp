@@ -607,7 +607,7 @@ void CApplicationCEF::Close()
 		if (m_pInternal->m_bIsMessageLoopRunned)
 		{
 #ifdef _WIN32
-			// https://bitbucket.org/chromiumembedded/cef/issues/2026/crash-in-createnetworkcontext-on-shutdown
+// https://bitbucket.org/chromiumembedded/cef/issues/2703/crash-in-createnetworkcontext-on-shutdown
 			// TODO: fix in new cef builds (next release)
 			ExitMessageLoop();
 			return;
